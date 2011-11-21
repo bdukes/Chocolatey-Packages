@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>linqpad4</id>
+    <title>LINQPad 4</title>
+    <version>4.31.0</version>
+    <authors>Joseph Albahari</authors>
+    <owners>Brian Dukes</owners>
+    <summary>LINQPad 4 Low-Impact Setup</summary>
+    <description>
+  LINQPad lets you interactively query databases in a modern query language: LINQ.  LINQPad supports everything in C# 4.0 and Framework 4.0 (LINQ to Objects, SQL, EF, XML, Parallel LINQ, etc.).  It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn LINQ: it comes loaded with 500 examples from the book, C# 4.0 in a Nutshell.  And LINQPad is more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any expression, statement block or program with rich output formatting – the ultimate in dynamic development. 
+  This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.linqpad.net/</projectUrl>
+    <tags>linq sql .net-4 chocolatey</tags>
+    <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/__NAME__/__NAME__.gif</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
