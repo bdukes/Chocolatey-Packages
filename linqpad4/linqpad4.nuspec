@@ -3,7 +3,7 @@
   <metadata>
     <id>linqpad4</id>
     <title>LINQPad 4</title>
-    <version>4.45.05</version>
+    <version>4.31.0</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 4 Low-Impact Setup</summary>
@@ -12,10 +12,10 @@
   This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.linqpad.net/</projectUrl>
-    <tags>linq sql .net-4 chocolatey linqpad</tags>
+    <tags>linq sql .net-4 chocolatey</tags>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/linqpad4/linqpadmed.png</iconUrl>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/__NAME__/__NAME__.gif</iconUrl>-->
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
