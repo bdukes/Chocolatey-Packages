@@ -3,12 +3,12 @@
   <metadata>
     <id>tfsSidekicks2010</id>
     <title>Team Foundation Sidekicks 2010</title>
-    <version>3.1.1</version>
+    <version>3.0.4</version>
     <authors>Attrice Corporation</authors>
     <owners>Brian Dukes</owners>
     <summary>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environments. </summary>
     <description>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environment.
-Version 3.1 of Team Foundation Sidekicks is available for Visual Studio 2010 and TFS 2010.
+Version 3.0 of Team Foundation Sidekicks is available for Visual Studio 2010 and TFS 2010.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.attrice.info/cm/tfs/</projectUrl>
     <tags>tfs tfsSidekicks tfs-2010 chocolatey</tags>
