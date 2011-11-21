@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>tfsSidekicks</id>
+    <title>Team Foundation Sidekicks</title>
+    <version>2.4.0</version>
+    <authors>Attrice Corporation</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environments. </summary>
+    <description>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environment.
+The installation package includes Users View Sidekick, Permission Sidekick, Code Review Sidekick, Shelveset Sidekick, Labels Sidekick, History Sidekick, Workspace Sidekick and Status Sidekick in stand-alone application as well as Visual Studio Integration Package with all Sidekicks integrated, Search Items dialog, dynamic History and Build Type editing functionality. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.attrice.info/cm/tfs/</projectUrl>
+    <tags>tfs tfsSidekicks chocolatey</tags>
+    <licenseUrl>http://www.attrice.info/cm/tfs/license.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/tfsSidekicks/TFSLogo.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
