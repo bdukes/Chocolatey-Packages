@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hg</id>
+    <title>hg</title>
+    <version>2.0.0</version>
+    <authors>Matt Mackall</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface.</summary>
+    <description>Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://mercurial.selenic.com/</projectUrl>
+    <tags>hg vcs dvcs source-control chocolatey</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/hg/hg.png</iconUrl>
+    <dependencies>
+      <dependency id="python" /> 
+    </dependencies>
+  </metadata>
+</package>
