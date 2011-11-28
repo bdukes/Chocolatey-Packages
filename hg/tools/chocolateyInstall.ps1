@@ -1,8 +1,1 @@
-﻿$packageName = 'hg'
-$installerType = 'msi'
-$url = 'http://mercurial.selenic.com/release/windows/mercurial-2.6.3-x86.msi'
-$url64 = 'http://mercurial.selenic.com/release/windows/mercurial-2.6.3-x64.msi'
-$silentArgs = '/quiet'
-$validExitCodes = @(0)
-
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
+﻿  Install-ChocolateyPackage 'hg' 'msi' '/silent' 'http://mercurial.selenic.com/release/windows/mercurial-2.0.0-x86.msi' 'http://mercurial.selenic.com/release/windows/mercurial-2.0.0-x64.msi' 
