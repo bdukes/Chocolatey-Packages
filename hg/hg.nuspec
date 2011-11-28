@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>hg</id>
-    <title>hg</title>
+    <title>Mercurial</title>
     <version>2.0.0</version>
     <authors>Matt Mackall</authors>
     <owners>Brian Dukes</owners>
