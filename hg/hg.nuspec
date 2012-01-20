@@ -14,8 +14,5 @@
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/hg/hg.png</iconUrl>
-    <dependencies>
-      <dependency id="python" /> 
-    </dependencies>
   </metadata>
 </package>
