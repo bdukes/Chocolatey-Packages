@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pnggauntlet</id>
+    <title>PNGGauntlet</title>
+    <version>3.1.1</version>
+    <authors>Benjamin Hollis</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Smash PNGs for faster sites</summary>
+    <description>Combines PNGOUT, OptiPNG, and DeflOpt to create the smallest PNGs; 
+No image quality is lost - only file size; 
+Converts JPG, GIF, TIFF, and BMP files to PNG; 
+Ultra-configurable; 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://pnggauntlet.com/</projectUrl>
+    <tags>pnggauntlet png pngout optipng deflopt image optimize lossless chocolatey</tags>
+    <licenseUrl></licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/bdukes/nugetpackages/raw/master/pnggauntlet/gauntlet_shadow.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
