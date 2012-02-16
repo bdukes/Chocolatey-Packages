@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>spawner</id>
+    <title>Spawner Data Generator</title>
+    <version>0.1.7</version>
+    <authors>Seth Grover</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.</summary>
+    <description>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://sourceforge.net/projects/spawner/</projectUrl>
+    <tags>spawner chocolatey sql data-generator</tags>
+    <licenseUrl>http://opensource.org/licenses/gpl-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/bdukes/nugetpackages/raw/master/spawner/spawner.gif</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>

@@ -1,0 +1,1 @@
+﻿  Install-ChocolateyZipPackage 'spawner' 'http://downloads.sourceforge.net/project/spawner/spawner/spawner-0.1.7/spawner-0.1.7-win32-i386.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
