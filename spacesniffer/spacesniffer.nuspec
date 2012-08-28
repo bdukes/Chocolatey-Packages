@@ -3,7 +3,7 @@
   <metadata>
     <id>spacesniffer</id>
     <title>Space Sniffer</title>
-    <version>1.1.4.0</version>
+    <version>1.1.4.0.1</version>
     <authors>Uderzo Umberto</authors>
     <owners>Brian Dukes</owners>
     <summary>Find lost space on your disks the easy way.</summary>
@@ -12,6 +12,7 @@
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
     <tags>spacesniffer disk usage admin file utilities tools chocolatey</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
+    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>
