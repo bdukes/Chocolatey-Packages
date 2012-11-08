@@ -1,0 +1,1 @@
+﻿  Install-ChocolateyPackage 'veracity' 'msi' '/quiet' 'http://download.sourcegear.com/Veracity/release/2.1.0.10979/vv_x86__2.1.0.10979.msi' 'http://download.sourcegear.com/Veracity/release/2.1.0.10979/vv_x64__2.1.0.10979.msi' 
