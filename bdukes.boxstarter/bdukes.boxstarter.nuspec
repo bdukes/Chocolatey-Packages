@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>bdukes.boxstarter</id>
+    <title>bdukes - boxstarter</title>
+    <version>1.0</version>
+    <authors>Brian Dukes</authors>
+    <owners>Brian Dukes</owners>
+    <summary>bdukes.boxstarter - create new machine for bdukes</summary>
+    <description>Setup new machine using boxstarter</description>
+    <projectUrl>https://github.com/bdukes/nugetpackages</projectUrl>
+    <tags>bdukes utilities tools boxstarter chocolatey</tags>
+    <dependencies>
+      <dependency id="boxstarter" />
+      <dependency id="skydrive" />
+      <dependency id="dotpeek" />
+      <dependency id="VisualStudio2012Premium" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,27 @@
+﻿Install-WindowsUpdate
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions
+Enable-RemoteDesktop
+Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
+
+cinst IIS-WebServerRole -source windowsfeatures
+cinst IIS-HttpCompressionDynamic -source windowsfeatures
+cinst IIS-ManagementScriptingTools -source windowsfeatures
+cinst IIS-WindowsAuthentication -source windowsfeatures
+
+Install-ChocolateyPinnedTaskBarItem "$env:programfiles\ConEmu\ConEmu64.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Mozilla Firefox\firefox.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\notepad.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\WinMerge\WinMergeU.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\LINQPad4\LINQPad.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
+Install-ChocolateyPinnedTaskBarItem "%windir%\system32\inetsrv\InetMgr.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe"
+
+Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.ChocolateyBin)\dotPeek.bat"
+
+copy-item (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
+
+Install-ChocolateyVsixPackage JSLint http://visualstudiogallery.msdn.microsoft.com/1a417c37-4d6f-43ca-b753-6ea6eb5041fd/file/84638/4/JSLint.VS2012.vsix
+Install-ChocolateyVsixPackage WebEssentials http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/17/WebEssentials2012.vsix
+Install-ChocolateyVsixPackage WebWorkbench http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a/file/53962/41/Mindscape.WebWorkbench.Integration.10.vsix
