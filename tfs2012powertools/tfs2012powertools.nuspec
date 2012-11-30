@@ -2,14 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>tfs2012powertools</id>
-    <title>Microsoft Visual Studio Team Foundation Server 2012 Update 2 Power Tools</title>
-    <version>11.0.60507.0</version>
+    <title>Microsoft Visual Studio Team Foundation Server 2012 Update 1 Power Tools</title>
+    <version>11.0.51126.0</version>
     <authors>Microsoft</authors>
     <owners>Brian Dukes</owners>
     <summary>Power Tools are a set of enhancements, tools, and command-line utilities that increase productivity of Team Foundation Server scenarios.</summary>
-    <description>Power Tools are a set of enhancements, tools, and command-line utilities that increase productivity of Team Foundation Server scenarios.</description>
+    <description>Power Tools are a set of enhancements, tools, and command-line utilities that increase productivity of Team Foundation Server scenarios.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://visualstudiogallery.msdn.microsoft.com/b1ef7eb2-e084-4cb8-9bc7-06c3bad9148f</projectUrl>
-    <tags>tfs tfs-2012 tools powertools admin</tags>
+    <tags>tfs tfs-2012 tools powertools chocolatey</tags>
     <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/b1ef7eb2-e084-4cb8-9bc7-06c3bad9148f</licenseUrl>
   </metadata>
 </package>
