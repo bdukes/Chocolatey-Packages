@@ -3,10 +3,10 @@ Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions
 Enable-RemoteDesktop
 Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
 
-cinst IIS-WebServerRole -source windowsfeatures
-cinst IIS-HttpCompressionDynamic -source windowsfeatures
-cinst IIS-ManagementScriptingTools -source windowsfeatures
-cinst IIS-WindowsAuthentication -source windowsfeatures
+cinstm IIS-WebServerRole -source windowsfeatures
+cinstm IIS-HttpCompressionDynamic -source windowsfeatures
+cinstm IIS-ManagementScriptingTools -source windowsfeatures
+cinstm IIS-WindowsAuthentication -source windowsfeatures
 
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\ConEmu\ConEmu64.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
