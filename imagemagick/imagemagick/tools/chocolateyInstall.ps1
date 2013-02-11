@@ -1,0 +1,1 @@
+﻿#Install-VirtualPackage 'imagemagick.tool' 'imagemagick.app'

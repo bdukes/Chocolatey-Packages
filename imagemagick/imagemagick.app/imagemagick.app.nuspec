@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>imagemagick.app</id>
+    <title>ImageMagick (Application Install)</title>
+    <version>6.8.2.6</version>
+    <authors>ImageMagick Studio LLC</authors>
+    <owners>Brian Dukes</owners>
+    <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
+    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.]]></description>
+    <projectUrl>http://www.imagemagick.org</projectUrl>
+    <tags>imagemagick images picture graphics convert admin</tags>
+    <copyright><![CDATA[© 1999-2013 ImageMagick Studio LLC]]></copyright>
+    <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/imagemagick/logo.jpg</iconUrl>
+    <dependencies>
+      <dependency id="vcredist2010" />
+    </dependencies>
+    <releaseNotes><![CDATA[
+    New version 6.8.2-6, SVN revision 10961.
+    Don't destroy an image that's already destroyed (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=22747).
+    Montage is now invarient to the font when no label image label exists.
+    ]]></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
