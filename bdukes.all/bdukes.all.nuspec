@@ -64,6 +64,7 @@
       <dependency id="Git-TF" />
       <dependency id="hg" />
       
+      <dependency id="heroku-toolbelt" />
       <dependency id="nodejs.install" />
       <dependency id="ruby.devkit" />
       <dependency id="pik" />
