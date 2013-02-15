@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DefaultProgramsEditor</id>
+    <title>Default Programs Editor</title>
+    <version>2.7.2675.2253</version>
+    <authors>FactorMystic</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions.</summary>
+    <description>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions. Also: autoplay settings and default programs settings ...all without fiddling around in the registry.</description>
+    <projectUrl>http://defaultprogramseditor.com/</projectUrl>
+    <tags>DefaultProgramsEditor autoplay file-association context-menu icon open-with file-extension</tags>
+    <copyright><![CDATA[© factormystic.net]]></copyright>
+    <licenseUrl>http://defaultprogramseditor.com/donate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/DefaultProgramsEditor/favicon.ico</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes><![CDATA[
+    Version 2.7.2675.2253 (October 29, 2010)
+Bugs Fixed:
+- Fixed a minor DPI related layout bug.
+
+Crashes Fixed:
+- Fixed a crash after clicking the DDE 'Edit' button when adding a new context menu item.
+- Viewing 'Open With' programs caused a crash when the item listed in the registry didn't exist on disk.
+- Fixed a crash when starting the application for some users.]]></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
