@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Non-installed Tool)</title>
-    <version>6.8.4.2</version>
+    <version>6.8.4.4</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagickÃ‚Â® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,9 +18,9 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Use MorphologyApply() rather than MorphologyImage() for -sharpen / -blur.
-Sync 'intensity' option with current image.
-Normalize sharpen kernel to match that of 6.8.3-3.]]></releaseNotes>
+    Update unit test signatures for Q8.
+    Resolve send() / recv() socket problems under MinGW.
+    Adding noise to a gray image returns a gray image as expected.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
