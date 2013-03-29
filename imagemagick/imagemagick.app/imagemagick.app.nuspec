@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>imagemagick.tool</id>
-    <title>ImageMagick (Non-installed Tool)</title>
-    <version>6.8.4.2</version>
+    <id>imagemagick.app</id>
+    <title>ImageMagick (Application Install)</title>
+    <version>6.8.4.4</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
-    <summary><![CDATA[ImageMagickÃ‚Â® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
-    <description><![CDATA[ImageMagickÃ‚Â® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and BÃƒÂ©zier curves.]]></description>
+    <summary><![CDATA[ImageMagick� is a software suite to create, edit, compose, or convert bitmap images]]></summary>
+    <description><![CDATA[ImageMagick� is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and B�zier curves.]]></description>
     <projectUrl>http://www.imagemagick.org</projectUrl>
-    <tags>imagemagick images picture graphics convert</tags>
-    <copyright><![CDATA[Ã‚Â© 1999-2013 ImageMagick Studio LLC]]></copyright>
+    <tags>imagemagick images picture graphics convert admin</tags>
+    <copyright><![CDATA[� 1999-2013 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/imagemagick/logo.jpg</iconUrl>
@@ -18,9 +18,9 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Use MorphologyApply() rather than MorphologyImage() for -sharpen / -blur.
-Sync 'intensity' option with current image.
-Normalize sharpen kernel to match that of 6.8.3-3.]]></releaseNotes>
+    Update unit test signatures for Q8.
+    Resolve send() / recv() socket problems under MinGW.
+    Adding noise to a gray image returns a gray image as expected.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
