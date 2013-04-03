@@ -1,5 +1,5 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.4-5-Q16-x86-windows.zip'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.4-6-Q16-x86-windows.zip'
 $url64 = $url
 
 try { 
