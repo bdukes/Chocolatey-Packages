@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Application Install)</title>
-    <version>6.8.4.5</version>
+    <version>6.8.4.6</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,10 +18,9 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Fix transient bug when writing grayscale MIFF images.
-    Adding noise to a gray image returns a gray image as expected.
-    Image interlace no longer overwritten by proper cloning for GIF format.
-    Extract the clipping path from an image file with clip:myimage.]]></releaseNotes>
+    The -clut option return a luma grayscale instead of the expected luminance.
+    Add moduledir variable to MagickCore.pc to support the MagickFilter and MagickCore kits.
+    Caption fits the sized area (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23085).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
