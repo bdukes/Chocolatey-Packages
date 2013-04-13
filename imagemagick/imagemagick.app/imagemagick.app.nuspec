@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Application Install)</title>
-    <version>6.8.4.8</version>
+    <version>6.8.4.9</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,8 +18,13 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Include intensity type in the MIFF metadata.]]></releaseNotes>
-  </metadata>
+    Respect --program-suffix configure script option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23143).
+    Update to the newest AX_CHECK_PTHREAD macro from autoconf-archive.
+    Save the calculated angle for "deskew" as the artifact "deskew:angle"
+    Pass JP2 format type to decoder (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23038).
+    Previously tinting a grayscale image returned dark results.
+    The -page option only affects new images (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23172).
+    Revert 'Move binaries to lib subdirectory and link are created from binary]]></releaseNotes>  </metadata>
   <files>
     <file src="tools\**" target="tools" />
     <!--<file src="content\**" target="content" />-->
