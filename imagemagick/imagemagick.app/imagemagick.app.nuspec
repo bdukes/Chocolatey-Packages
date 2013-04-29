@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Application Install)</title>
-    <version>6.8.5.1</version>
+    <version>6.8.5.3</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,9 +18,8 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Recognize xc:gray50 is non-linear.
-    Loop over read() until requested bytes are consumed (reference http://www.imagemagick.org/discourse-server/viewtopic.php?t=23268).
-    Don't use gamma lookup map when HDRI is enabled.]]></releaseNotes>
+    Add DeleteImageArtifact() for jpeg:extent artifact (thanks to Jimmy Xie @ Microsoft).
+    Add support for JXR / WDP image format.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
