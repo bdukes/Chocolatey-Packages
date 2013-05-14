@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Non-installed Tool)</title>
-    <version>6.8.5.5</version>
+    <version>6.8.5.6</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,12 +18,9 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Change the sample JPEG quantization table xml to something that works really well with 2x2 Chroma subsampling around quality 75.
-    Eliminate whitespace from image properties that hold PNG chunk data.
-    The -poly option treats the opacity channel as alpha (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23346).
-    The -threshold 50% option returns a 50-50 black and white image (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23354).
-    Let user override the TIFF rows per strip (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2&t=23307).
-    Fix transient bug in the -separate option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23335).]]></releaseNotes>
+    Sometimes an sRGB image is masquerading as grayscale (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23370).
+    The stream utility no longer faults when exporting float pixels (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23394).
+    Labels no longer overflow (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=22964).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
