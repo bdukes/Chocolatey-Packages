@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Application Install)</title>
-    <version>6.8.5.7</version>
+    <version>6.8.5.8</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,12 +18,11 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Recognize PNG iCCP chunks that contain the sRGB profile and replace them with the PNG sRGB chunk. Use "-define png:preserve-iCCP" to get the previous behavior, of simply copying the iCCP chunk.
-    Sometimes an sRGB image is masquerading as grayscale (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23370).
-    Labels no longer overflow (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=22964).
-    If more then one exception, return the highest security exception.
-    A grayscale image returns a color JPEG for -type TrueColor (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=23421).
-    Read PAM comment (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23442).]]></releaseNotes>
+    Stopped a "-fsanitize-address" warning in the JNG coder.
+    The -white-threshold option is symetrical with -black-threshold (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23441);
+    Fix multi-line PNM comments (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23442).
+    The -format option should not automatically append a newline since the user can specify a newline in the formatting expression.
+    The -level option is no longer returning a darkened image (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23479).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
