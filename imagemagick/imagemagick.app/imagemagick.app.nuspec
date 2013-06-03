@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>imagemagick.app</id>
@@ -13,7 +13,7 @@
     <copyright><![CDATA[© 1999-2013 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/imagemagick/logo.jpg</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/nugetpackages/master/imagemagick/imagemagick/logo.png</iconUrl>
     <dependencies>
       <dependency id="vcredist2010" />
     </dependencies>
