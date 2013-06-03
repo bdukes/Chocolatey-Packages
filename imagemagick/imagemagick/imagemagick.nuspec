@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.5.8</version>
+    <version>6.8.5.9</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,14 +15,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/imagemagick/logo.jpg</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.5.8]" />
+      <dependency id="imagemagick.app" version="[6.8.5.9]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Stopped a "-fsanitize-address" warning in the JNG coder.
-    The -white-threshold option is symetrical with -black-threshold (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23441);
-    Fix multi-line PNM comments (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23442).
-    The -format option should not automatically append a newline since the user can specify a newline in the formatting expression.
-    The -level option is no longer returning a darkened image (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23479).]]></releaseNotes>
+    Caption no longer clips long words (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23504).
+    The lightness intensity is (min(R',G',B')+max(R',G',B'))/2.0 (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23517).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
