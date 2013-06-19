@@ -3,7 +3,7 @@
   <metadata>
     <id>svn</id>
     <title>Subversion for Windows</title>
-    <version>1.7.9</version>
+    <version>1.8.0</version>
     <authors>Zid Alagazam</authors>
     <owners>Brian Dukes</owners>
     <summary>Command line tools, Language bindings, and Apache httpd modules</summary>
