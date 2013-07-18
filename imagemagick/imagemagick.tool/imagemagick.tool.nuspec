@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Non-installed Tool)</title>
-    <version>6.8.6.5</version>
+    <version>6.8.6.6</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,11 +18,9 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Fixed calculation of pixel area count limit flag ('@').
-    Added option to enable OpenMP to configure.exe and improved creation of x64 project file
-    compare exits with a non-zero exit code when no error (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23722).
-    correct calculaton of quantization error (reference http://www.imagemagick.org/discourse-server/viewtopic.php?t=23734).
-    correct quantize tree walking mistake for RiemersmaDither (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2&t=23735).]]></releaseNotes>
+    JPEG ICC folor profile requires null after ICC tag (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23756).
+    Don't sync channels for the -unsharp option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23740).
+    Magick++ version so bump (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23752).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
