@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>imagemagick.tool</id>
-    <title>ImageMagick (Non-installed Tool)</title>
+    <title>ImageMagick (Portable, Tool)</title>
     <version>6.8.6.7</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
