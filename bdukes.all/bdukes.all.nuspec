@@ -9,7 +9,7 @@
     <summary>bdukes.all - All applications</summary>
     <description>Includes a number of utilities including fiddler, filezilla, expresso, 7zip, lockhunter, notepad2, etc.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
-    <projectUrl>https://github.com/bdukes/nugetpackages</projectUrl>
+    <projectUrl>https://github.com/bdukes/Chocolatey-Packages</projectUrl>
     <tags>bdukes utilities tools chocolatey</tags>
     <dependencies>     
       <!--dependency id="webpicommandline" /-->

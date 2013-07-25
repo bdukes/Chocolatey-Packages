@@ -13,7 +13,7 @@
     <copyright><![CDATA[© factormystic.net]]></copyright>
     <licenseUrl>http://defaultprogramseditor.com/donate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/DefaultProgramsEditor/favicon.ico</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/DefaultProgramsEditor/favicon.ico</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

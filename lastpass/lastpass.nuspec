@@ -12,6 +12,6 @@
     <projectUrl>https://lastpass.com/</projectUrl>
     <tags>lastpass password chocolatey</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/lastpass/onepassword.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/lastpass/onepassword.png</iconUrl>
   </metadata>
 </package>

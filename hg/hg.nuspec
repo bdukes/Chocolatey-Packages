@@ -12,6 +12,6 @@
     <tags>hg mercurial vcs dvcs source-control admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/hg/hg.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/hg/hg.png</iconUrl>
   </metadata>
 </package>

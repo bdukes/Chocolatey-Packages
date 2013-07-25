@@ -15,7 +15,7 @@
     <tags>linq sql .net-4 chocolatey linqpad</tags>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/linqpad4/linqpadmed.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/linqpad4/linqpadmed.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

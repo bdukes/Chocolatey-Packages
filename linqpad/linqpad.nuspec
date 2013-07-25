@@ -15,7 +15,7 @@ LINQPad lets you interactively query databases in a modern query language: LINQ.
     <tags>linq sql .net-3.5 chocolatey linqpad</tags>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/linqpad/linqpadmed.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/linqpad/linqpadmed.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

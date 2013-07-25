@@ -14,7 +14,7 @@ Version 3.1 of Team Foundation Sidekicks is available for Visual Studio 2010 and
     <tags>tfs tfsSidekicks tfs-2010 chocolatey</tags>
     <licenseUrl>http://www.attrice.info/cm/tfs/license.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/tfsSidekicks2010/TFSLogo.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/tfsSidekicks2010/TFSLogo.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

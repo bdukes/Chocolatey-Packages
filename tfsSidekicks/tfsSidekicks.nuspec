@@ -14,7 +14,7 @@ The installation package includes Users View Sidekick, Permission Sidekick, Code
     <tags>tfs tfsSidekicks chocolatey</tags>
     <licenseUrl>http://www.attrice.info/cm/tfs/license.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/tfsSidekicks/TFSLogo.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/tfsSidekicks/TFSLogo.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

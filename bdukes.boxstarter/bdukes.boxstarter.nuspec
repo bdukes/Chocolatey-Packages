@@ -8,7 +8,7 @@
     <owners>Brian Dukes</owners>
     <summary>bdukes.boxstarter - create new machine for bdukes</summary>
     <description>Setup new machine using boxstarter</description>
-    <projectUrl>https://github.com/bdukes/nugetpackages</projectUrl>
+    <projectUrl>https://github.com/bdukes/Chocolatey-Packages</projectUrl>
     <tags>bdukes utilities tools boxstarter chocolatey</tags>
     <dependencies>
       <dependency id="boxstarter" />

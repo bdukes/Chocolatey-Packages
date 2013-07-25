@@ -13,6 +13,6 @@
     <tags>vv veracity vcs dvcs source-control chocolatey</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/veracity/veracity.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/veracity/veracity.png</iconUrl>
   </metadata>
 </package>

@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://opensource.org/licenses/gpl-2.0.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/bdukes/nugetpackages/raw/master/spawner/icon.png</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/spawner/icon.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
