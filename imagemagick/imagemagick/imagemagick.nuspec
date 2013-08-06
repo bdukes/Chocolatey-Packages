@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.6.7</version>
+    <version>6.8.6.8</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,13 +15,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.6.7]" />
+      <dependency id="imagemagick.app" version="[6.8.6.8]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Missing case for HCLpColorspace (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23811).
-    Do not write "jpeg:" properties in a PNG output file (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23794).
-    Fix memory leak in CloneImageArtifacts and CloneImageProfiles.
-    Minor fix for the clipMask property in Magick++.]]></releaseNotes>
+    Added support for WebP to the Windows distribution (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1;t=23856).
+    Properly handle interlaced GIF images with less than 8 rows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3;t=23812).
+    Ensure image colorspace is sRGB when writing WebP format (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1;t=23841).
+    Avoid deadlock with logging subsystem (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2;t=23849).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
