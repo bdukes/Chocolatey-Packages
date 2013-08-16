@@ -1,8 +1,8 @@
-$package = "Mercurial"
-$packageWildCard = $package + "*";
+$package = 'hg'
+$productName = 'Mercurial'
 
 try {
-	$app = Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -like $packageWildCard  -and ($_.Version -eq "2.7.0") }
+	$app = Get-WmiObject -class Win32_Product -filter "Name LIKE '$productName%' AND Version='2.7.0'"	
 	$result = $app.Uninstall();
 	
 	Write-ChocolateySuccess $package
