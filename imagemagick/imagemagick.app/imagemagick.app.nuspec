@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.8.6.8</version>
+    <version>6.8.6.9</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,11 +18,18 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Added support for WebP to the Windows distribution (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1;t=23856).
-    Properly handle interlaced GIF images with less than 8 rows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3;t=23812).
-    Ensure image colorspace is sRGB when writing WebP format (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1;t=23841).
-    Avoid deadlock with logging subsystem (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2;t=23849).]]></releaseNotes>
-  </metadata>
+    Accelerate numerous image filters with OpenCL under AMD, Intel, and NVidia. Adapted from MulticoreWare OpenCL contribution.
+    Added the following command line options to configure.exe: /x64, set 64 bit build /mtd, set project type to: multi threaded dll /sts, set project type to: single threaded static /mts, set project type to: multi threaded static /mtsd, set project type to: multi threaded static dll /noWizard, skip the wizard and generate the project/solution files
+    Fixed infinite loop with jpeg:extent (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23314).
+    Fixed performance issue when converting jpeg to png (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23922).
+    Added "-define bmp:format=bmp2|bmp3|bmp4" option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=23875).
+    Free disk resource if cache resources are exhausted (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23877).
+    Return proper EXIF:ISOSpeedRating property value for TIFF images (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23913).
+    Escape MIFF properties with null values (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23931).
+    Allow negative pixel values in TXT image format (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23923).
+    The -fx option no longer crashes for certain expressions (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23932).
+    Add support for the -compare option (e.g. convert image.png reference.png -metric RMSE -compare -format "%[distortion]" info:).
+    The internal SVG renderer is now invariant for the "fill" and "opacity" keywords.]]></releaseNotes>  </metadata>
   <files>
     <file src="tools\**" target="tools" />
     <!--<file src="content\**" target="content" />-->
