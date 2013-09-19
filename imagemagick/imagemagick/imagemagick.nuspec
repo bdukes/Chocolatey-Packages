@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.6.9</version>
+    <version>6.8.6.10</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,21 +15,18 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.6.9]" />
+      <dependency id="imagemagick.app" version="[6.8.6.10]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Accelerate numerous image filters with OpenCL under AMD, Intel, and NVidia. Adapted from MulticoreWare OpenCL contribution.
-    Added the following command line options to configure.exe: /x64, set 64 bit build /mtd, set project type to: multi threaded dll /sts, set project type to: single threaded static /mts, set project type to: multi threaded static /mtsd, set project type to: multi threaded static dll /noWizard, skip the wizard and generate the project/solution files
-    Fixed infinite loop with jpeg:extent (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23314).
-    Fixed performance issue when converting jpeg to png (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23922).
-    Added "-define bmp:format=bmp2|bmp3|bmp4" option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=23875).
-    Free disk resource if cache resources are exhausted (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23877).
-    Return proper EXIF:ISOSpeedRating property value for TIFF images (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23913).
-    Escape MIFF properties with null values (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23931).
-    Allow negative pixel values in TXT image format (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23923).
-    The -fx option no longer crashes for certain expressions (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23932).
-    Add support for the -compare option (e.g. convert image.png reference.png -metric RMSE -compare -format "%[distortion]" info:).
-    The internal SVG renderer is now invariant for the "fill" and "opacity" keywords.]]></releaseNotes>
+    Added support for writing DDS files.
+    Call SVG / MSL xmlCleanupParser() / xmlInitParser() once (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23991).
+    Support LEGO Mindstorms EV3 Robot Graphics File format (contributed by bdwheele@ind.../
+    Since glib-2.35.0 g_type_init() was removed (reference https://bugs.gentoo.org/show_bug.cgi?id=481042).
+    New identify define to output the location of the minimum, maximum, or mean pixel of the image (e.g. identify -define identify:locate=maximum -define identify:limit=7 rose).
+    Column columns / rows no longer inverted for RGF image format (patch from Brian Wheeler <bdwheele@india...>.
+    16bit PSD images might have a 65536 colormap (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24102).
+    Ascii map is now declare as AsciiMap (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24106).
+    Return label for identify -format "%l" (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24105).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
