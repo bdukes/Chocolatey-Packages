@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>tfs2013powertools</id>
+    <title>Microsoft Visual Studio Team Foundation Server 2013 Power Tools</title>
+    <version>12.0.60919.00-rc</version>
+    <authors>Microsoft</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Power Tools are a set of enhancements, tools, and command-line utilities that increase productivity of Team Foundation Server scenarios.</summary>
+    <description>Power Tools are a set of enhancements, tools, and command-line utilities that increase productivity of Team Foundation Server scenarios.</description>
+    <projectUrl>http://visualstudiogallery.msdn.microsoft.com/f017b10c-02b4-4d6d-9845-58a06545627f</projectUrl>
+    <tags>tfs tfs-2013 tools powertools admin</tags>
+    <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/f017b10c-02b4-4d6d-9845-58a06545627f</licenseUrl>
+  </metadata>
+</package>

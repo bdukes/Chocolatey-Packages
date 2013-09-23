@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'tfs2013powertools' 'msi' '/quiet' 'http://visualstudiogallery.msdn.microsoft.com/f017b10c-02b4-4d6d-9845-58a06545627f/file/112253/2/Visual%20Studio%20Team%20Foundation%20Server%202013%20Power%20Tools.msi' 
