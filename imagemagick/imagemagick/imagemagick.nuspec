@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.6.10</version>
+    <version>6.8.7.0</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,18 +15,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.6.10]" />
+      <dependency id="imagemagick.app" version="[6.8.7.0]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Added support for writing DDS files.
-    Call SVG / MSL xmlCleanupParser() / xmlInitParser() once (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23991).
-    Support LEGO Mindstorms EV3 Robot Graphics File format (contributed by bdwheele@ind.../
-    Since glib-2.35.0 g_type_init() was removed (reference https://bugs.gentoo.org/show_bug.cgi?id=481042).
-    New identify define to output the location of the minimum, maximum, or mean pixel of the image (e.g. identify -define identify:locate=maximum -define identify:limit=7 rose).
-    Column columns / rows no longer inverted for RGF image format (patch from Brian Wheeler <bdwheele@india...>.
-    16bit PSD images might have a 65536 colormap (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24102).
-    Ascii map is now declare as AsciiMap (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24106).
-    Return label for identify -format "%l" (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24105).]]></releaseNotes>
+    Comment interpretation of the -quality value in PNG coder (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2&t=24134).
+    Fixed issue with colormap when reading Viff image.
+    Added support for opening https files under windows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24121).
+    Fixed incorrect format when reading EPT image from a blob (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24129).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
