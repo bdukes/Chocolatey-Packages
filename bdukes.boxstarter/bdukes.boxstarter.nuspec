@@ -3,7 +3,7 @@
   <metadata>
     <id>bdukes.boxstarter</id>
     <title>bdukes - boxstarter</title>
-    <version>1.0.2</version>
+    <version>1.0.3-beta</version>
     <authors>Brian Dukes</authors>
     <owners>Brian Dukes</owners>
     <summary>bdukes.boxstarter - create new machine for bdukes</summary>
@@ -14,7 +14,8 @@
       <dependency id="boxstarter" />
       <dependency id="skydrive" />
       <dependency id="dotpeek" />
-      <dependency id="VisualStudio2012Premium" />
+      <dependency id="VisualStudio2013Premium" />
+      <dependency id="bdukes.all" />
     </dependencies>
   </metadata>
 </package>
