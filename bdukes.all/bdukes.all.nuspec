@@ -3,7 +3,7 @@
   <metadata>
     <id>bdukes.all</id>
     <title>bdukes - All applications</title>
-    <version>1.0.4</version>
+    <version>1.0.4-beta</version>
     <authors>Brian Dukes</authors>
     <owners>Brian Dukes</owners>
     <summary>bdukes.all - All applications</summary>
@@ -25,13 +25,18 @@
       
       <dependency id="pscx" />
       <dependency id="conemu" />
-      <dependency id="7zip" />
+      <dependency id="7zip.install" />
+      <dependency id="7zip.commandline" />
+      <dependency id="DefaultProgramsEditor" />
       <dependency id="lockhunter" />
       <dependency id="sysinternals" />
-      <dependency id="clipx" />
+      <!--dependency id="openssh" /-->
+      <dependency id="clipx" version="1.0.3.9-beta" />
       <dependency id="greenshot" />
+      <dependency id="sox.portable" />
       
       <dependency id="paint.net" />
+      <dependency id="imagemagick.tool" />
       <!--dependency id="virtualbox" /-->
       <dependency id="skype" />
       <dependency id="spacesniffer" />
@@ -43,7 +48,7 @@
       <dependency id="vim" />
       <dependency id="notepad2" />
       
-      <dependency id="VisualStudio2012Premium" />
+      <dependency id="VisualStudio2013Professional" />
       <dependency id="expresso" />
       <dependency id="papercut" />
       <dependency id="fiddler" />
@@ -54,21 +59,21 @@
       <dependency id="linqpad4" />
       <dependency id="NAnt" />
       <dependency id="resharper" />
-      <dependency id="tfs2012powertools" />
+      <!--dependency id="tfs2012powertools" /-->
       <!--dependency id="tfsSidekicks" /-->
       <dependency id="stylecop" />
       
-      <dependency id="githubforwindows" />
+      <!--dependency id="githubforwindows" /-->
       <dependency id="gitextensions" />
       <dependency id="gittfs" />
-      <dependency id="Git-TF" />
-      <dependency id="hg" />
+      <!--dependency id="Git-TF" /-->
+      <!--dependency id="hg" /-->
       
-      <dependency id="heroku-toolbelt" />
+      <!--dependency id="heroku-toolbelt" /-->
       <dependency id="nodejs.install" />
-      <dependency id="ruby.devkit" />
-      <dependency id="pik" />
-      <dependency id="python" />
+      <!--dependency id="ruby.devkit" /-->
+      <!--dependency id="pik" /-->
+      <!--dependency id="python" /-->
     </dependencies>
   </metadata>
 </package>

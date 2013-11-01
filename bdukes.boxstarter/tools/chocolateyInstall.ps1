@@ -1,4 +1,5 @@
-﻿Install-WindowsUpdate -accepteula
+﻿Install-WindowsUpdate -AcceptEula
+Set-ExecutionPolicy RemoteSigned
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions
 Enable-RemoteDesktop
 #Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
@@ -64,13 +65,13 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Mozilla Firef
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\notepad.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\WinMerge\WinMergeU.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\LINQPad4\LINQPad.exe"
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\inetsrv\InetMgr.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe"
 
 Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.ChocolateyBin)\dotPeek.bat"
 
-copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'console.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
+copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
 
 #Install-ChocolateyVsixPackage JSLint http://visualstudiogallery.msdn.microsoft.com/1a417c37-4d6f-43ca-b753-6ea6eb5041fd/file/84638/4/JSLint.VS2012.vsix
 Install-ChocolateyVsixPackage WebEssentials2013 http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/17/WebEssentials2013.vsix
@@ -81,6 +82,6 @@ Install-ChocolateyVsixPackage NUnitVisualStudioTestAdapter http://visualstudioga
 #Turn off Attach to Process warning (lots of assumptions about existing/non-existing keys/values here)
 Set-ItemProperty HKCU:\Software\Microsoft\VisualStudio\12.0\Debugger DisableAttachSecurityWarning 1
 #New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio
-#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\11.0
-#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\11.0\Debugger
-#Set-ItemProperty HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\11.0\Debugger DisableAttachSecurityWarning 1
+#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0
+#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0\Debugger
+#Set-ItemProperty HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0\Debugger DisableAttachSecurityWarning 1
