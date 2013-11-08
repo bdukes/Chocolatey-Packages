@@ -3,7 +3,7 @@
   <metadata>
     <id>bdukes.boxstarter</id>
     <title>bdukes - boxstarter</title>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Brian Dukes</authors>
     <owners>Brian Dukes</owners>
     <summary>bdukes.boxstarter - create new machine for bdukes</summary>
@@ -11,7 +11,6 @@
     <projectUrl>https://github.com/bdukes/Chocolatey-Packages</projectUrl>
     <tags>bdukes utilities tools boxstarter chocolatey</tags>
     <dependencies>
-      <dependency id="boxstarter" />
     </dependencies>
   </metadata>
 </package>
