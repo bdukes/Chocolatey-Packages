@@ -1,5 +1,5 @@
 ﻿Install-WindowsUpdate -AcceptEula
-Set-ExecutionPolicy RemoteSigned
+#Set-ExecutionPolicy RemoteSigned
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions
 Enable-RemoteDesktop
 #Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
