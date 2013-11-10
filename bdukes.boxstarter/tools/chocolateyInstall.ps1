@@ -1,6 +1,6 @@
 ﻿Install-WindowsUpdate -AcceptEula
 #Set-ExecutionPolicy RemoteSigned
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions
+Set-ExplorerOptions -showHiddenFilesFoldersDrives -showFileExtensions
 Enable-RemoteDesktop
 #Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
 
@@ -69,7 +69,7 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Vis
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\inetsrv\InetMgr.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe"
 
-Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.ChocolateyBin)\dotPeek.bat"
+Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.programFiles86)\Jetbrains\dotPeek\v1.1\Bin\dotPeek32.exe"
 
 copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
 
