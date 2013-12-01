@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>svn</id>
     <title>Subversion for Windows</title>
-    <version>1.8.4</version>
+    <version>1.8.5</version>
     <authors>Zid Alagazam</authors>
     <owners>Brian Dukes</owners>
     <summary>Command line tools, Language bindings, and Apache httpd modules</summary>
@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/svn/icon.png</iconUrl>
+    <iconUrl>http://tomone.github.io/icons/svn.svg</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
