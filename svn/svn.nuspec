@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://tomone.github.io/icons/svn.svg</iconUrl>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/svn/icon.svg</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
