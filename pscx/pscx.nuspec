@@ -14,5 +14,6 @@
         <releaseNotes />
         <copyright />
         <tags>powershell</tags>
+        <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/pscx/icon.png</iconUrl>
     </metadata>
 </package>
