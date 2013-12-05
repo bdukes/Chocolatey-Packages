@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'pscx' 'msi' '/qb'  'https://pscx.codeplex.com/downloads/get/523236'
