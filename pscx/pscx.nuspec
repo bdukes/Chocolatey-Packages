@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>pscx</id>
-        <version>3.0.0.1</version>
+        <version>3.1.0</version>
         <title>PowerShell Community Extensions</title>
         <authors>PowerShell Community Extensions</authors>
-        <owners>yannisgu</owners>
+        <owners>yannisgu, bdukes</owners>
         <licenseUrl>http://pscx.codeplex.com/license</licenseUrl>
         <projectUrl>http://pscx.codeplex.com/</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,7 +13,7 @@
         <summary>PowerShell Community Extensions (PSCX) is aimed at providing a widely useful set of additional cmdlets, providers, aliases, filters, functions and scripts for Windows PowerShell that members of the community have expressed interest in.</summary>
         <releaseNotes />
         <copyright />
-        <tags>powershell</tags>
+        <tags>powershell pscx admin</tags>
         <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/pscx/icon.png</iconUrl>
     </metadata>
 </package>
