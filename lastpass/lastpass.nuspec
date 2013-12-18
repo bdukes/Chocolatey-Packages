@@ -3,14 +3,13 @@
   <metadata>
     <id>lastpass</id>
     <title>LastPass</title>
-    <version>2.0.2.1</version>
+    <version>3.0.10</version>
     <authors>LastPass</authors>
     <owners>Brian Dukes</owners>
     <summary>Password Manager, Form Filler, Password Management.</summary>
-    <description>LastPass is a password manager that makes web browsing easier and more secure.
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>LastPass is a password manager that makes web browsing easier and more secure.</description>
     <projectUrl>https://lastpass.com/</projectUrl>
-    <tags>lastpass password chocolatey</tags>
+    <tags>lastpass password admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/lastpass/onepassword.png</iconUrl>
   </metadata>

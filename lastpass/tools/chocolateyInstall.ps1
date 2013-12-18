@@ -1,1 +1,1 @@
-﻿Install-ChocolateyPackage 'lastpass' 'exe' '--userinstallie --userinstallff --userinstallchrome --installforallusers -j "C:\Program Files\LastPass"' 'https://download.lastpass.com/lastpass.exe'  'https://download.lastpass.com/lastpass_x64.exe'
+﻿Install-ChocolateyPackage 'lastpass' 'exe' '--silinstall --userinstallie --userinstallff --userinstallchrome --installforallusers -installdir="C:\Program Files\LastPass"' 'https://lastpass.com/download/cdn/lastpass.exe'  'https://lastpass.com/download/cdn/lastpass_x64.exe'
