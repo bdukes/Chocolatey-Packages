@@ -24,7 +24,7 @@ cinst curl
 cinst filezilla
 cinst selfssl7
 cinst pscx
-cinst conemu
+#cinst conemu
 cinst 7zip.install
 cinst 7zip.commandline
 cinst DefaultProgramsEditor
@@ -59,7 +59,7 @@ cinst gitextensions
 cinst gittfs
 cinst nodejs.install
 
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\ConEmu\ConEmu64.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:home\Dropbox\Applications\cmder\Cmder.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Mozilla Firefox\firefox.exe"
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\notepad.exe"
@@ -71,7 +71,7 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL
 
 Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.programFiles86)\Jetbrains\dotPeek\v1.1\Bin\dotPeek32.exe"
 
-copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
+#copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
 
 #Install-ChocolateyVsixPackage JSLint http://visualstudiogallery.msdn.microsoft.com/1a417c37-4d6f-43ca-b753-6ea6eb5041fd/file/84638/4/JSLint.VS2012.vsix
 Install-ChocolateyVsixPackage WebEssentials2013 http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/17/WebEssentials2013.vsix
