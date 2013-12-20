@@ -29,7 +29,6 @@ cinst 7zip.install
 cinst 7zip.commandline
 cinst DefaultProgramsEditor
 cinst lockhunter
-#cinst devbox-rapidee #not silent
 cinst sysinternals
 cinst clipx -version 1.0.3.9-beta
 cinst greenshot
@@ -46,7 +45,7 @@ cinst notepad2
 #cinst VisualStudio2013Professional
 cinst expresso
 cinst papercut
-cinst fiddler
+cinst fiddler4
 cinst NugetPackageExplorer
 cinst diffmerge
 cinst winmerge
