@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>LightTable</id>
+    <title>LightTable</title>
+    <version>0.6.0</version>
+    <authors>Chris Granger</authors>
+    <owners>Brian Dukes</owners>
+    <summary>LightTable</summary>
+    <description>Light Table is a new interactive IDE that lets you modify running programs and embed anything from websites to games. It provides the real time feedback we need to not only answer questions about our code, but to understand how our programs really work.</description>
+    <projectUrl>http://www.lighttable.com/</projectUrl>
+    <tags>LightTable IDE Clojure JavaScript node CSS HTML python</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/LightTable/LightTable/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/LightTable/icon.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes>https://github.com/LightTable/LightTable/blob/master/deploy/core/changelog.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
