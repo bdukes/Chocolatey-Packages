@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.8.8.8</version>
+    <version>6.8.8.9</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,18 +18,10 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Reset colorspace to Grayscale when reading a gray PNG image with gamma > 0.75 instead of when gamma==1.0 (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25136).
-    The PSD reader creates a merged image if the image does not contain one.
-    Added option pdf:fit-page to scale a pdf to the specified size (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=25044).
-    The ResolutionInfo in the 8BIM profile will be updated when an image is written.
-    Fixed UTF8 issues and added support for reading files with long path names for the Windows distribution.
-    Convert linear RGB to sRGB before writing the Targa image format.
-    Make sure we use the secure C library functions when compiling ImageMagick on Windows.
-    Tweak color reduction optimization to return a full color palette (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=25098).
-    Patch configure.ac to support FlashPix under Debian (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25140).
-    OpenCL support writes to $HOME/.config/ImageMagick, if the path does not exist, two calls to mkdir() are required (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25080).
-    Replace MAGICKCORE_JP2_DELEGATE with MAGICKCORE_LIBOPENJP2_DELEGATE in magick/static.c (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25153).
-    Eliminate thread race condition (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25168)..]]></releaseNotes>
+    Do not block threads in the png codec when PNG_SETJMP_SUPPORTED is not defined (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=23&t=25218).
+    Added tiff:ignore-tags to ignore specific tags.
+    Added orderedDither, selectiveBlur, separate, sepiaTone, sketch, smushImages, tint, uniqueColors and vignette to Magick++.
+    The -define jpeg:extent option overrides the image quality (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25200). ]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
