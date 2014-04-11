@@ -3,14 +3,13 @@
   <metadata>
     <id>spacesniffer</id>
     <title>Space Sniffer</title>
-    <version>1.1.4.0</version>
+    <version>1.1.4.20140411</version>
     <authors>Uderzo Umberto</authors>
     <owners>Brian Dukes</owners>
     <summary>Find lost space on your disks the easy way.</summary>
-    <description>SpaceSniffer is a freeWare (donations are welcome) and portable tool application that lets you understand how folders and files are structured on your disks. By using a Treemap visualization layout, you have immediate perception of where big folders and files are placed on your devices.
-|Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>SpaceSniffer is a freeWare (donations are welcome) and portable tool application that lets you understand how folders and files are structured on your disks. By using a Treemap visualization layout, you have immediate perception of where big folders and files are placed on your devices.</description>
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
-    <tags>spacesniffer disk usage admin file utilities tools chocolatey</tags>
+    <tags>spacesniffer disk usage file utilities tools</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
