@@ -1,7 +1,7 @@
 ﻿$packageName = 'hg'
 $installerType = 'msi'
-$url = 'http://mercurial.selenic.com/release/windows/mercurial-2.9.2-x86.msi'
-$url64 = 'http://mercurial.selenic.com/release/windows/mercurial-2.9.2-x64.msi'
+$url = 'http://mercurial.selenic.com/release/windows/mercurial-3.0.0-x86.msi'
+$url64 = 'http://mercurial.selenic.com/release/windows/mercurial-3.0.0-x64.msi'
 $silentArgs = '/quiet'
 $validExitCodes = @(0)
 
