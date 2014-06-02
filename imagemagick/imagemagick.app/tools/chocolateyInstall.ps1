@@ -1,7 +1,7 @@
 ﻿$packageName = 'imagemagick.app'
 $installerType = 'exe'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-1-Q16-x86-dll.exe'
-$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-1-Q16-x64-dll.exe'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-2-Q16-x86-dll.exe'
+$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-2-Q16-x64-dll.exe'
 $silentArgs = '/SILENT /SP-'
 $validExitCodes = @(0)
 
