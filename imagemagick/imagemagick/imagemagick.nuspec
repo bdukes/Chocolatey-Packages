@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.9.2</version>
+    <version>6.8.9.3</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,21 +15,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.9.2]" />
+      <dependency id="imagemagick.app" version="[6.8.9.3]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Fixed some bugs in the PNG codec discovered by coverity analysis.
-    The -fx equality operator returns a proper boolean result now (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25580).
-    Permit spaces in the gradient color specification (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25614).
-    Fix IdentifyImage() crash when image->magick member is null (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25615).
-    The -format M and Y channels are no longer reversed (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25633).
-    Remove Makefile race condition where two targets attempt to install magick-baseconfig.h (reference
-    Fix memory leak in BlobToStringInfo() (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25639).
-    In certain cases, -adaptive-sharpen failed to sharpen (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23211
-    Bump major Magick++ library version.
-    Added support for writing RLE compressed TGA files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=12335).
-    Improved performance of parsing the xmp profile (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25612).
-    Fixed detecting transparency in PSD files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25634).]]></releaseNotes>
+    Quiet warning about unused variable "skip_to_iend" in coders/png.c.
+    Fixed creation of SVG from 8bim clip path. (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=25594).
+    The -version option returns 0 status (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25667).
+    The inline coder can now read from standard input (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25641).
+    Add '=' character to the santize whitelist.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
