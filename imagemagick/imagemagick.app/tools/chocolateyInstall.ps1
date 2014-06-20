@@ -2,7 +2,7 @@
 $installerType = 'exe'
 $url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-3-Q16-x86-dll.exe'
 $url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-3-Q16-x64-dll.exe'
-$silentArgs = '/SILENT /SP-'
+$silentArgs = '/VERYSILENT /MERGETASKS=install_devel'
 $validExitCodes = @(0)
 
 try {
