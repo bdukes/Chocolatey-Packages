@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.8.9.3</version>
+    <version>6.8.9.4</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -15,14 +15,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.8.9.3]" />
+      <dependency id="imagemagick.app" version="[6.8.9.4]" />
     </dependencies>
     <releaseNotes><![CDATA[
-    Quiet warning about unused variable "skip_to_iend" in coders/png.c.
-    Fixed creation of SVG from 8bim clip path. (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=25594).
-    The -version option returns 0 status (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25667).
-    The inline coder can now read from standard input (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25641).
-    Add '=' character to the santize whitelist.]]></releaseNotes>
+    Support RMS argument for -evaluate-sequence and -statistic options.
+    Fix lseek define for a successful compile under 64-bit MinGW.
+    Pipe image to display program no longer reports an exception (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=23532).
+    Check that profile is non-NULL in coders/tiff.c (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25770).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
