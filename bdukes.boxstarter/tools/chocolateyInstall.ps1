@@ -80,7 +80,7 @@ Install-ChocolateyVsixPackage NUnitVisualStudioTestAdapter http://visualstudioga
 
 #Turn off Attach to Process warning (lots of assumptions about existing/non-existing keys/values here)
 Set-ItemProperty HKCU:\Software\Microsoft\VisualStudio\12.0\Debugger DisableAttachSecurityWarning 1
-#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio
-#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0
-#New-Item -Path HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0\Debugger
-#Set-ItemProperty HKCU:\Software\Wow6432Node\Microsoft\VisualStudio\12.0\Debugger DisableAttachSecurityWarning 1
+
+#Turn off Aero Shake
+New-Item -Path HKCU:\Software\Policies\Microsoft\Windows\Explorer
+Set-ItemProperty HKCU:\Software\Policies\Microsoft\Windows\Explorer NoWindowMinimizingShortcuts 1
