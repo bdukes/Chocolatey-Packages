@@ -2,8 +2,15 @@
 $installerType = 'exe'
 $url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-5-Q16-x86-dll.exe'
 $url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-5-Q16-x64-dll.exe'
-$silentArgs = '/VERYSILENT /MERGETASKS=install_devel'
+$silentArgs = '/VERYSILENT'
 $validExitCodes = @(0)
+
+if ($env:chocolateyPackageParameters) {
+    $packageParams = ConvertFrom-StringData $env:chocolateyPackageParameters.Replace(" ", "`n")
+    if ($packageParams.InstallDevelopmentHeaders) {
+        $silentArgs = $silentArgs + ' /MERGETASKS=install_devel'
+    }
+}
 
 try {
     # Uninstall older version of imagemagick, otherwise the installation won’t be silent.
@@ -19,6 +26,7 @@ try {
 }
 
 try {
+    Write-Verbose "Installing with arguments: $silentArgs"
     Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
 }
 catch {
