@@ -1,5 +1,5 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-6-Q16-x86-windows.zip'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.8.9-7-Q16-x86-windows.zip'
 
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
