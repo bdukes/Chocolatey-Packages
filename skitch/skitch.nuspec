@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>skitch</id>
+    <title>Skitch</title>
+    <version>2.3.1.168</version>
+    <authors>Evernote</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Get your point across with fewer words using annotation, shapes and sketches, so that your ideas become reality faster.</summary>
+    <description>Skitch is a free app for adding annotations (shapes, arrows, text) to sketches, images, screen captures, maps, etc. that makes it easy to share your work</description>
+    <projectUrl>http://evernote.com/skitch/</projectUrl>
+    <tags>skitch admin screenshot annotate sketch evernote</tags>
+    <copyright>Evernote Corporation</copyright>
+    <licenseUrl>http://evernote.com/legal/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/skitch/skitch.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
