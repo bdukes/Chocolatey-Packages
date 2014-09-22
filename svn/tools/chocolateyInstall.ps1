@@ -1,6 +1,6 @@
 ﻿$packageName = 'svn'
 $installerType = 'msi'
-$url = 'http://sourceforge.net/projects/win32svn/files/1.8.9/Setup-Subversion-1.8.9-1.msi'
+$url = 'http://sourceforge.net/projects/win32svn/files/1.8.10/Setup-Subversion-1.8.10.msi'
 $url64 = $url
 $silentArgs = '/quiet'
 $validExitCodes = @(0)

@@ -3,7 +3,7 @@
   <metadata>
     <id>svn</id>
     <title>Subversion for Windows</title>
-    <version>1.8.9.1</version>
+    <version>1.8.10</version>
     <authors>Zid Alagazam</authors>
     <owners>Brian Dukes</owners>
     <summary>Command line tools, Language bindings, and Apache httpd modules</summary>
@@ -13,14 +13,9 @@
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://bdukes.github.io/Chocolatey-Packages/svn/icon.svg</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
-    <releaseNotes>Includes updated OpenSSL 1.0.1h files</releaseNotes>
+    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/svn/icon.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>
