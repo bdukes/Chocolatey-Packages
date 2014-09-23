@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'lastpass-for-applications' 'exe' '/S' 'https://download.lastpass.com/lastappinstall.exe' 'https://download.lastpass.com/lastappinstall_x64.exe'
