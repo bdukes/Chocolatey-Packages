@@ -68,7 +68,7 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Vis
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\inetsrv\InetMgr.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe"
 
-Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.programFiles86)\Jetbrains\dotPeek\v1.1\Bin\dotPeek32.exe"
+Install-ChocolateyFileAssociation ".dll" "$($Boxstarter.programFiles86)\Jetbrains\dotPeek\v1.2\Bin\dotPeek32.exe"
 
 #copy-item (Join-Path (Get-PackageRoot($MyInvocation)) 'ConEmu.xml') -Force $env:ProgramFiles\ConEmu\ConEmu\ConEmu.xml
 
