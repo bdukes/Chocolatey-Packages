@@ -42,7 +42,7 @@ cinst skydrive
 cinst googledrive
 cinst vim
 cinst notepad2
-#cinst VisualStudio2013Professional
+cinst VisualStudio2013Professional -InstallArguments "Features:'WebTools SQL'"
 cinst expresso
 cinst papercut
 cinst fiddler4
