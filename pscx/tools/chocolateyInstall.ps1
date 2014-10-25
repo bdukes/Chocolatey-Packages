@@ -1,6 +1,6 @@
-$packageName = 'pscx'
+﻿$packageName = 'pscx'
 $installerType = 'msi'
-$url = 'https://pscx.codeplex.com/downloads/get/744915'
+$url = 'https://pscx.codeplex.com/downloads/get/923562'
 $url64 = $url
 $silentArgs = '/quiet'
 $validExitCodes = @(0)
