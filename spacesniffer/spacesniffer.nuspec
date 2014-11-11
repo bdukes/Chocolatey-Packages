@@ -3,7 +3,7 @@
   <metadata>
     <id>spacesniffer</id>
     <title>Space Sniffer</title>
-    <version>1.1.4.20140411</version>
+    <version>1.2.0.1</version>
     <authors>Uderzo Umberto</authors>
     <owners>Brian Dukes</owners>
     <summary>Find lost space on your disks the easy way.</summary>
@@ -11,7 +11,32 @@
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
     <tags>spacesniffer disk usage file utilities tools</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
-    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/spacesniffer/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes><![CDATA[
+	Release 1.2.0.1
+[#] 	Fixed command line "scan" command.
+	Release 1.2.0.0
+[+] 	New modular engine that can be expanded more easily to support new scan sources.
+[+] 	Added quick dismiss button to the log console to disable repeated popups.
+[+] 	Added the element first level children count to the tooltip.
+[+] 	Added SpaceSniffer binary snapshot file format.
+[+] 	Added load command line parameter.
+[+] 	Added inequality operators to the export scripting language.
+[!] 	Enhanced export module configuration behavior.
+[!] 	Now cluster size is available for all types of paths (also network where available).
+[!] 	Improved rescan performance.
+[!] 	Improved scan performance on Windows XP+ OSes (used new OS API).
+[!] 	Replaced old XML library with more optimized TinyXML.
+[!] 	Memory optimizations: 15% less ram usage.
+[!] 	Compiled with LARGEADDRESSAWARE flag: 1 more GB available on 64 bit systems.
+[!] 	Now the export dialog waits 500ms after typing a key before showing the preview.
+[!] 	Improved path handling: this should fix issues with the optional registry key on different OSes.
+[!] 	Improved stability.
+[!] 	Updated user manual.
+[#] 	Small correction on size specifiers (Gb to GB and so on...).
+[#] 	Fixed leftpad script command due to bad trimming.
+[#] 	Minor UI enhancements.
+]]></releaseNotes>
   </metadata>
 </package>
