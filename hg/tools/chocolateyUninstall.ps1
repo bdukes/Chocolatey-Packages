@@ -2,9 +2,9 @@ $package = 'hg'
 $productName = 'Mercurial'
 
 try {
-	$app = Get-WmiObject -class Win32_Product -filter "Name LIKE '$productName%' AND Version='2.7.0'"	
+	$app = Get-WmiObject -class Win32_Product -filter "Name LIKE '$productName%' AND Version='3.2.0'"
 	$result = $app.Uninstall();
-	
+
 	Write-ChocolateySuccess $package
 }
 catch {
