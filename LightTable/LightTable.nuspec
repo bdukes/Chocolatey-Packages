@@ -3,7 +3,7 @@
   <metadata>
     <id>LightTable</id>
     <title>LightTable</title>
-    <version>0.6.7</version>
+    <version>0.7.2</version>
     <authors>Chris Granger</authors>
     <owners>Brian Dukes</owners>
     <summary>LightTable</summary>
@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>https://github.com/LightTable/LightTable/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/LightTable/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/LightTable/icon.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
