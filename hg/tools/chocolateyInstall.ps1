@@ -6,4 +6,6 @@ $silentArgs = '/quiet'
 $validExitCodes = @(0, 3010)
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-Install-ChocolateyPath "$env:SystemDrive\Program Files\Mercurial"
+
+$installDir = (Get-ItemProperty HKCU:\Software\Mercurial\InstallDir).'(default)'
+Install-ChocolateyPath $installDir
