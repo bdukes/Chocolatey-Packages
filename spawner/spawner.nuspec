@@ -3,7 +3,7 @@
   <metadata>
     <id>spawner</id>
     <title>Spawner Data Generator</title>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <authors>Seth Grover</authors>
     <owners>Brian Dukes</owners>
     <summary>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.</summary>
