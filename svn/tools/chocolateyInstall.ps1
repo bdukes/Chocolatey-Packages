@@ -5,4 +5,6 @@ $silentArgs = '/quiet'
 $validExitCodes = @(0)
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
-Install-ChocolateyPath "${env:ProgramFiles(x86)}\Subversion\bin"
+
+$installDir = (Get-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\App Paths\svn.exe').Path
+Install-ChocolateyPath $installDir
