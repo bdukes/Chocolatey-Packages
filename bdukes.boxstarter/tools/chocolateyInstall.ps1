@@ -57,6 +57,7 @@ cinst stylecop
 cinst gitextensions
 cinst gittfs
 cinst nodejs.install
+cinst vlc
 
 Install-ChocolateyPinnedTaskBarItem "$env:home\Dropbox\Applications\cmder\Cmder.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
