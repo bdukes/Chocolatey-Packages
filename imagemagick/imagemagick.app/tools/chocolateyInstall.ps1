@@ -45,8 +45,6 @@ catch {
         $url64 = $content64 -replace '.+(ImageMagick-)([\d-\.]+)(-Q16-x64-dll.exe).+', 'http://www.imagemagick.org/download/binaries/$1$2$3'
 
         Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url64  -validExitCodes $validExitCodes
-
-        Write-ChocolateySuccess $packageName
     } catch {
         Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
         throw 

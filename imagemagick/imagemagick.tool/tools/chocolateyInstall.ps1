@@ -4,7 +4,6 @@ $url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.0-5-Q16-x86
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
   Install-ChocolateyZipPackage $packageName $url $installDir
-  Write-ChocolateySuccess "$packageName"
 }
 catch {
     try {
@@ -21,8 +20,6 @@ catch {
         $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
         Install-ChocolateyZipPackage $packageName $url $installDir
-
-        Write-ChocolateySuccess $packageName
     } catch {
         Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
         throw 
