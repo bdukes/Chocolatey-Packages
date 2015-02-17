@@ -8,8 +8,8 @@
 
     Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
 
-    $regEntry = Get-ChildItem HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\ | ? { $_.GetValue('DisplayName') -like 'Mercurial*' }
-    if ($regEntry) {
+    $regEntries = @(Get-ChildItem HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\ | ? { $_.GetValue('DisplayName') -like 'Mercurial*' })
+    foreach ($regEntry in $regEntries) {
       Install-ChocolateyPath $regEntry.GetValue('InstallLocation')
     }
 } catch {
