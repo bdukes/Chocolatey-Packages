@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.9.0.5</version>
+    <version>6.9.0.6</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -19,15 +19,11 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <dependencies>
       <dependency id="vcredist2010" />
     </dependencies>
-    <releaseNotes><![CDATA[In coders/gif.c, quiet two warnings.
-Fixed iccColorProfile() in Magick++ (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2&t=26910).
-Fixed infinite loop in HDR reader (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26929).
-Check lengths of certain MNG chunks before reading them.
-In the PNG codec, check status wherever a function returns it.
-Remove possible resource memory leak in a multi-threaded program (bug report and patch from David Chapman <d...@acm.org>.
-Small optimization to pixel cache.
-More image sanity checks.
-Support writing base64-encoded images (e.g]]></releaseNotes>
+    <releaseNotes><![CDATA[Fixed command line execution in Windows for delegates that move files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=27027).
+A transient bug for the write MSL element (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27022).
+Remove uninitialized, unused "p++" from coders/png.c, MNG reader.
+Initialize "length" in coders/png.c, WriteJNGImage().
+Fix signed/unsigned mismatch in coders/png.c, MNG reader.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
