@@ -15,6 +15,9 @@ if ($env:chocolateyPackageParameters) {
 try {
     # Uninstall older version of imagemagick, otherwise the installation won’t be silent.
     $regPath = 'HKLM:\SOFTWARE\ImageMagick\Current'
+    if ($env:chocolateyForceX86) {
+        $regPath = 'HKLM:\SOFTWARE\Wow6432Node\ImageMagick\Current'
+    }
     if (Test-Path $regPath) {
         $uninstallPath = (Get-ItemProperty -Path $regPath).BinPath
         $uninstallFilePath = "$uninstallPath\unins000.exe"
