@@ -3,7 +3,7 @@
   <metadata>
     <id>linqpad</id>
     <title>LINQPad</title>
-    <version>4.51.03</version>
+    <version>4.55.03</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 4 Low-Impact Setup</summary>
@@ -17,7 +17,7 @@
     <copyright><![CDATA[© 2007-2014 Joseph Albahari]]></copyright>
     <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/linqpad/linqpadmed.png</iconUrl>
     <dependencies>
-      <dependency id="linqpad4" version="[4.51.03]" />
+      <dependency id="linqpad4" version="[4.55.03]" />
     </dependencies>
   </metadata>
   <files>
