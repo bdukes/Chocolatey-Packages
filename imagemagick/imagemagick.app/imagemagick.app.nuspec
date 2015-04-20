@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.9.1.1</version>
+    <version>6.9.1.2</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -20,7 +20,12 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Skip empty frames when comparing layers (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27234).]]></releaseNotes>
+Avoid using a NULL alpha_image or color_image in the JNG decoder.
+Fix JPEG-2000 transparency on write (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27304).
+Identify now identifies PSD (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26948).
+Speed up writing to TGA (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27369).
+Reduce draw epsilon to increate mathematical stability.
+Fixed UTF8 issue when determining the current working directory on Windows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27295).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
