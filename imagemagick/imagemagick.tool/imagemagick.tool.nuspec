@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Portable)</title>
-    <version>6.9.1.2</version>
+    <version>6.9.1.3</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,12 +18,17 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Avoid using a NULL alpha_image or color_image in the JNG decoder.
-Fix JPEG-2000 transparency on write (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27304).
-Identify now identifies PSD (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26948).
-Speed up writing to TGA (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27369).
-Reduce draw epsilon to increate mathematical stability.
-Fixed UTF8 issue when determining the current working directory on Windows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27295).]]></releaseNotes>
+Fixed transparency issue with 16-bit tga files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27469).
+Fixed writing label and comment in tiff images (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=25516).
+Jpeg images no longer have pixels per inch as a default value for density units when the density is not set (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27589).
+Added support for setting the font color with -fill to the pango coder.
+Fixed bug with "-define png:format=x" in png.c, introduced in version 6.8.9-0, that caused the define to be ignored.
+Replaced some dead code in ReadJNGImage with an assert().
+Avoid palette-building when writing a grayscale PNG (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27580).
+Support -define compose:clamp=false option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26946).
+Don't extend any user supplied image buffer in SeekBlob() (bug report from a.chernij@corp...).
+Improved reproducible builds (reference https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=783933).
+Draw a rectangle of width & height of 1 (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=24874).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
