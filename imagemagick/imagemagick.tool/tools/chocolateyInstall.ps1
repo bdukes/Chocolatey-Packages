@@ -1,9 +1,10 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-4-Q16-x86-windows.zip'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-6-portable-Q16-x86.zip'
+$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-6-portable-Q16-x64.zip'
 
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
-  Install-ChocolateyZipPackage $packageName $url $installDir
+  Install-ChocolateyZipPackage $packageName $url $installDir $url64
 }
 catch {
     try {

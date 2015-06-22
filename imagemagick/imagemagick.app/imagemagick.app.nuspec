@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.9.1.4</version>
+    <version>6.9.1.6</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -20,8 +20,10 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Support 'restrict' keyword under Windows.
-Added support for reading a user supplied layer mask in PSD files.]]></releaseNotes>
+Cache cloning on disk optimized with sendfile() (if available).
+Add an additional check for end-of-file for the RLE coder (reference http://www.imagemagick.org/discourse-server/viewforum.php?f=3).
+Respect resource limits in AVS coder.
+Reverted change to 6.9.1-3 that skipped palette-building.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
