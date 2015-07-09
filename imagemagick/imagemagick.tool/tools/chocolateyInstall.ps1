@@ -1,6 +1,6 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-6-portable-Q16-x86.zip'
-$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-6-portable-Q16-x64.zip'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-7-portable-Q16-x86.zip'
+$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-7-portable-Q16-x64.zip'
 
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
