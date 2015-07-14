@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.9.1.7</version>
+    <version>6.9.1.8</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -20,10 +20,9 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Fixed and escaped output of the json coder. (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&p=27894).
-Support BPG image format (respects -quality option).
-A bordered transparent image now remains transparent (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=5&t=27937).
-The -update option behavior restored (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=27939).]]></releaseNotes>
+Correct install location of the Magick++ headers (reference https://github.com/ImageMagick/ImageMagick/pull/17/commits).
+Different gif cropping behavior between versions (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28013).
+Cannot read properly simple psd file (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28002).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
