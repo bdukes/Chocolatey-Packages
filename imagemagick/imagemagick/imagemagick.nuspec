@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.9.1.8</version>
+    <version>6.9.1.9</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -17,12 +17,10 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.9.1.8]" />
+      <dependency id="imagemagick.app" version="[6.9.1.9]" />
     </dependencies>
     <releaseNotes><![CDATA[
-Correct install location of the Magick++ headers (reference https://github.com/ImageMagick/ImageMagick/pull/17/commits).
-Different gif cropping behavior between versions (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28013).
-Cannot read properly simple psd file (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28002).]]></releaseNotes>
+Fixed issue with radial gradient in MVG (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=27995).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
