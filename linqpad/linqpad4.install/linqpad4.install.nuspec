@@ -15,7 +15,7 @@
     <copyright><![CDATA[© 2007-2014 Joseph Albahari]]></copyright>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/linqpad/linqpadmed.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
