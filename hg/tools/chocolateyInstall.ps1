@@ -1,8 +1,8 @@
 ﻿try {
     $packageName = 'hg'
     $installerType = 'exe'
-    $url = 'http://mercurial.selenic.com/release/windows/Mercurial-3.4.2.exe'
-    $url64 = 'http://mercurial.selenic.com/release/windows/Mercurial-3.4.2-x64.exe'
+    $url = 'http://mercurial.selenic.com/release/windows/Mercurial-3.5.exe'
+    $url64 = 'http://mercurial.selenic.com/release/windows/Mercurial-3.5-x64.exe'
     $silentArgs = '/VERYSILENT'
     $validExitCodes = @(0, 3010)
 
