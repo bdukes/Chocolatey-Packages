@@ -1,28 +1,13 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-10-portable-Q16-x86.zip'
-$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.1-10-portable-Q16-x64.zip'
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.2-0-portable-Q16-x86.zip'
+$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.2-0-portable-Q16-x64.zip'
+$installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
 
 try { 
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
   Install-ChocolateyZipPackage $packageName $url $installDir $url64
 }
 catch {
-    try {
-        $tempDir = "$env:TEMP\chocolatey\$packageName"
-        if (-not (Test-Path $tempDir)) {New-Item $tempDir -ItemType directory}
-
-        $listUrl = 'http://www.imagemagick.org/download/binaries/'
-        $fileFullPath = "$tempDir\temp.html"
-
-        # Obtain the download URL of the latest version using regex
-        Get-ChocolateyWebFile 'HTML file containing the URL' $fileFullPath $listUrl
-        $content = Select-String -Path $fileFullPath -Pattern 'zip' | Select-Object -First 1
-        $url = $content -replace '.+(ImageMagick-)([\d-\.]{1,})(-Q16-x86-windows.zip).+', 'http://www.imagemagick.org/download/binaries/$1$2$3'
-        $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-
-        Install-ChocolateyZipPackage $packageName $url $installDir
-    } catch {
-        Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
-        throw 
-    }
+    $url = 'http://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/binaries/ImageMagick-6.9.2-0-portable-Q16-x86.zip'
+    $url64 = 'http://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/binaries/ImageMagick-6.9.2-0-portable-Q16-x64.zip'
+    Install-ChocolateyZipPackage $packageName $url $installDir $url64
 }

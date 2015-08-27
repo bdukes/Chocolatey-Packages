@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>6.9.1.10</version>
+    <version>6.9.2.0</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -20,11 +20,15 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-coders/magick.c: added "-define h:format=FMT" and "-define magick:format=FMT" options. FMT can be any output format supported by ImageMagick except "H" or "MAGICK". If this define is omitted, the encoder uses GIF by default for pseudoclass images and PNM for directclass images, as previously. Made "MAGICK" (read-write) and "H" (write-only) visible in the format list.
-Removed incorrect EOF check in the DDS reader (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28065).
-Fixed undefined behaviors (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28067).
-Return exception message for unknown image properties.
-Color shift removed when reading transparent gray images (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28081)]]></releaseNotes>
+Swap pixels for -spread command-line option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28043).
+fx logical operations short circuit (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28179).
+Type cast intensity variable (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28182).
+Fix ModulusAdd & ModulusSubstract for HDRI compositing (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28186).
+Added "-set colorspace:auto-grayscale=false" that will prevent automatic conversion to grayscale inside coders that support grayscale.
+Fixed -list weight and the options for -weight.
+Added fontFamily, fontStyle, fontWeight and textUnderColor to the Image class of Magick++.
+Fixed reading Photoshop layers of LSB TIFF files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28045).
+Fixed memory leak in font cache under Windows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=6&t=28191).]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
