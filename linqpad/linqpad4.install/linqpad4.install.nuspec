@@ -3,7 +3,7 @@
   <metadata>
     <id>linqpad4.install</id>
     <title>LINQPad 4 (Low-Impact Setup)</title>
-    <version>4.55.03</version>
+    <version>4.57.02</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 4 Low-Impact Setup</summary>
@@ -12,7 +12,7 @@
   This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
     <projectUrl>http://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 linqpad</tags>
-    <copyright><![CDATA[© 2007-2014 Joseph Albahari]]></copyright>
+    <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>

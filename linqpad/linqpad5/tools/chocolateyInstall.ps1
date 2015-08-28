@@ -1,0 +1,1 @@
+﻿#Install-VirtualPackage 'linqpad5.install' 'linqpad5.portable'

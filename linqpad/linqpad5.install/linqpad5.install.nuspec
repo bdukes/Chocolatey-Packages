@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>linqpad</id>
-    <title>LINQPad</title>
+    <id>linqpad5.install</id>
+    <title>LINQPad 5 (Low-Impact Setup)</title>
     <version>5.02.03</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
@@ -12,16 +12,12 @@
   This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
     <projectUrl>http://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 .net-4.6 linqpad</tags>
+    <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
-    <dependencies>
-      <dependency id="linqpad5" version="[5.02.03]" />
-    </dependencies>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
-  </files>
 </package>

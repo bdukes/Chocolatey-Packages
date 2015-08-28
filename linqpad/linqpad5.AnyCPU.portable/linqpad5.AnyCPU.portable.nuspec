@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>linqpad5.AnyCPU.portable</id>
+    <title>LINQPad 5 (Portable, AnyCPU build)</title>
+    <version>5.02.03</version>
+    <authors>Joseph Albahari</authors>
+    <owners>Brian Dukes</owners>
+    <summary>LINQPad 5 (Portable, AnyCPU build for "massive" queries)</summary>
+    <description>LINQPad lets you interactively query databases in a modern query language: LINQ.  LINQPad supports everything in C# 6.0 and Framework 4.6 (LINQ to Objects, SQL, EF, XML, Parallel LINQ, etc.).  It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn LINQ: it comes loaded with 500 examples from the book, C# 6.0 in a Nutshell.  And LINQPad is more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any expression, statement block or program with rich output formatting – the ultimate in dynamic development.</description>
+    <projectUrl>http://www.linqpad.net/</projectUrl>
+    <tags>linq sql .net-4 .net-4.6 linqpad</tags>
+    <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
+    <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
