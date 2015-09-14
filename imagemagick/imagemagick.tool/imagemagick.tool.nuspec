@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Portable)</title>
-    <version>6.9.2.0</version>
+    <version>6.9.2.1</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -18,15 +18,15 @@
       <dependency id="vcredist2010" />
     </dependencies>
     <releaseNotes><![CDATA[
-Swap pixels for -spread command-line option (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28043).
-fx logical operations short circuit (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28179).
-Type cast intensity variable (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28182).
-Fix ModulusAdd & ModulusSubstract for HDRI compositing (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28186).
-Added "-set colorspace:auto-grayscale=false" that will prevent automatic conversion to grayscale inside coders that support grayscale.
-Fixed -list weight and the options for -weight.
-Added fontFamily, fontStyle, fontWeight and textUnderColor to the Image class of Magick++.
-Fixed reading Photoshop layers of LSB TIFF files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28045).
-Fixed memory leak in font cache under Windows (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=6&t=28191).]]></releaseNotes>
+Preserving image origin in TGA files (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28310).
+Support color compliance for TXT format (e.g. -define txt:compliance=css) (bug report from Anthony).
+The first argument of a hsl() color is integer, not percentage (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=2&t=26072).
+Limit -fx recursive to avoid stack overflow (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28200).
+Support inline images with data URLS.
+Report progress less often (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=28299).
+Don't set image colorspace to gray for -alpha copy option.
+Fixed a possible memory leak associated with the -sampling-factor option.
+GetImageType() no longer has side-effects to match behavior of IMv7.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
