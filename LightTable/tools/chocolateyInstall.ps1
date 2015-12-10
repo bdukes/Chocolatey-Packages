@@ -1,4 +1,4 @@
 ﻿$packageName = 'LightTable'
-$url = 'https://d35ac8ww5dfjyg.cloudfront.net/playground/bins/0.7.2/LightTableWin.zip'
+$url = 'https://github.com/LightTable/LightTable/releases/download/0.8.0-alpha/lighttable-0.8.0-alpha-windows.zip'
 
 Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
