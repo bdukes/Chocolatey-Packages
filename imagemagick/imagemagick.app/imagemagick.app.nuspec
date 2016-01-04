@@ -16,6 +16,7 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/imagemagick/imagemagick/imagemagick.png</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <dependencies>
       <dependency id="vcredist2010" />
     </dependencies>
@@ -23,8 +24,4 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
 Don't break on euro-style numbers (reference http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=28910).
 16-bit pnm images have a max value of 65535.]]></releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
-  </files>
 </package>

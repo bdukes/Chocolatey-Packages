@@ -14,9 +14,7 @@
     <licenseUrl>https://github.com/LightTable/LightTable/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/LightTable/icon.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://github.com/LightTable/LightTable/blob/master/deploy/core/changelog.md</releaseNotes>
   </metadata>
   <files>

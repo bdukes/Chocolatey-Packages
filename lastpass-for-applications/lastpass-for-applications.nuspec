@@ -16,5 +16,6 @@
     <tags>lastpass password applications admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
 </package>

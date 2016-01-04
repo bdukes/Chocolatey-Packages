@@ -14,8 +14,6 @@
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/svn/icon.svg</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

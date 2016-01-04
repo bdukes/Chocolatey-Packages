@@ -11,5 +11,6 @@
     <projectUrl>http://visualstudiogallery.msdn.microsoft.com/b1ef7eb2-e084-4cb8-9bc7-06c3bad9148f</projectUrl>
     <tags>tfs tfs-2012 tools powertools admin</tags>
     <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/b1ef7eb2-e084-4cb8-9bc7-06c3bad9148f</licenseUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
 </package>

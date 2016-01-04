@@ -16,12 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <dependencies>
       <dependency id="linqpad5.install" version="[5.02.03]" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
-  </files>
 </package>

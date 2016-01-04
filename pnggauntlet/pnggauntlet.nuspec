@@ -10,15 +10,12 @@
     <description>Combines PNGOUT, OptiPNG, and DeflOpt to create the smallest PNGs; 
 No image quality is lost - only file size; 
 Converts JPG, GIF, TIFF, and BMP files to PNG; 
-Ultra-configurable; 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+Ultra-configurable</description>
     <projectUrl>http://pnggauntlet.com/</projectUrl>
     <tags>pnggauntlet png pngout optipng deflopt image optimize lossless chocolatey</tags>
     <licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/pnggauntlet/gauntlet_shadow.png</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/pnggauntlet/gauntlet_shadow.png</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
 </package>

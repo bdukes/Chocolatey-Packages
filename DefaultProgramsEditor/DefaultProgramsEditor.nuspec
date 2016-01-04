@@ -14,9 +14,7 @@
     <licenseUrl>http://defaultprogramseditor.com/donate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/DefaultProgramsEditor/favicon.ico</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes><![CDATA[
     Version 2.7.2675.2253 (October 29, 2010)
 Bugs Fixed:
@@ -27,8 +25,4 @@ Crashes Fixed:
 - Viewing 'Open With' programs caused a crash when the item listed in the registry didn't exist on disk.
 - Fixed a crash when starting the application for some users.]]></releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
-  </files>
 </package>
