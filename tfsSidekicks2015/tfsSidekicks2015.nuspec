@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>tfsSidekicks2015</id>
+    <title>Team Foundation Sidekicks 2015</title>
+    <version>6.0</version>
+    <authors>Attrice Corporation</authors>
+    <owners>Brian Dukes</owners>
+    <summary>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environments. </summary>
+    <description>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environment.
+Version 6.0 of Team Foundation Sidekicks is available for Visual Studio© 2015, Team Foundation Server 2015 and Team Foundation Service. .</description>
+    <projectUrl>http://www.attrice.info/cm/tfs/</projectUrl>
+    <tags>tfs tfsSidekicks tfs-2015 admin</tags>
+    <licenseUrl>http://www.attrice.info/cm/tfs/license.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/tfsSidekicks2013/TFSLogo.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+</package>
