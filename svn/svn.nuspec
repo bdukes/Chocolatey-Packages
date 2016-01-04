@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/svn/icon.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/svn/icon.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

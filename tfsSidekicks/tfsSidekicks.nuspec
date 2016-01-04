@@ -8,13 +8,13 @@
     <owners>Brian Dukes</owners>
     <summary>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environments. </summary>
     <description>Team Foundation Sidekicks is a suite of tools for Microsoft Team Foundation Server administrators and advanced users providing Graphic User Interface for administrative and advanced version control tasks in multi-user TFS environment.
-The installation package includes Users View Sidekick, Permission Sidekick, Code Review Sidekick, Shelveset Sidekick, Labels Sidekick, History Sidekick, Workspace Sidekick and Status Sidekick in stand-alone application as well as Visual Studio Integration Package with all Sidekicks integrated, Search Items dialog, dynamic History and Build Type editing functionality. 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+The installation package includes Users View Sidekick, Permission Sidekick, Code Review Sidekick, Shelveset Sidekick, Labels Sidekick, History Sidekick, Workspace Sidekick, Status Sidekick and Users View Sidekick in uniform GUI stand-alone application, and Visual Studio Integraton Package providing VS integration for all sidekicks as well as additional features such as Search Items dialog, dynamic History and Build Type editing support.
+Single installation package contains versions of application compatible both with Team Foundation Server 2005 and Team Foundation Server 2008.</description>
     <projectUrl>http://www.attrice.info/cm/tfs/</projectUrl>
     <tags>tfs tfsSidekicks chocolatey</tags>
     <licenseUrl>http://www.attrice.info/cm/tfs/license.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/tfsSidekicks/TFSLogo.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/tfsSidekicks/TFSLogo.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

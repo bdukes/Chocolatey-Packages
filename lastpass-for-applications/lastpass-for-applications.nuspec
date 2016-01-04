@@ -8,13 +8,13 @@
     <owners>Brian Dukes</owners>
     <summary>The LastPass password manager for native Windows applications (e.g. Skype or PuTTY).</summary>
     <description>
-    Fills in your application login data for you; allows you to stop using the ‘Remember Password’ function, which can oftentimes be saved insecurely.
+    Fills in your application login data for you; allows you to stop using the ï¿½Remember Passwordï¿½ function, which can oftentimes be saved insecurely.
     As a tray application, it has some preferences that are now possible, like logout on lock or screensaver  (exporting only exports Application passwords, not your entire Vault).
     Can launch your applications directly from the tray icon.
     </description>
     <projectUrl>https://helpdesk.lastpass.com/upgrading-to-premium/lastpass-for-applications/</projectUrl>
     <tags>lastpass password applications admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
-    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/lastpass/onepassword.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>
   </metadata>
 </package>

@@ -264,6 +264,6 @@ MISC UPDATES:
             ]]></releaseNotes>
         <copyright />
         <tags>powershell pscx admin</tags>
-        <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/pscx/icon.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/pscx/icon.png</iconUrl>
     </metadata>
 </package>

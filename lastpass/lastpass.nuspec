@@ -11,6 +11,6 @@
     <projectUrl>https://lastpass.com/</projectUrl>
     <tags>lastpass password admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
-    <iconUrl>https://raw.github.com/bdukes/Chocolatey-Packages/master/lastpass/onepassword.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>
   </metadata>
 </package>
