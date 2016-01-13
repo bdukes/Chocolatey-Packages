@@ -1,9 +1,10 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lastpass-for-applications</id>
     <title>LastPass for Applications</title>
-    <version>3.1.40</version>
+    <version>3.2.40</version>
     <authors>LastPass</authors>
     <owners>Brian Dukes</owners>
     <summary>The LastPass password manager for native Windows applications (e.g. Skype or PuTTY).</summary>
@@ -13,8 +14,14 @@
     Can launch your applications directly from the tray icon.
     </description>
     <projectUrl>https://helpdesk.lastpass.com/upgrading-to-premium/lastpass-for-applications/</projectUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages/tree/master/lastpass-for-applications</packageSourceUrl>
     <tags>lastpass password applications admin</tags>
+    <copyright>Copyright 2008-2016 LastPass</copyright>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
