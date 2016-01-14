@@ -9,6 +9,9 @@
     <summary>Password Manager, Form Filler, Password Management.</summary>
     <description>LastPass is a password manager that makes web browsing easier and more secure.</description>
     <projectUrl>https://lastpass.com/</projectUrl>
+    <bugTrackerUrl>https://lastpass.com/support.php</bugTrackerUrl>
+    <docsUrl>https://helpdesk.lastpass.com/</docsUrl>
+    <mailingListUrl>https://forums.lastpass.com/</mailingListUrl>
     <tags>lastpass password admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>

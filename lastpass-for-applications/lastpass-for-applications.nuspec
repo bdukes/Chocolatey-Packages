@@ -10,11 +10,15 @@
     <summary>The LastPass password manager for native Windows applications (e.g. Skype or PuTTY).</summary>
     <description>
     Fills in your application login data for you; allows you to stop using the "Remember Password" function, which can oftentimes be saved insecurely.
-    As a tray application, it has some preferences that are now possible, like logout on lock or screensaver  (exporting only exports Application passwords, not your entire Vault).
+    As a tray application, it has some preferences that are now possible, like logout on lock or screensaver (exporting only exports Application passwords, not your entire Vault).
     Can launch your applications directly from the tray icon.
+    LastPass for Applications (LastApp) on Windows is available for users with a Premium account and to members of the LastPass Pre-Build Team. As with all Premium services, LastPass for Applications can also be tested with a 14-day free trial.
     </description>
     <projectUrl>https://helpdesk.lastpass.com/upgrading-to-premium/lastpass-for-applications/</projectUrl>
-    <tags>lastpass password applications admin</tags>
+    <bugTrackerUrl>https://lastpass.com/support.php</bugTrackerUrl>
+    <docsUrl>https://helpdesk.lastpass.com/lastpass-for-applications/</docsUrl>
+    <mailingListUrl>https://forums.lastpass.com/</mailingListUrl>
+    <tags>lastpass password applications admin trial</tags>
     <copyright>Copyright 2008-2016 LastPass</copyright>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
