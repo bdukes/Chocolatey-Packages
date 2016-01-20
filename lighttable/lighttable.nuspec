@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>lighttable</id>
+    <title>LightTable (Portable)</title>
+    <version>0.8.0</version>
+    <authors>Kodowa, Inc. and Light Table contributors</authors>
+    <owners>Brian Dukes</owners>
+    <summary>The next generation code editor</summary>
+    <description>Light Table is a new interactive IDE that lets you modify running programs and embed anything from websites to games. It provides the real time feedback we need to not only answer questions about our code, but to understand how our programs really work.</description>
+    <projectUrl>http://lighttable.com/</projectUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <docsUrl>http://docs.lighttable.com/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/light-table-discussion</mailingListUrl>
+    <bugTrackerUrl>https://github.com/LightTable/LightTable/issues</bugTrackerUrl>
+    <tags>lighttable admin IDE Clojure JavaScript node.js CSS HTML python</tags>
+    <copyright>Copyright (c) 2014 Kodowa, Inc. &amp; Light Table contributors</copyright>
+    <licenseUrl>https://github.com/LightTable/LightTable/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lighttable/icon.png</iconUrl>
+    <releaseNotes>https://github.com/LightTable/LightTable/blob/master/deploy/core/changelog.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
