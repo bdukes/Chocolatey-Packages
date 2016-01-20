@@ -15,9 +15,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/LightTable/icon.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <docsUrl>http://docs.lighttable.com/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/light-table-discussion</mailingListUrl>
+    <bugTrackerUrl>https://github.com/LightTable/LightTable/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/LightTable/LightTable</projectSourceUrl>
     <releaseNotes>https://github.com/LightTable/LightTable/blob/master/deploy/core/changelog.md</releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
