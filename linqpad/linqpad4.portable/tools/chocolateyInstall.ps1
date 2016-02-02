@@ -1,11 +1,15 @@
-﻿$packageName = 'linqpad4.portable'
-$url = 'http://www.linqpad.net/GetFile.aspx?LINQPad4.zip'
+﻿
+$ErrorActionPreference = 'Stop';
 
-try {
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-  Install-ChocolateyZipPackage "$packageName" "$url" "$installDir"
-} catch {
-  Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  throw
+$packageName= 'linqpad4.portable'
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'http://www.linqpad.net/GetFile.aspx?LINQPad4.zip'
+
+$packageArgs = @{
+  packageName   = $packageName
+  unzipLocation = $toolsDir
+  url           = $url
 }
+
+Install-ChocolateyZipPackage @packageArgs
