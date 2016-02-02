@@ -3,7 +3,7 @@
   <metadata>
     <id>linqpad5.portable</id>
     <title>LINQPad 5 (Portable)</title>
-    <version>5.02.03</version>
+    <version>5.05.02</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 5 (Portable)</summary>
@@ -15,5 +15,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <docsUrl>http://www.linqpad.net/FAQ.aspx</docsUrl>
+    <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
+    <bugTrackerUrl>http://linqpad.uservoice.com/</bugTrackerUrl>
+    <releaseNotes>http://www.linqpad.net/Download.aspx#LINQPad5</releaseNotes>
   </metadata>
 </package>
