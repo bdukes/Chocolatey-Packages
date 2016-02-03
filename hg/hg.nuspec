@@ -14,5 +14,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/hg/hg.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <docsUrl>https://www.mercurial-scm.org/learn</docsUrl>
+    <mailingListUrl>https://www.mercurial-scm.org/wiki/MailingLists</mailingListUrl>
+    <bugTrackerUrl>https://www.mercurial-scm.org/wiki/BugTracker</bugTrackerUrl>
+    <releaseNotes>https://www.mercurial-scm.org/wiki/WhatsNew</releaseNotes>
   </metadata>
 </package>
