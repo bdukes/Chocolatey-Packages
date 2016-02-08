@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Portable)</title>
-    <version>6.9.3.2</version>
+    <version>6.9.3.3</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
