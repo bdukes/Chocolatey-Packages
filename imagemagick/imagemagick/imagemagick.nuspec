@@ -17,9 +17,13 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/imagemagick/imagemagick/imagemagick.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <releaseNotes>http://www.imagemagick.org/script/changelog.php</releaseNotes>
+    <docsUrl>http://imagemagick.org/script/command-line-processing.php</docsUrl>
+    <mailingListUrl>https://www.imagemagick.org/discourse-server/</mailingListUrl>
+    <bugTrackerUrl>https://www.imagemagick.org/discourse-server/viewforum.php?f=3&sid=baa8f80e44fcbf4c38ed8df075205457</bugTrackerUrl>
+    <projectSourceUrl>http://git.imagemagick.org/repos/ImageMagick</projectSourceUrl>
     <dependencies>
       <dependency id="imagemagick.app" version="[6.9.3.3]" />
     </dependencies>
-    <releaseNotes>http://www.imagemagick.org/script/changelog.php</releaseNotes>
   </metadata>
 </package>
