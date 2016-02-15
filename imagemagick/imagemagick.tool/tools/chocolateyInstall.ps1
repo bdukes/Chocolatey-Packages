@@ -1,13 +1,13 @@
 ﻿$packageName = 'imagemagick.tool'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.3-3-portable-Q16-x86.zip'
-$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.3-3-portable-Q16-x64.zip'
-$installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.3-4-portable-Q16-x86.zip'
+$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-6.9.3-4-portable-Q16-x64.zip'
+$installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-try { 
-  Install-ChocolateyZipPackage $packageName $url $installDir $url64
+try {
+    Install-ChocolateyZipPackage $packageName $url $installDir $url64
 }
 catch {
-    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.3-3-portable-Q16-x86.zip'
-    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.3-3-portable-Q16-x64.zip'
+    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.3-4-portable-Q16-x86.zip'
+    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.3-4-portable-Q16-x64.zip'
     Install-ChocolateyZipPackage $packageName $url $installDir $url64
 }
