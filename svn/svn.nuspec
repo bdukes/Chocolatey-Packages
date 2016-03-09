@@ -3,7 +3,7 @@
   <metadata>
     <id>svn</id>
     <title>Subversion for Windows</title>
-    <version>1.8.13</version>
+    <version>1.8.15</version>
     <authors>Zid Alagazam</authors>
     <owners>Brian Dukes</owners>
     <summary>Command line tools, Language bindings, and Apache httpd modules</summary>
@@ -15,5 +15,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/svn/icon.svg</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <docsUrl>https://subversion.apache.org/docs/</docsUrl>
+    <mailingListUrl>https://subversion.apache.org/mailing-lists.html</mailingListUrl>
+    <bugTrackerUrl>https://subversion.apache.org/reporting-issues.html</bugTrackerUrl>
+    <releaseNotes>https://subversion.apache.org/docs/release-notes/1.8.html</releaseNotes>
   </metadata>
 </package>
