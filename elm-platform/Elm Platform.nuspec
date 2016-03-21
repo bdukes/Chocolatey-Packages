@@ -9,7 +9,7 @@
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
     <projectUrl>http://elm-lang.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/bdukes/Chocolatey-Packages/master/elm-platform/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/cc1f48f63e6f3c2082888eb43e8f6b9e61e7d9fe/elm-platform/icon.png</iconUrl>
     <copyright>Copyright (c) 2014-2016, Evan Czaplicki</copyright>
     <licenseUrl>https://github.com/elm-lang/elm-platform/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
