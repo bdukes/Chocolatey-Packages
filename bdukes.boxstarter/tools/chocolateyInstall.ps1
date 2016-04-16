@@ -5,18 +5,6 @@ Set-ExplorerOptions -showHiddenFilesFoldersDrives -showFileExtensions
 Enable-RemoteDesktop
 #Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
 
-choco install IIS-WebServerRole -source windowsfeatures
-choco install IIS-HttpCompressionDynamic -source windowsfeatures
-choco install IIS-ManagementScriptingTools -source windowsfeatures
-choco install IIS-WindowsAuthentication -source windowsfeatures
-choco install IIS-DigestAuthentication -source windowsfeatures
-choco install IIS-BasicAuthentication -source windowsfeatures
-choco install IIS-ASPNET -source windowsfeatures
-choco install IIS-ASPNET45 -source windowsfeatures
-choco install IIS-NetFxExtensibility -source windowsfeatures
-choco install IIS-NetFxExtensibility45 -source windowsfeatures
-choco install IIS-HttpRedirect -source windowsfeatures
-
 choco install powershell
 choco install urlrewrite 
 choco install FirefoxESR
@@ -49,7 +37,7 @@ choco install imagemagick.tool
 choco install teamviewer 
 choco install skype
 choco install spacesniffer
-choco install dropbox
+#choco install dropbox
 #choco install skydrive
 #choco install googledrive
 #choco install vim
@@ -108,3 +96,15 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft SQL
 #Turn off Aero Shake
 New-Item -Path HKCU:\Software\Policies\Microsoft\Windows\Explorer
 Set-ItemProperty HKCU:\Software\Policies\Microsoft\Windows\Explorer NoWindowMinimizingShortcuts 1
+
+choco install IIS-WebServerRole -source windowsfeatures
+choco install IIS-HttpCompressionDynamic -source windowsfeatures
+choco install IIS-ManagementScriptingTools -source windowsfeatures
+choco install IIS-WindowsAuthentication -source windowsfeatures
+choco install IIS-DigestAuthentication -source windowsfeatures
+choco install IIS-BasicAuthentication -source windowsfeatures
+choco install IIS-ASPNET -source windowsfeatures
+choco install IIS-ASPNET45 -source windowsfeatures
+choco install IIS-NetFxExtensibility -source windowsfeatures
+choco install IIS-NetFxExtensibility45 -source windowsfeatures
+choco install IIS-HttpRedirect -source windowsfeatures
