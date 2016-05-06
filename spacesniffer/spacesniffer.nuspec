@@ -1,19 +1,47 @@
-<?xml version="1.0"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spacesniffer</id>
-    <title>Space Sniffer</title>
+    <title>SpaceSniffer (Install)</title>
     <version>1.3.0.0</version>
     <authors>Uderzo Umberto</authors>
     <owners>Brian Dukes</owners>
     <summary>Find lost space on your disks the easy way.</summary>
-    <description>SpaceSniffer is a freeWare (donations are welcome) and portable tool application that lets you understand how folders and files are structured on your disks. By using a Treemap visualization layout, you have immediate perception of where big folders and files are placed on your devices.</description>
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
     <tags>spacesniffer disk usage file utilities tools</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <copyright>2016 Uderzo Umberto</copyright>
+    <docsUrl>http://www.uderzo.it/main_products/space_sniffer/tips_and_tricks.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <description><![CDATA[
+        SpaceSniffer is a **freeWare** (donations are welcome) and **portable** tool application that lets you understand how folders and files are structured on your disks. By using a [Treemap](http://www.cs.umd.edu/hcil/treemap-history/) visualization layout, you have immediate perception of where big folders and files are placed on your devices. [Treemap](http://www.cs.umd.edu/hcil/treemap-history/) concept was invented by [Prof. Ben Shneiderman](http://www.cs.umd.edu/~ben/), who kindly permitted the use of his concept into this tool.
+
+        Start a scan process and see the overall situation. Bigger are the elements on the view, bigger are folders and files on your disk. You need more detail on a big folder? Just **single click on it**. The selected element will be detailed with its content.
+
+        Need more and more detail? Keep selecting elements and they'll discover their secrets to you. Need a larger view of a small folder? Then **double click on it**, and it'll zoom to the full extent of the view.
+
+        If you need to understand why no more free space is left on media, keep following bigger elements. Maybe you want to focus only on particular file types... ok. Just **type the file type** on the filter field (example: `*.jpg`) and press enter. The view will react and show you only JPEG files.
+        Want to exclude files? Then type a starting pipe before the filter (example: `|*.jpg`) and press enter. The view will show everything but JPEG files.
+
+        If you want to keep track of examined files **you can tag them**. Four colors are available. Just hover the mouse on a file and press `CTRL+1` to tag it red. There are keys also for yellow, green and blue tagging. Use them as you wish. You can also filter on tags (example: `:red` will show only red tagges files, `:all` will show all tagged files and so on). You can also exclude tagged files (example: `|:red` will exclude all red tagged files)
+
+        Want to know if you have old files? Type the condition in the filter field (example: `>2years`) and the view will react accordingly.
+
+        You can also filter on **file size, file date** and combine all filters
+        (example: `*.jpg;>1mb;<3months;|:yellow`)
+
+        Once you have your result, you can produce a textual report by using the embedded **Export Module**. You can even customize the report layout to match your needs.
+
+        Please have a look at [features](http://www.uderzo.it/main_products/space_sniffer/features.html). Download [here](http://www.uderzo.it/main_products/space_sniffer/download.html). Support [here](http://www.uderzo.it/main_products/space_sniffer/donate.html). Enjoy everywhere!
+    ]]></description>
     <releaseNotes>http://www.uderzo.it/main_products/space_sniffer/release_notes.html</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
