@@ -10,7 +10,10 @@
 
     $regEntries = @(Get-ChildItem HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\ | ? { $_.GetValue('DisplayName') -like 'Mercurial*' })
     foreach ($regEntry in $regEntries) {
-      Install-ChocolateyPath $regEntry.GetValue('InstallLocation')
+        $installLocation = $regEntry.GetValue('InstallLocation')
+        if ($installLocation) {
+            Install-ChocolateyPath $installLocation
+        }
     }
 } catch {
     throw $_
