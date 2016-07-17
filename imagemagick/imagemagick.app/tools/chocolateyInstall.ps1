@@ -1,7 +1,7 @@
 ﻿$packageName = 'imagemagick.app'
 $installerType = 'exe'
-$url = 'http://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-1-Q16-x86-dll.exe'
-$url64 = 'http://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-1-Q16-x64-dll.exe'
+$url = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
+$url64 = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
 $silentArgs = '/VERYSILENT'
 $validExitCodes = @(0)
 
@@ -33,7 +33,7 @@ try {
     Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
 }
 catch {
-    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-1-Q16-x86-dll.exe'
-    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-1-Q16-x64-dll.exe'
+    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
+    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
     Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
 }
