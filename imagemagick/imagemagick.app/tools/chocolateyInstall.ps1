@@ -5,6 +5,14 @@ $url64 = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-4-Q16-
 $silentArgs = '/VERYSILENT'
 $validExitCodes = @(0)
 
+try {
+    Get-WebHeaders $url
+}
+catch {
+    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
+    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
+}
+
 if ($env:chocolateyPackageParameters) {
     $packageParams = ConvertFrom-StringData $env:chocolateyPackageParameters.Replace(" ", "`n")
     if ($packageParams.InstallDevelopmentHeaders) {
@@ -28,12 +36,5 @@ try {
     Write-Warning "$packageName installation may not be silent"
 }
 
-try {
-    Write-Verbose "Installing with arguments: $silentArgs"
-    Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-}
-catch {
-    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
-    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
-    Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-}
+Write-Verbose "Installing with arguments: $silentArgs"
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
