@@ -3,15 +3,15 @@
   <metadata>
     <id>spawner</id>
     <title>Spawner Data Generator</title>
-    <version>0.2.3</version>
-    <authors>Seth Grover</authors>
+    <version>0.2.4</version>
+    <authors>Seth Grover and Ryan Zuwala</authors>
     <owners>Brian Dukes</owners>
-    <summary>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.</summary>
+    <summary>Spawner is a tool for generating test data suitable for populating databases.</summary>
     <description>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.</description>
-    <projectUrl>http://spawner.sourceforge.net/</projectUrl>
+    <projectUrl>https://spawner.sourceforge.net/</projectUrl>
     <tags>spawner sql database data-generator</tags>
     <copyright></copyright>
-    <licenseUrl>http://opensource.org/licenses/gpl-2.0.php</licenseUrl>
+    <licenseUrl>https://opensource.org/licenses/gpl-2.0.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/spawner/icon.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
