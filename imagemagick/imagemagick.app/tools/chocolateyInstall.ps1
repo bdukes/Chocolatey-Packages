@@ -1,7 +1,7 @@
 ﻿$packageName = 'imagemagick.app'
 $installerType = 'exe'
-$url = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
-$url64 = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
+$url = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-5-Q16-x86-dll.exe'
+$url64 = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.2-5-Q16-x64-dll.exe'
 $silentArgs = '/VERYSILENT'
 $validExitCodes = @(0)
 
@@ -9,8 +9,8 @@ try {
     Get-WebHeaders $url
 }
 catch {
-    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x86-dll.exe'
-    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-4-Q16-x64-dll.exe'
+    $url = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-5-Q16-x86-dll.exe'
+    $url64 = 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.2-5-Q16-x64-dll.exe'
 }
 
 if ($env:chocolateyPackageParameters) {
