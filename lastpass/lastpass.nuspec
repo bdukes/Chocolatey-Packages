@@ -14,7 +14,7 @@
     <mailingListUrl>https://forums.lastpass.com/</mailingListUrl>
     <tags>lastpass password admin</tags>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
-    <releaseNotes>https://lastpass.com/upgrade.php?fromwebsite=1&releasenotes=1</releaseNotes>
+    <releaseNotes>https://lastpass.com/upgrade.php?fromwebsite=1&amp;releasenotes=1</releaseNotes>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lastpass/onepassword.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
