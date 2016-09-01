@@ -36,7 +36,7 @@ $options = @{
         if ($Phase -ne 'END') { return }
 
         Save-RunInfo
-        Save-Gist
+        #Save-Gist
         Save-Git
     }
 }
