@@ -19,6 +19,8 @@ environment:
   github_user: bdukes
   github_pass:
     secure: 06f731HQXQhFABO90tP+/ew19WMolULfTfjC8d28DD7w6dTB/+/EXe19APRxUtDY #https://ci.appveyor.com/tools/encrypt
+  github_token:
+    secure: 0RoSWkDqTHfvN8tDbP0O7HxIKIo34YazfUcM/bNVE8vM8aFW0xKF6Hmvwt9U2ByO #https://ci.appveyor.com/tools/encrypt
   github_user_repo: 'bdukes/chocolatey-packages' #https://github.com/chocolatey/chocolatey-packages-template is 'chocolatey/chocolatey-packages-template'
 
   # Email credentials - for error notifications
@@ -38,8 +40,8 @@ environment:
     secure: e8dwnu8NXv/wQkK5f8myhKi4ShcQxDkD65h44prLBOhyXVGqC0BJhYfY7M9Av73V # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "bdukes@engagesoftware.com"
+- git config --global user.name "Brian Dukes (via AppVeyor)"
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
@@ -47,8 +49,9 @@ install:
 - SET PATH=C:\Ruby21-x64\bin;%PATH%
 - ruby -v
 - gem install gist --no-ri --no-rdoc
-- "ruby -e \"require 'gist'; Gist.login! username: ENV['github_user'], password: ENV['github_pass'] if ENV['github_user'] \""
+#- "ruby -e \"require 'gist'; Gist.login! username: ENV['github_user'], password: ENV['github_pass'] if ENV['github_user'] \""
 - ps: |
+    $Env:github_token | Out-File ~/.gist
     "machine github.com", "login $Env:github_user", "password $Env:github_pass" | Out-File ~/_netrc -Encoding ascii
     Install-PackageProvider -Name NuGet -Force
     Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
