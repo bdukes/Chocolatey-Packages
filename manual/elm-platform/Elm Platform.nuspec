@@ -3,32 +3,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>elm-platform</id>
-    <version>0.16</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Christian Jacobsen, Brian Dukes</owners>
+    <version>0.17.1</version>
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
     <projectUrl>http://elm-lang.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/cc1f48f63e6f3c2082888eb43e8f6b9e61e7d9fe/elm-platform/icon.png</iconUrl>
-    <copyright>Copyright (c) 2014-2016, Evan Czaplicki</copyright>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
+    <copyright>Copyright (c) 2012-2016, Evan Czaplicki</copyright>
     <licenseUrl>https://github.com/elm-lang/elm-platform/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elm-lang/elm-platform</projectSourceUrl>
     <docsUrl>http://elm-lang.org/get-started</docsUrl>
     <mailingListUrl>https://groups.google.com/forum/?fromgroups#!forum/elm-discuss</mailingListUrl>
     <bugTrackerUrl>https://github.com/elm-lang/elm-platform/issues</bugTrackerUrl>
-    <tags>elm-platform elm FRP admin</tags>
+    <tags>elm-platform elm admin</tags>
     <summary>A bundle of all Elm tools: elm, elm-reactor, elm-repl, and elm-get.</summary>
     <description>
     A bundle of all [Elm](http://elm-lang.org) tools, usable through the `elm` executable.
 
-    This bundles together a bunch of projects that make it nice to use Elm: [`elm-compiler`][compiler], [`elm-make`][make], [`elm-reactor`][reactor], [`elm-repl`][repl], and [`elm-package`][package].
-
-    [compiler]: https://github.com/elm-lang/elm-compiler
-    [make]: https://github.com/elm-lang/elm-make
-    [reactor]: https://github.com/elm-lang/elm-reactor
-    [repl]: https://github.com/elm-lang/elm-repl
-    [package]: https://github.com/elm-lang/elm-package
+    This bundles together a bunch of projects that make it nice to use Elm: [`elm-compiler`](https://github.com/elm-lang/elm-compiler), [`elm-make`](https://github.com/elm-lang/elm-make), [`elm-reactor`](https://github.com/elm-lang/elm-reactor), [`elm-repl`](https://github.com/elm-lang/elm-repl), and [`elm-package`](https://github.com/elm-lang/elm-package).
     </description>
     <releaseNotes>http://elm-lang.org/blog#release-notes</releaseNotes>
   </metadata>
