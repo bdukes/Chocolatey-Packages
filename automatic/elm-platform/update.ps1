@@ -14,12 +14,12 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $re  = "^http.+/Elm-Platform-(\d+\.\d+\.\d+).exe$"
-    $url = $download_page.links | ? href -match $re | select -First 2 -expand href
+    $re  = "^http.+/Elm-Platform-(\d+\.\d+\.\d+)\.exe$"
+    $urls = @($download_page.Links | ? href -match $re | % { $_.href })
 
-    $versionMatch = $url[0] | select-string -Pattern $re
+    $versionMatch = $urls[0] | Select-String -Pattern $re
     $version = $versionMatch.Matches[0].Groups[1].Value
-    $url = $url[0]
+    $url = $urls[0]
 
     $Latest = @{ URL = $url; Version = $version }
     return $Latest
