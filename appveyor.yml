@@ -18,14 +18,14 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: bdukes/chocolatey-packages
   github_api_key:
-    secure: 0RoSWkDqTHfvN8tDbP0O7HxIKIo34YazfUcM/bNVE8vM8aFW0xKF6Hmvwt9U2ByO #https://ci.appveyor.com/tools/encrypt
+    secure: Czr5so4ZCPwuFZlkUyVRmKlVkJZ5kBQOSCdBlssySQloUZiY85Smg7FNXtT9L7BQ
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: +xPHXyY0bzpb3roN9sl0PdeggcJ2L1MYIYkDSXjNG2c= #https://ci.appveyor.com/tools/encrypt
+    secure: +xPHXyY0bzpb3roN9sl0PdeggcJ2L1MYIYkDSXjNG2c=
   mail_pass:
-    secure: 70TPhBmRfbajaGAkq3MuYQ== #https://ci.appveyor.com/tools/encrypt
+    secure: 70TPhBmRfbajaGAkq3MuYQ==
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
@@ -36,7 +36,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: e8dwnu8NXv/wQkK5f8myhKi4ShcQxDkD65h44prLBOhyXVGqC0BJhYfY7M9Av73V # https://ci.appveyor.com/tools/encrypt
+    secure: e8dwnu8NXv/wQkK5f8myhKi4ShcQxDkD65h44prLBOhyXVGqC0BJhYfY7M9Av73V
 
 init:
 - git config --global user.email "bdukes@engagesoftware.com"
