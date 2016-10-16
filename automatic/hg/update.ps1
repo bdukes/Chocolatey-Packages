@@ -24,8 +24,8 @@ function global:au_GetLatest {
 
     $versionMatch = $urls[0] | Select-String -Pattern $re
     $version = $versionMatch.Matches[0].Groups[1].Value
-    $url32 = $url[0]
-    $url64 = $url[1]
+    $url32 = $urls[0]
+    $url64 = $urls[1]
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
