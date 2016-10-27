@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.imagemagick.org/script/binary-releases.php'
+$releases = 'https://legacy.imagemagick.org/script/binary-releases.php'
 
 function global:au_SearchReplace {
     @{
