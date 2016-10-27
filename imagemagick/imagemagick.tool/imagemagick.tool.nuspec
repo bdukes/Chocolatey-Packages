@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick.tool</id>
     <title>ImageMagick (Portable)</title>
-    <version>6.9.3.9</version>
+    <version>6.9.6.2</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -13,7 +13,7 @@
     <copyright><![CDATA[© 1999-2016 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/imagemagick/imagemagick/imagemagick.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>http://www.imagemagick.org/script/changelog.php</releaseNotes>
     <docsUrl>http://imagemagick.org/script/command-line-processing.php</docsUrl>
