@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>imagemagick.app</id>
+    <title>ImageMagick (Install)</title>
+    <version>6.9.6.2</version>
+    <authors>ImageMagick Studio LLC</authors>
+    <owners>Brian Dukes</owners>
+    <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
+    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
+
+You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++]]></description>
+    <projectUrl>http://www.imagemagick.org</projectUrl>
+    <tags>imagemagick images picture graphics convert admin</tags>
+    <copyright><![CDATA[© 1999-2016 ImageMagick Studio LLC]]></copyright>
+    <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
+    <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
+    <releaseNotes>http://www.imagemagick.org/script/changelog.php</releaseNotes>
+    <docsUrl>http://imagemagick.org/script/command-line-processing.php</docsUrl>
+    <mailingListUrl>https://www.imagemagick.org/discourse-server/</mailingListUrl>
+    <bugTrackerUrl>https://www.imagemagick.org/discourse-server/viewforum.php?f=3&amp;sid=baa8f80e44fcbf4c38ed8df075205457</bugTrackerUrl>
+    <projectSourceUrl>http://git.imagemagick.org/repos/ImageMagick</projectSourceUrl>
+    <dependencies>
+      <dependency id="vcredist2010" version="10.0.40219.1" />
+    </dependencies>
+  </metadata>
+</package>
