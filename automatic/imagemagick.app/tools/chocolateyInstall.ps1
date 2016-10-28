@@ -24,6 +24,9 @@ if ($env:chocolateyPackageParameters) {
     if ($packageParams.InstallDevelopmentHeaders) {
         $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=install_devel'
     }
+    if ($packageParams.LegacySupport) {
+        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=legacy_support'
+    }
 }
 
 try {
