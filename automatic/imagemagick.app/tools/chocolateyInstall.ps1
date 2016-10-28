@@ -21,11 +21,16 @@ catch {
 
 if ($env:chocolateyPackageParameters) {
     $packageParams = ConvertFrom-StringData $env:chocolateyPackageParameters.Replace(" ", "`n")
+    $additionalTasks = @()
     if ($packageParams.InstallDevelopmentHeaders) {
-        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=install_devel'
+        $additionalTasks += 'install_devel'
     }
     if ($packageParams.LegacySupport) {
-        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=legacy_support'
+        $additionalTasks += 'legacy_support'
+    }
+    
+    if ($additionalTasks.length -gt 0) {
+        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=' + ($additionalTasks -join ',')
     }
 }
 
