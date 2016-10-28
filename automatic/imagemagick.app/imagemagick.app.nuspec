@@ -9,7 +9,9 @@
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
     <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
-You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++]]></description>
+You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++
+    
+You can add -PackageParameters LegacySupport=true to the choco install command in order to install the legacy utilities (e.g. convert)]]></description>
     <projectUrl>http://www.imagemagick.org</projectUrl>
     <tags>imagemagick images picture graphics convert admin</tags>
     <copyright><![CDATA[© 1999-2016 ImageMagick Studio LLC]]></copyright>
