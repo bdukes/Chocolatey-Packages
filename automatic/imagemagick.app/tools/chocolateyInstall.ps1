@@ -1,10 +1,10 @@
-﻿$packageArgs = @{
+$packageArgs = @{
   packageName    = 'imagemagick.app'
   installerType  = 'exe'
-  url            = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-0-Q16-x86-dll.exe'
-  url64          = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-0-Q16-x64-dll.exe'
-  checksum       = '951f77adb6ae25ae3c98965d0d6d0f8e665604ef4432b5aedba10105a4422091'
-  checksum64     = '9278859af84f4c565b7b95168ddbfa34dde8d081b4f24b05ea6af259324c428b'
+  url            = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-5-Q16-x86-dll.exe'
+  url64          = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-5-Q16-x64-dll.exe'
+  checksum       = 'e068ff74876e7c61bd8b5e4a12930f5c5d1e3ccef501aec5ce4421c4067ed36a'
+  checksum64     = '48df34a18942a268cde80128f3853bd2ee7a6228008c84da4426ce8a8865cde9'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT'
