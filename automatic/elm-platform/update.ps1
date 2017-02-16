@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'http://elm-lang.org/install'
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -12,9 +10,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri 'http://elm-lang.org/install'
 
-    $re  = "^http.+/Elm-Platform-(\d+\.\d+\.\d+)\.exe$"
+    $re  = "^http.+/Elm-Platform-(\d+\.\d+(?:\.\d+)?)\.exe$"
     $urls = @($download_page.Links | ? href -match $re | % { $_.href })
 
     $versionMatch = $urls[0] | Select-String -Pattern $re
