@@ -1,10 +1,10 @@
-$packageArgs = @{
+﻿$packageArgs = @{
   packageName    = 'imagemagick.app'
   installerType  = 'exe'
-  url            = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-10-Q16-x86-dll.exe'
-  url64          = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.3-10-Q16-x64-dll.exe'
-  checksum       = '94f542cacf73d8d3504723b769ad4e4d43a7c66665972bbf36419454b19b6630'
-  checksum64     = 'f414c87aba11a187837e8da55af51dcd496ce23fa2f4ef4d19b659b44459494d'
+  url            = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.4-9-Q16-x86-dll.exe'
+  url64          = 'https://www.imagemagick.org/download/binaries/ImageMagick-7.0.4-9-Q16-x64-dll.exe'
+  checksum       = '37f682e2c1d37b908cf0a43239a85cd80d5235d53dd3d91abbb1c62db3323915'
+  checksum64     = '7351d8632072fc95d52082b18d4584a833630394e74957588ad48905827b70a8'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT'
@@ -35,7 +35,7 @@ if ($env:chocolateyPackageParameters) {
 }
 
 try {
-    # Uninstall older version of imagemagick, otherwise the installation won’t be silent.
+    # Uninstall older version of imagemagick, otherwise the installation wonâ€™t be silent.
     $regPath = 'HKLM:\SOFTWARE\ImageMagick\Current'
     if ($env:chocolateyForceX86) {
         $regPath = 'HKLM:\SOFTWARE\Wow6432Node\ImageMagick\Current'
