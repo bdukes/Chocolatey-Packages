@@ -4,7 +4,7 @@ $releases = 'https://legacy.imagemagick.org/script/binary-releases.php'
 
 function global:au_SearchReplace {
     @{
-        'imagemagick.nuspec' = @{
+        'imagemagick.legacy.nuspec' = @{
             '(^\s*<dependency id="imagemagick.app" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
         }
      }

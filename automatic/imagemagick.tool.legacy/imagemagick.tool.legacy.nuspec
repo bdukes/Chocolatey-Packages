@@ -1,17 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>imagemagick.app</id>
-    <title>ImageMagick (Install)</title>
-    <version>6.9.6.2</version>
+    <id>imagemagick.tool.legacy</id>
+    <title>ImageMagick (Portable)</title>
+    <version>6.9.7.8</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
-    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
-
-You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++]]></description>
+    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.]]></description>
     <projectUrl>http://www.imagemagick.org</projectUrl>
-    <tags>imagemagick images picture graphics convert admin</tags>
+    <tags>imagemagick images picture graphics convert</tags>
     <copyright><![CDATA[© 1999-2016 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
