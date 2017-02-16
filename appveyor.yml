@@ -3,7 +3,8 @@
 version: '{build}'
 max_jobs: 1
 image: WMF 5
-clone_depth: 5
+# History plugin requires complete log
+#clone_depth: 5
 branches:
   only:
   - master
@@ -12,8 +13,10 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  #au_version: latest
+  au_version:
   au_push: true
+  # Force test: use 1 to test all, or N to split testing into N groups
+  au_test_groups: 1
 
   # Github token to commit pushed packages to repository
   github_user_repo: bdukes/chocolatey-packages
@@ -34,6 +37,9 @@ environment:
   # Optional, leave empty to create anonymous gist
   gist_id: fd3d636b9b4617772f9b99ceb88838fa
 
+  # Force test: gist id for test results
+  gist_id_test:
+
   # Chocolatey API key - to push updated packages
   api_key:
     secure: e8dwnu8NXv/wQkK5f8myhKi4ShcQxDkD65h44prLBOhyXVGqC0BJhYfY7M9Av73V
@@ -46,37 +52,48 @@ init:
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
+- git --version
 - ps: |
-    $x=$null; $is_branch = ($Env:au_version -ne $null) -and ([version]::TryParse($Env:au_version, [ref]$x) -eq $false)
-    if ($is_branch) {
-        pushd ..
-            git clone -q https://github.com/majkinetor/au.git
-            cd au
-            git fetch
-            git checkout -q $Env:au_version
-            ./build.ps1 -Install -NoChocoPackage
-        popd
-    } else {
-        Install-PackageProvider -Name NuGet -Force
-        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
-        $params = @{ Name = 'au' }
-        if ( $Env:au_version -ne $null ) { $params.MinimumVersion = $Env:au_version }
-        Install-Module @params
-
-        Get-Module au -ListAvailable | select Name, Version
-    }
+- ps: |
+    "Build info"
+    '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
+    '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
+    '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
 
 build_script:
 - ps: |
-    ./au/update_all.ps1
+    $ErrorActionPreference = 'Continue'
+    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
-#on_finish:
-#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
+        switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
+        {
+            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+
+            '\[PUSH (.+?)\]' {
+                $packages = $Matches[1] -split ' '
+                Write-Host "PUSHING PACKAGES: $packages"
+                foreach ($package in $packages) {
+                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
+                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
+                    pushd $package_dir; choco pack; Push-Package; popd
+                }
+                return
+            }
+        }
+    }
+
+    ./update_all.ps1 -ForcedPackages $forced
+    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
 - path: update_info.xml
 - path: Update-AUPackages.md
+- path: au_temp.zip
 
 notifications:
 - provider: Email
@@ -85,3 +102,5 @@ notifications:
   on_build_failure: true
   on_build_status_changed: true
 
+#on_finish:
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
