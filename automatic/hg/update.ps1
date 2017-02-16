@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://www.mercurial-scm.org/sources.js'
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -14,9 +12,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_list = Invoke-WebRequest -Uri $releases
+    $download_list = Invoke-WebRequest -Uri 'https://www.mercurial-scm.org/sources.js'
 
-    $re  = 'https.+/windows/Mercurial-(\d+\.\d+\.\d+)(?:-x64)?\.exe'
+    $re  = 'https.+/windows/Mercurial-(\d+\.\d+(?:\.\d+)?)(?:-x64)?\.exe'
     $urls = $download_list.Content.Split("`n") |
                 ? { $_ -match $re } |
                 % { Select-String -Pattern $re -InputObject $_ } |
