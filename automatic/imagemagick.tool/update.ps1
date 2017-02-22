@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://www.imagemagick.org/script/binary-releases.php'
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -14,15 +12,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/binary-releases.php'
 
-    $re  = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x(?:86|64).zip$"
-    $url = $download_page.links | ? href -match $re | select -First 2 -expand href
+    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x86.zip$"
+    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x64.zip$"
+    $url32 = $download_page.links | ? href -match $re32 | select -First 1 -expand href
+    $url64 = $download_page.links | ? href -match $re64 | select -First 1 -expand href
 
-    $versionMatch = $url[0] | select-string -Pattern $re
+    $versionMatch = $url64 | select-string -Pattern $re64
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
-    $url64 = $url[0] -replace 'http://', 'https://'
-    $url32 = $url[1] -replace 'http://', 'https://'
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
