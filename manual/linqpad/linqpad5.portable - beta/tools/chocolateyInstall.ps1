@@ -4,7 +4,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'linqpad5.portable'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://www.linqpad.net/GetFile.aspx?preview+LINQPad5.zip'
+$url        = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5.zip'
 
 $packageArgs = @{
   packageName   = $packageName
