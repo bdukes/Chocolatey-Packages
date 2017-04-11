@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>imagemagick.app.legacy</id>
+    <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
     <version>6.9.8.4</version>
     <authors>ImageMagick Studio LLC</authors>
