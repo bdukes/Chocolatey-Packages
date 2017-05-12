@@ -1,0 +1,26 @@
+import-module au
+
+$releases =
+
+function global:au_SearchReplace {
+    @{
+        'tools\chocolateyInstall.ps1' = @{
+            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+        }
+     }
+}
+
+function global:au_GetLatest {
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
+
+    $re = "GetFile\.aspx\?preview\+LINQPad5\.zip$"
+    $linkText = $download_page.links | ? href -match $re | select -First 1 -expand innerText
+
+    $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
+    $version = $versionMatch.Matches[0].Value
+
+    $Latest = @{ URL32 = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5.zip'; Version = "$version-beta" }
+    return $Latest
+}
+
+update

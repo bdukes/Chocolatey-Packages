@@ -1,1 +1,0 @@
-﻿Install-ChocolateyPackage 'linqpad2.install' 'exe' '/silent' 'http://www.linqpad.net/GetFile.aspx?LINQPadSetup.exe'
