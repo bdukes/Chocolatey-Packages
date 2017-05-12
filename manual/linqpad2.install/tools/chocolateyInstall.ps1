@@ -1,8 +1,9 @@
-﻿
+﻿Install-ChocolateyPackage 'linqpad2.install' 'exe' '/silent' 'https://www.linqpad.net/GetFile.aspx?LINQPadSetup.exe'
+
 $ErrorActionPreference = 'Stop';
 
-$packageName= 'linqpad5.install'
-$url        = 'https://www.linqpad.net/GetFile.aspx?LINQPad5Setup.exe'
+$packageName= 'linqpad2.install'
+$url        = 'https://www.linqpad.net/GetFile.aspx?LINQPadSetup.exe'
 
 $packageArgs = @{
   packageName   = $packageName
