@@ -12,7 +12,7 @@
   This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 .net-4.6 linqpad admin</tags>
-    <copyright><![CDATA[© 2007-2015 Joseph Albahari]]></copyright>
+    <copyright><![CDATA[© 2007-2017 Joseph Albahari]]></copyright>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
