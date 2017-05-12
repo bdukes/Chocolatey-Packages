@@ -2,7 +2,7 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        'imagemagick.legacy.nuspec' = @{
+        'imagemagick.nuspec' = @{
             '(^\s*<dependency id="imagemagick.app" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
         }
      }
