@@ -1,7 +1,5 @@
 import-module au
 
-$releases =
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -19,8 +17,11 @@ function global:au_GetLatest {
     $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
     $version = $versionMatch.Matches[0].Value
 
-    $Latest = @{ URL32 = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5-AnyCPU.zip'; Version = "$version-beta" }
-    return $Latest
+    return @{
+        URL32 = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5-AnyCPU.zip';
+        Version = "$version-beta"
+        PackageName = 'linqpad5.AnyCPU.portable'
+    }
 }
 
 update

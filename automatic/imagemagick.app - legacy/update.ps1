@@ -22,8 +22,12 @@ function global:au_GetLatest {
     $versionMatch = $url64 | select-string -Pattern $re64
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
 
-    $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
-    return $Latest
+    return @{
+        URL32 = $url32
+        URL64 = $url64
+        Version = $version
+        PackageName = 'imagemagick.app'
+    }
 }
 
 update
