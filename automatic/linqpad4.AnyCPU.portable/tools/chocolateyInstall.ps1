@@ -11,6 +11,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   url           = $url
   checksum      = 'acd8667a5463dded52e7d82a9c7e528abc023ecf6b46cdcfb8a428ed5936eb19'
+  checksumType  = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
