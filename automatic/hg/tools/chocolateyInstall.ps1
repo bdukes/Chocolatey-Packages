@@ -3,11 +3,11 @@
 $packageArgs = @{
   packageName    = 'hg'
   installerType  = 'exe'
-  url            = 'https://www.mercurial-scm.org/release/windows/Mercurial-4.4.exe'
-  url64          = 'https://www.mercurial-scm.org/release/windows/Mercurial-4.4-x64.exe'
-  checksum       = '86d944e8b65b4f5f17c2013b2976452141ce05c902e5c11a50401af2cffbd4f1'
+  url            = 'https://www.mercurial-scm.org/release/windows/Mercurial-4.4.1.exe'
+  url64          = 'https://www.mercurial-scm.org/release/windows/Mercurial-4.4.1-x64.exe'
+  checksum       = 'fd6b5790fb75c759d5b7f51972a6d6f60effb25f309869a74b3a9af561b775f0'
   checksumType   = 'sha256'
-  checksum64     = '387d73da4c41a34fc1fe49afbe6af94effb421f4e16939aa02e186d62f5e514b'
+  checksum64     = '312887a720763843969006edfa66683a50051fae4177a9451423fdcb8af476cc'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT'
   validExitCodes = @(0, 3010)
