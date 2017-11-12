@@ -4,7 +4,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'spacesniffer'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://www.uderzo.it/main_products/space_sniffer/files/spacesniffer_1_3_0_1.zip'
+$url        = 'http://www.uderzo.it/main_products/space_sniffer/files/spacesniffer_1_3_0_2.zip'
 
 $packageArgs = @{
   packageName   = $packageName
