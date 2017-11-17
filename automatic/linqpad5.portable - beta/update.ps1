@@ -3,9 +3,9 @@ import-module au
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-     }
+    }
 }
 
 function global:au_GetLatest {
@@ -18,8 +18,8 @@ function global:au_GetLatest {
     $version = $versionMatch.Matches[0].Value
 
     return @{
-        URL32 = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5.zip'
-        Version = "$version-beta"
+        URL32       = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5.zip'
+        Version     = "$version-beta"
         PackageName = 'linqpad5.portable'
     }
 }
