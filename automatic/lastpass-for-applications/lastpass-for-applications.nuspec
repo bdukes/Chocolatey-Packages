@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+<package 
+  xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lastpass-for-applications</id>
     <title>LastPass for Applications</title>
-    <version>4.1.46</version>
+    <version>4.1.2</version>
     <authors>LastPass</authors>
     <owners>Brian Dukes</owners>
     <summary>The LastPass password manager for native Windows applications (e.g. Skype or PuTTY).</summary>
@@ -19,7 +20,7 @@
     <docsUrl>https://helpdesk.lastpass.com/lastpass-for-applications/</docsUrl>
     <mailingListUrl>https://forums.lastpass.com/</mailingListUrl>
     <tags>lastpass password applications admin trial</tags>
-    <copyright>Copyright 2008-2016 LastPass</copyright>
+    <copyright>Copyright 2008-2017 LastPass</copyright>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/0a012c036438e0a3b09def66f8f3e1e5e5d7e62a/icons/lastpass.png</iconUrl>
