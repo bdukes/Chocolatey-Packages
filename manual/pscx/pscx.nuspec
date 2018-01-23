@@ -267,4 +267,7 @@ MISC UPDATES:
         wmitimespan            Pscx.TypeAccelerators.WmiTimeSpan
             ]]></releaseNotes>
     </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

@@ -25,4 +25,7 @@
       <dependency id="linqpad5" version="[5.26.01]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

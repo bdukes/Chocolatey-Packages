@@ -21,4 +21,7 @@ This package is the low-impact setup, which creates a desktop shortcut and a fil
       <dependency id="linqpad2.install" version="[2.45.05]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

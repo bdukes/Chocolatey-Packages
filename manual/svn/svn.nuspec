@@ -20,4 +20,7 @@
     <bugTrackerUrl>https://subversion.apache.org/reporting-issues.html</bugTrackerUrl>
     <releaseNotes>https://subversion.apache.org/docs/release-notes/1.8.html</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

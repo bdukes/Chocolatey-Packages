@@ -26,4 +26,7 @@
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/0a012c036438e0a3b09def66f8f3e1e5e5d7e62a/icons/lastpass.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

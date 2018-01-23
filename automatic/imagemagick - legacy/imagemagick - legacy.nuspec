@@ -26,4 +26,7 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
       <dependency id="imagemagick.app" version="[6.9.9.23]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

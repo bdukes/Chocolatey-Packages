@@ -28,4 +28,7 @@ You can add -PackageParameters LegacySupport=true to the choco install command i
       <dependency id="vcredist2010" version="10.0.40219.1" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>
