@@ -25,4 +25,7 @@ Crashes Fixed:
 - Viewing 'Open With' programs caused a crash when the item listed in the registry didn't exist on disk.
 - Fixed a crash when starting the application for some users.]]></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

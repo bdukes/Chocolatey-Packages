@@ -16,4 +16,7 @@
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

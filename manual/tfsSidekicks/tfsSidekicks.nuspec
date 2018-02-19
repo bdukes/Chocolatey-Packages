@@ -17,4 +17,7 @@ Single installation package contains versions of application compatible both wit
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/tfsSidekicks/TFSLogo.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>

@@ -16,4 +16,7 @@ Version 3.1 of Team Foundation Sidekicks is available for Visual Studio© 2010 a
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/tfsSidekicks2010/TFSLogo.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools\" />
+  </files>
 </package>
