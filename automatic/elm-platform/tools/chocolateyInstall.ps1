@@ -3,11 +3,11 @@
 $packageArgs = @{
   packageName   = 'elm-platform'
   fileType      = 'EXE'
-  url           = 'http://install.elm-lang.org/Elm-Platform-0.17.1.exe'
+  url           = 'https://44a95588fe4cc47efd96-ec3c2a753a12d2be9f23ba16873acc23.ssl.cf2.rackcdn.com/Elm-Platform-0.18.exe'
   silentArgs    = '/S'
   validExitCodes= @(0)
   softwareName  = 'Elm Platform*'
-  checksum      = 'B5BB5CD2107D4EA58D6A745A92309A6B2D3290A39CB0CACEB872C13D6CBCD6C1'
+  checksum      = 'e4b392e2cb8deb0bcf6c4d0b5f69f4df187416ea815d4ab09bafa5c036640967'
   checksumType  = 'sha256'
 }
 

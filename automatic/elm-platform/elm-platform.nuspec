@@ -5,12 +5,12 @@
     <id>elm-platform</id>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Christian Jacobsen, Brian Dukes</owners>
-    <version>0.17.1</version>
+    <version>0.18.0.20180222</version>
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
     <projectUrl>http://elm-lang.org/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
-    <copyright>Copyright (c) 2012-2016, Evan Czaplicki</copyright>
+    <copyright>Copyright (c) 2012-2017, Evan Czaplicki</copyright>
     <licenseUrl>https://github.com/elm-lang/elm-platform/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elm-lang/elm-platform</projectSourceUrl>
