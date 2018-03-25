@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/binary-releases.php'
+    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php'
 
     $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe$"
     $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x64-dll.exe$"
