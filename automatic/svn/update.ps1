@@ -4,7 +4,8 @@ function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
             "(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL)'"
-            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum)'"
+            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
         }
     }
 }
@@ -17,7 +18,7 @@ function global:au_GetLatest {
 
     $re = '^http.+Setup-Subversion-(\d+\.\d+\.\d+).msi$'
 
-    $url = $downloadPge.links | Where-Object href -match $re | Select-Object -First 1 -Expand href
+    $url = $downloadPage.links | Where-Object href -match $re | Select-Object -First 1 -Expand href
 
     $versionMatch = $url | select-string -Pattern $re
     $version = $versionMatch.Matches[0].Groups[1].Value
