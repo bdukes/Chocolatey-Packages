@@ -3,7 +3,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>7.0.7.33</version>
+    <version>7.0.7.35</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagickÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -23,7 +23,7 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <bugTrackerUrl>https://www.imagemagick.org/discourse-server/viewforum.php?f=3&amp;sid=baa8f80e44fcbf4c38ed8df075205457</bugTrackerUrl>
     <projectSourceUrl>http://git.imagemagick.org/repos/ImageMagick</projectSourceUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[7.0.7.33]" />
+      <dependency id="imagemagick.app" version="[7.0.7.35]" />
     </dependencies>
   </metadata>
   <files>
