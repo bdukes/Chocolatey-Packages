@@ -3,7 +3,7 @@
   <metadata>
     <id>linqpad5</id>
     <title>LINQPad</title>
-    <version>5.31.0</version>
+    <version>5.31.0.20180720</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 5 Low-Impact Setup</summary>
@@ -22,7 +22,7 @@
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/Download.aspx#LINQPad5</releaseNotes>
     <dependencies>
-      <dependency id="linqpad5.install" version="[5.31.0]" />
+      <dependency id="linqpad5.install" version="[5.31.0.20180720]" />
     </dependencies>
   </metadata>
   <files>
