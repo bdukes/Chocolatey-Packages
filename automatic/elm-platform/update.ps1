@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://elm-lang.org/install'
 
-    $re  = "^http.+/Elm-Platform-(\d+\.\d+(?:\.\d+)?)\.exe$"
+    $re  = "^http.+\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
     $urls = @($download_page.Links | ? href -match $re | % { $_.href })
 
     $versionMatch = $urls[0] | Select-String -Pattern $re
