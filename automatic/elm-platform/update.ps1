@@ -4,15 +4,16 @@ function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
             "(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL)'"
-            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum)'"
+            "(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
         }
      }
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'http://elm-lang.org/install'
+    $download_page = Invoke-WebRequest -Uri 'https://elm-lang.org/install'
 
-    $re  = "^http.+\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
+    $re  = "^https.+\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
     $urls = @($download_page.Links | ? href -match $re | % { $_.href })
 
     $versionMatch = $urls[0] | Select-String -Pattern $re
