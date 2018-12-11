@@ -34,7 +34,7 @@ steps:
 
 - powershell: |
     Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
-    Write-Host $PSVersionTable
+    $PSVersionTable
     git --version
     choco --version
   displayName: 'Output environment details'
@@ -49,7 +49,9 @@ steps:
     if ($Env:BUILD_REASON -eq 'IndividualCI') {
         switch -regex ($Env:BUILD_SOURCEVERSIONMESSAGE)
         {
-            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+            '\[AU (.+?)\]' {
+              Write-Host "##vso[task.setvariable variable=forced]$($Matches[1])"
+            }
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
                 Write-Host "PUSHING PACKAGES: $packages"
@@ -66,7 +68,12 @@ steps:
             }
         }
     }
-    ./update_all.ps1 -ForcedPackages $forced
+  displayName: 'Process commit message commands'
+
+- task: PowerShell@2
+  inputs:
+    filePath: update_all.ps1
+    arguments: '-ForcedPackages $(FORCED)'
   displayName: 'Update all packages'
 
 - task: CopyFiles@2
