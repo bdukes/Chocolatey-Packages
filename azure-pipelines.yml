@@ -73,7 +73,7 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: au/update_all.ps1
-    arguments: '-ForcedPackages $(FORCED)'
+    arguments: '-ForcedPackages $env:FORCED'
   displayName: 'Update all packages'
 
 - task: CopyFiles@2
