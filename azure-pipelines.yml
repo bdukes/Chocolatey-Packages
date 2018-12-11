@@ -78,12 +78,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: '$(TEMP)/chocolatey/au/'
-    targetFolder: '$(Build.ArtifactStagingDirectory)/au_temp'
-  displayName: 'Copy AU temp folder to Artifacts Staging Directory'
-
-- task: CopyFiles@2
-  inputs:
     sourceFolder: 'Update-AUPackages.md'
     targetFolder: '$(Build.ArtifactStagingDirectory)'
   displayName: 'Copy Update-AUPackages.md to Artifacts Staging Directory'
