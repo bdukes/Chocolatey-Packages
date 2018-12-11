@@ -33,7 +33,7 @@ steps:
   displayName: 'Configure Git'
 
 - powershell: |
-    Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
+    Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
     Write-Host $PSVersionTable
     git --version
     choco --version
