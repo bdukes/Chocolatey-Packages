@@ -78,15 +78,12 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: 'Update-AUPackages.md'
+    sourceFolder: '$(Build.SourcesDirectory)'
     targetFolder: '$(Build.ArtifactStagingDirectory)'
-  displayName: 'Copy Update-AUPackages.md to Artifacts Staging Directory'
-
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: 'update_info.xml'
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
-  displayName: 'Copy update_info.xml to Artifacts Staging Directory'
+    contents: |
+      update_info.xml
+      Update-AUPackages.md
+  displayName: 'Copy artifacts to staging directory'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifacts'
