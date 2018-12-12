@@ -1,14 +1,13 @@
 # Chocolatey Packages
 
-[![Build status](https://ci.appveyor.com/api/projects/status/o9qbm2t3vwhqlugc?svg=true)](https://ci.appveyor.com/project/bdukes/chocolatey-packages)
-[![Update status](https://img.shields.io/badge/AU-Status-lightgrey.svg)](https://gist.github.com/bdukes/fd3d636b9b4617772f9b99ceb88838fa)
+[![Build Status](https://dev.azure.com/dukesb11/Chocolatey-Packages/_apis/build/status/bdukes.Chocolatey-Packages)](https://dev.azure.com/dukesb11/Chocolatey-Packages/_build/latest?definitionId=1)
 
 This contains Chocolatey packages, both manually and automatically maintained.
 
 ### Folder Structure
 
 * `au` - The scripts for running Automatic Updater (AU) are here.
-* `automatic` - where automatic packaging and packages are kept. These are packages that are automatically maintained using either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater) combo.
+* `automatic` - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
 * `icons` - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 * `manual` - where packages that are not automatic are kept.
 
