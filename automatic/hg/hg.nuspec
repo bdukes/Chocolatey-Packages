@@ -18,6 +18,9 @@
     <mailingListUrl>https://www.mercurial-scm.org/wiki/MailingLists</mailingListUrl>
     <bugTrackerUrl>https://www.mercurial-scm.org/wiki/BugTracker</bugTrackerUrl>
     <releaseNotes>https://www.mercurial-scm.org/wiki/WhatsNew</releaseNotes>
+    <dependencies>
+      <dependency id="KB2919355" version="1.0.20160915" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools\" />
