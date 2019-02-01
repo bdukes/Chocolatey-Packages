@@ -39,6 +39,9 @@ steps:
     choco --version
   displayName: 'Output environment details'
 
+- powershell: 'ls env:\'
+  displayName: 'Output environment variables'
+
 - powershell: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
