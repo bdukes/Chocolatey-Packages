@@ -9,6 +9,7 @@ variables:
 
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   - name: au_version
+    value: ''
 
   - name: au_push
     value: 'true'
@@ -28,6 +29,7 @@ variables:
 
   # Force test: gist id for test results
   - name: gist_id_test
+    value: ''
 
 
 steps:
