@@ -13,7 +13,6 @@ variables:
 
   # Github token to commit pushed packages to repository
   github_user_repo: 'bdukes/Chocolatey-Packages'
-  #github_api_key:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
@@ -22,8 +21,7 @@ variables:
   # Force test: gist id for test results
   gist_id_test:
 
-  # Chocolatey API key - to push updated packages
-  #api_key:
+  - group: 'Chocolatey CI'
 
 steps:
 - powershell: |
@@ -39,8 +37,9 @@ steps:
     choco --version
   displayName: 'Output environment details'
 
-- powershell: 'ls env:\'
-  displayName: 'Output environment variables'
+- powershell: |
+    $env:
+  displayName: 'Set environment variables'
 
 - powershell: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
