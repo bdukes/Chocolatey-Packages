@@ -11,11 +11,11 @@ variables:
   - name: au_version
 
   - name: au_push
-    value: true
+    value: 'true'
   
   # Force test: use 1 to test all, or N to split testing into N groups
   - name: au_test_groups
-    value: 1
+    value: '1'
 
   # Github token to commit pushed packages to repository
   - name: github_user_repo
@@ -24,7 +24,7 @@ variables:
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
   - name: gist_id
-    value: fd3d636b9b4617772f9b99ceb88838fa
+    value: 'fd3d636b9b4617772f9b99ceb88838fa'
 
   # Force test: gist id for test results
   - name: gist_id_test
