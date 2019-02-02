@@ -38,7 +38,7 @@
           {
             "sourceFolder": "$(Build.SourcesDirectory)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)",
-            "contents": "update_info.xml; Update-AUPackages.md; ",
+            "contents": "update_info.xml\nUpdate-AUPackages.md\nUpdate-History.md",
           },
         "displayName": "Copy artifacts to staging directory",
       },
