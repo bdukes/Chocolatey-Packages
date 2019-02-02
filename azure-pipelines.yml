@@ -46,9 +46,6 @@ steps:
     choco --version
   displayName: 'Output environment details'
 
-- powershell: 'ls env:\'
-  displayName: 'Output environment variables'
-
 - powershell: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
@@ -85,6 +82,9 @@ steps:
     filePath: au/update_all.ps1
     arguments: '-ForcedPackages $env:FORCED'
   displayName: 'Update all packages'
+  env:
+    api_key: $(api_key)
+    github_api_key: $(github_api_key)
 
 - task: CopyFiles@2
   inputs:
