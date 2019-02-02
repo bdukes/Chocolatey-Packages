@@ -1,99 +1,47 @@
-trigger:
-- master
-
-pool:
-  vmImage: 'vs2017-win2016'
-
-variables:
-  - group: 'Chocolatey CI'
-
-  # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  - name: au_version
-    value: ''
-
-  - name: au_push
-    value: 'true'
-  
-  # Force test: use 1 to test all, or N to split testing into N groups
-  - name: au_test_groups
-    value: '1'
-
-  # Github token to commit pushed packages to repository
-  - name: github_user_repo
-    value: 'bdukes/Chocolatey-Packages'
-
-  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-  # Optional, leave empty to create anonymous gist
-  - name: gist_id
-    value: 'fd3d636b9b4617772f9b99ceb88838fa'
-
-  # Force test: gist id for test results
-  - name: gist_id_test
-    value: ''
-
-
-steps:
-- powershell: |
-    git config --global user.email "bdukes@engagesoftware.com"
-    git config --global user.name "Brian Dukes (via Azure DevOps)"
-    git config --global core.safecrlf false
-  displayName: 'Configure Git'
-
-- powershell: |
-    Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
-    $PSVersionTable
-    git --version
-    choco --version
-  displayName: 'Output environment details'
-
-- powershell: |
-    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-  displayName: 'Install AU'
-
-- powershell: |
-    $ErrorActionPreference = 'Continue'
-    if ($Env:BUILD_REASON -eq 'IndividualCI') {
-        switch -regex ($Env:BUILD_SOURCEVERSIONMESSAGE)
-        {
-            '\[AU (.+?)\]' {
-              Write-Host "##vso[task.setvariable variable=forced]$($Matches[1])"
-            }
-            '\[PUSH (.+?)\]' {
-                $packages = $Matches[1] -split ' '
-                Write-Host "PUSHING PACKAGES: $packages"
-                foreach ($package in $packages) {
-                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
-                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
-                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
-                    pushd $package_dir
-                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
-                      choco pack; Push-Package;
-                    popd
-                }
-                return
-            }
-        }
-    }
-  displayName: 'Process commit message commands'
-
-- task: PowerShell@2
-  inputs:
-    filePath: au/update_all.ps1
-    arguments: '-ForcedPackages $env:FORCED'
-  displayName: 'Update all packages'
-  env:
-    api_key: $(api_key)
-    github_api_key: $(github_api_key)
-
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: '$(Build.SourcesDirectory)'
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
-    contents: |
-      update_info.xml
-      Update-AUPackages.md
-  displayName: 'Copy artifacts to staging directory'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifacts'
+{
+  "trigger": ["master"],
+  "pool": { "vmImage": "vs2017-win2016" },
+  "variables":
+    [
+      { "group": "Chocolatey CI" },
+      { "name": "au_version", "value": "" },
+      { "name": "au_push", "value": "true" },
+      { "name": "au_test_groups", "value": "1" },
+      { "name": "github_user_repo", "value": "bdukes/Chocolatey-Packages" },
+      { "name": "gist_id", "value": "fd3d636b9b4617772f9b99ceb88838fa" },
+      { "name": "gist_id_test", "value": "" },
+    ],
+  "steps":
+    [
+      {
+        "powershell": 'git config --global user.email "bdukes@engagesoftware.com"; git config --global user.name "Brian Dukes (via Azure DevOps)"; git config --global core.safecrlf false;',
+        "displayName": "Configure Git",
+      },
+      {
+        "powershell": "Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version; $PSVersionTable; git --version; choco --version;",
+        "displayName": "Output environment details",
+      },
+      {
+        "powershell": 'git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au; . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version;',
+        "displayName": "Install AU",
+      },
+      {
+        "task": "PowerShell@2",
+        "inputs": { "filePath": "au/update_all.ps1" },
+        "displayName": "Update all packages",
+        "env":
+          { "api_key": "$(api_key)", "github_api_key": "$(github_api_key)" },
+      },
+      {
+        "task": "CopyFiles@2",
+        "inputs":
+          {
+            "sourceFolder": "$(Build.SourcesDirectory)",
+            "targetFolder": "$(Build.ArtifactStagingDirectory)",
+            "contents": "update_info.xml; Update-AUPackages.md; ",
+          },
+        "displayName": "Copy artifacts to staging directory",
+      },
+      { "task": "PublishBuildArtifacts@1", "displayName": "Publish Artifacts" },
+    ],
+}
