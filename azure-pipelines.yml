@@ -1,4 +1,7 @@
 {
+  "jobs":
+  [{
+    "job": "the job",
   "trigger": ["master"],
   "pool": { "vmImage": "vs2017-win2016" },
   "variables":
@@ -62,4 +65,5 @@
       },
       { "task": "PublishBuildArtifacts@1", "displayName": "Publish Artifacts" },
     ],
+}]
 }
