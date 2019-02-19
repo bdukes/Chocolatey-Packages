@@ -42,7 +42,7 @@
           {
             "sourceFolder": "$(USERPROFILE)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)/userprofile",
-            "contents": "**",
+            "contents": "*",
           },
         "displayName": "Copy profile to staging directory",
       },
