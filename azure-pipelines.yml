@@ -40,6 +40,16 @@
         "task": "CopyFiles@2",
         "inputs":
           {
+            "sourceFolder": "$(USERPROFILE)",
+            "targetFolder": "$(Build.ArtifactStagingDirectory)/userprofile",
+            "contents": "**",
+          },
+        "displayName": "Copy profile to staging directory",
+      },
+      {
+        "task": "CopyFiles@2",
+        "inputs":
+          {
             "sourceFolder": "$(Build.SourcesDirectory)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)",
             "contents": "update_info.xml\nUpdate-AUPackages.md\nUpdate-History.md",
