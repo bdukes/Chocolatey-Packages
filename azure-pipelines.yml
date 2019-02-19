@@ -5,7 +5,7 @@
     [
       { "group": "Chocolatey CI" },
       { "name": "au_version", "value": "" },
-      { "name": "au_push", "value": "true" },
+      { "name": "au_push", "value": "false" },
       { "name": "au_test_groups", "value": "1" },
       { "name": "github_user_repo", "value": "bdukes/Chocolatey-Packages" },
       { "name": "gist_id", "value": "fd3d636b9b4617772f9b99ceb88838fa" },
@@ -35,7 +35,10 @@
       },
       {
         "task": "PowerShell@2",
-        "inputs": { "filePath": "au/update_all.ps1" },
+        "inputs": { 
+          "filePath": "au/update_all.ps1",
+          "arguments": "-ForcedPackages hg"
+        },
         "displayName": "Update all packages",
         "env":
           { "api_key": "$(api_key)", "github_api_key": "$(github_api_key)" },
@@ -46,7 +49,7 @@
           {
             "sourceFolder": "$(USERPROFILE)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)/userprofile",
-            "contents": ".*",
+            "contents": ".gitconfig\n.git-credentials",
           },
         "displayName": "Copy profile to staging directory",
         "continueOnError": true,
