@@ -1,7 +1,4 @@
 {
-  "jobs":
-  [{
-    "job": "the job",
   "trigger": ["master"],
   "pool": { "vmImage": "vs2017-win2016" },
   "variables":
@@ -17,7 +14,8 @@
   "steps":
     [
       {
-        "checkout": { "persistCredentials": true },
+        "checkout": "self",
+        "persistCredentials": true
       },
       {
         "powershell": 'git config --global user.email "bdukes@engagesoftware.com"; git config --global user.name "Brian Dukes (via Azure DevOps)"; git config --global core.safecrlf false;',
@@ -48,7 +46,7 @@
           {
             "sourceFolder": "$(USERPROFILE)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)/userprofile",
-            "contents": ".git-credentials\n.gitconfig",
+            "contents": ".*",
           },
         "displayName": "Copy profile to staging directory",
         "continueOnError": true,
@@ -65,5 +63,4 @@
       },
       { "task": "PublishBuildArtifacts@1", "displayName": "Publish Artifacts" },
     ],
-}]
 }
