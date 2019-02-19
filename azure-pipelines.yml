@@ -18,6 +18,10 @@
         "displayName": "Configure Git",
       },
       {
+        "powershell": 'git config --get remote.origin.url',
+        "displayName": "Debug Git",
+      },
+      {
         "powershell": "Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version; $PSVersionTable; git --version; choco --version;",
         "displayName": "Output environment details",
       },
