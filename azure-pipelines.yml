@@ -1,6 +1,7 @@
 {
   "trigger": ["master"],
   "pool": { "vmImage": "vs2017-win2016" },
+  "checkout": { "persistCredentials": true },
   "variables":
     [
       { "group": "Chocolatey CI" },
@@ -42,7 +43,7 @@
           {
             "sourceFolder": "$(USERPROFILE)",
             "targetFolder": "$(Build.ArtifactStagingDirectory)/userprofile",
-            "contents": ".*",
+            "contents": ".git-credentials\n.gitconfig",
           },
         "displayName": "Copy profile to staging directory",
         "continueOnError": true,
