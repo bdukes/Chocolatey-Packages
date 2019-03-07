@@ -1,6 +1,4 @@
-import-module au
-
-$releases = 'https://lastpass.com/download'
+import-module au;
 
 function global:au_SearchReplace {
     @{
@@ -14,20 +12,25 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $releases = 'https://lastpass.com/download';
+    $downloadPage = Invoke-WebRequest -Uri $releases;
 
-    $re  = "Version (\d+\.\d+\.\d+)"
-    $version = $download_page.AllElements |
+    $downloadCard = $downloadPage.AllElements |
                     ? class -match 'card-dl' |
-                    ? innerHTML -match 'universal-windows-installer' |
-                    Select-String $re |
-                    % { $_.Matches[0].Groups[1].Value }
+                    ? innerHTML -match 'universal-windows-installer';
 
-    $url32 = 'https://lastpass.com/download/cdn/lastpass.exe'
-    $url64 = 'https://lastpass.com/download/cdn/lastpass_x64.exe'
+    $version = $downloadCard |
+               Select-String -Pattern 'Version (\d+\.\d+\.\d+)' |
+               % { $_.Matches[0].Groups[1].Value };
 
-    $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
-    return $Latest
+    $url32 = $downloadCard |
+             Select-String -Pattern "href=['`"]([^'`"]+)['`"]" |
+             % { $_.Matches[0].Groups[1].Value };
+
+    $url64 = $url32 -replace 'lastpass\.exe$','lastpass_x64.exe';
+
+    $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version };
+    return $Latest;
 }
 
-update
+update;
