@@ -8,22 +8,14 @@
     <owners>Brian Dukes</owners>
     <summary>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions.</summary>
     <description>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions. Also: autoplay settings and default programs settings ...all without fiddling around in the registry.</description>
-    <projectUrl>http://defaultprogramseditor.com/</projectUrl>
+    <projectUrl>https://defaultprogramseditor.com/</projectUrl>
     <tags>DefaultProgramsEditor autoplay file-association context-menu icon open-with file-extension</tags>
     <copyright><![CDATA[� factormystic.net]]></copyright>
-    <licenseUrl>http://defaultprogramseditor.com/donate</licenseUrl>
+    <licenseUrl>https://defaultprogramseditor.com/donate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/DefaultProgramsEditor/favicon.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/icons/DefaultProgramsEditor.ico</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
-    <releaseNotes><![CDATA[
-    Version 2.7.2675.2253 (October 29, 2010)
-Bugs Fixed:
-- Fixed a minor DPI related layout bug.
-
-Crashes Fixed:
-- Fixed a crash after clicking the DDE 'Edit' button when adding a new context menu item.
-- Viewing 'Open With' programs caused a crash when the item listed in the registry didn't exist on disk.
-- Fixed a crash when starting the application for some users.]]></releaseNotes>
+    <releaseNotes>https://defaultprogramseditor.com/changelog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools\" />
