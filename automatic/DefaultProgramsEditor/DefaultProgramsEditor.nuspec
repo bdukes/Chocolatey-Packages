@@ -3,17 +3,17 @@
   <metadata>
     <id>DefaultProgramsEditor</id>
     <title>Default Programs Editor</title>
-    <version>2.7.2675.2253</version>
+    <version>2.7.2676</version>
     <authors>FactorMystic</authors>
     <owners>Brian Dukes</owners>
     <summary>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions.</summary>
     <description>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions. Also: autoplay settings and default programs settings ...all without fiddling around in the registry.</description>
     <projectUrl>https://defaultprogramseditor.com/</projectUrl>
     <tags>DefaultProgramsEditor autoplay file-association context-menu icon open-with file-extension</tags>
-    <copyright><![CDATA[� factormystic.net]]></copyright>
+    <copyright><![CDATA[© factormystic.net]]></copyright>
     <licenseUrl>https://defaultprogramseditor.com/donate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/icons/DefaultProgramsEditor.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/1f1d1d155c9ec3a5063fe506dc556547a01c1406/icons/DefaultProgramsEditor.ico</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://defaultprogramseditor.com/changelog</releaseNotes>
   </metadata>
