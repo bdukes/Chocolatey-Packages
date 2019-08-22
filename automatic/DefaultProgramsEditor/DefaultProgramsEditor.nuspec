@@ -10,10 +10,13 @@
     <description>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions. Also: autoplay settings and default programs settings ...all without fiddling around in the registry.</description>
     <projectUrl>https://defaultprogramseditor.com/</projectUrl>
     <tags>DefaultProgramsEditor autoplay file-association context-menu icon open-with file-extension</tags>
-    <copyright><![CDATA[Â© factormystic.net]]></copyright>
+    <copyright><![CDATA[© factormystic.net]]></copyright>
     <licenseUrl>https://defaultprogramseditor.com/donate</licenseUrl>
+    <bugTrackerUrl>https://defaultprogramseditor.uservoice.com</bugTrackerUrl>
+    <mailingListUrl>https://defaultprogramseditor.uservoice.com</mailingListUrl>
+    <docsUrl>https://defaultprogramseditor.com/#features</docsUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/1f1d1d155c9ec3a5063fe506dc556547a01c1406/icons/DefaultProgramsEditor.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/4f56d99a29b82789c4cfe93ba0a1e76ca48625e9/icons/DefaultProgramsEditor.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://defaultprogramseditor.com/changelog</releaseNotes>
   </metadata>
