@@ -15,7 +15,11 @@ function global:au_GetLatest {
     $linkText = $download_page.links | ? href -match $re | select -First 1 -expand innerText
 
     $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
-    $version = $versionMatch.Matches[0].Value
+    if ($versionMatch) {
+        $version = $versionMatch.Matches[0].Value
+    } else {
+        $version = '0.0.0'
+    }
 
     return @{
         URL32       = 'https://www.linqpad.net/GetFile.aspx?preview+LINQPad5-AnyCPU.zip';
