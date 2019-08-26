@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DefaultProgramsEditor</id>
@@ -10,7 +11,7 @@
     <description>Default Programs Editor makes it easy to fix file association settings in Windows, including context menu items, icons, and descriptions. Also: autoplay settings and default programs settings ...all without fiddling around in the registry.</description>
     <projectUrl>https://defaultprogramseditor.com/</projectUrl>
     <tags>DefaultProgramsEditor autoplay file-association context-menu icon open-with file-extension</tags>
-    <copyright><![CDATA[� factormystic.net]]></copyright>
+    <copyright><![CDATA[© factormystic.net]]></copyright>
     <licenseUrl>https://defaultprogramseditor.com/donate</licenseUrl>
     <bugTrackerUrl>https://defaultprogramseditor.uservoice.com</bugTrackerUrl>
     <mailingListUrl>https://defaultprogramseditor.uservoice.com</mailingListUrl>

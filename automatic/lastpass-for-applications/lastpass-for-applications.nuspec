@@ -4,7 +4,7 @@
   <metadata>
     <id>lastpass-for-applications</id>
     <title>LastPass for Applications</title>
-    <version>4.31.0</version>
+    <version>4.32.0</version>
     <authors>LastPass</authors>
     <owners>Brian Dukes</owners>
     <summary>The LastPass password manager for native Windows applications (e.g. Skype or PuTTY).</summary>

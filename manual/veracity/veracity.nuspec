@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>veracity</id>
@@ -7,7 +8,7 @@
     <authors>SourceGear</authors>
     <owners>Brian Dukes</owners>
     <summary>Veracity is an open source version control and bug tracking system that offers a complete DVCS solution that offers great extras like scrum burndown charts, a wiki, build management and an iPad app.</summary>
-    <description>Veracity is an open source version control and bug tracking system for Windows, Mac OS X, and Linux. Together with SourceGear�s hosting solution, onVeracity.com, Veracity is a complete DVCS solution that offers great extras like scrum burndown charts, a wiki, build management and an iPad app.</description>
+    <description>Veracity is an open source version control and bug tracking system for Windows, Mac OS X, and Linux. Together with SourceGear's hosting solution, onVeracity.com, Veracity is a complete DVCS solution that offers great extras like scrum burndown charts, a wiki, build management and an iPad app.</description>
     <projectUrl>http://veracity-scm.com/</projectUrl>
     <tags>vv veracity vcs dvcs source-control admin</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
