@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName    = 'imagemagick.app'
   installerType  = 'exe'
-  url            = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.8-63-Q16-x86-dll.exe'
-  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.8-63-Q16-x64-dll.exe'
+  url            = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.8-64-Q16-x86-dll.exe'
+  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.8-64-Q16-x64-dll.exe'
   checksum       = ''
   checksum64     = ''
   checksumType   = 'sha256'
