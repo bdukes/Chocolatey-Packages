@@ -11,16 +11,18 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://elm-lang.org/install'
+    $download_url = [System.Uri]'https://github.com/elm/compiler/releases/latest'
+    $download_page = Invoke-WebRequest -Uri $download_url
 
-    $re  = "^https.+\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
+    $re  = "\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
     $urls = @($download_page.Links | ? href -match $re | % { $_.href })
 
     $versionMatch = $urls[0] | Select-String -Pattern $re
     $version = $versionMatch.Matches[0].Groups[1].Value
     $url = $urls[0]
+    $uri =  New-Object System.Uri @($download_url, $url)
 
-    $Latest = @{ URL = $url; Version = $version }
+    $Latest = @{ URL = $uri; Version = $version }
     return $Latest
 }
 
