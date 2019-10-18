@@ -9,10 +9,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad5.aspx'
 
     $re = "GetFile\.aspx\?preview\+LINQPad5-AnyCPU\.zip$"
-    $linkText = $download_page.links | ? href -match $re | select -First 1 -expand innerText
+    $linkText = $download_page.links | ? href -match $re | select -First 1 -expand outerHTML
 
     $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
     if ($versionMatch) {

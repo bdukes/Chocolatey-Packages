@@ -2,16 +2,26 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>linqpad5.AnyCPU.install</id>
-    <title>LINQPad 5 (Low-Impact Setup, AnyCPU build)</title>
-    <version>5.40.0</version>
+    <id>linqpad6.install</id>
+    <title>LINQPad 6 (Low-Impact Setup)</title>
+    <version>6.2</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
-    <summary>LINQPad 5 (Low-Impact Setup, AnyCPU build for "massive" queries)</summary>
-    <description>LINQPad lets you interactively query databases in a modern query language: LINQ.  LINQPad supports everything in C# 6.0 and Framework 4.6 (LINQ to Objects, SQL, EF, XML, Parallel LINQ, etc.).  It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn LINQ: it comes loaded with 500 examples from the book, C# 6.0 in a Nutshell.  And LINQPad is more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any expression, statement block or program with rich output formatting – the ultimate in dynamic development.</description>
+    <summary>LINQPad 6 Low-Impact Setup</summary>
+    <description>
+## The .NET Programmer’s Playground
+
+* [Instantly test](https://www.linqpad.net/#scratchpad) any C#/F#/VB snippet or program
+* [Query databases in LINQ](https://www.linqpad.net/#db) (or SQL) — SQL/Azure, Oracle, SQLite, Postgres &amp; MySQL
+* Enjoy [rich output formatting](https://www.linqpad.net/#dump), optional autocompletion and integrated debugging
+* [Script and automate](https://www.linqpad.net/lprun.aspx) in your favorite .NET language
+* Super lightweight — single 20MB executable!
+* Standard edition free, with no expiry
+
+  This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
-    <tags>linq sql .net-4 .net-4.6 linqpad</tags>
-    <copyright><![CDATA[© 2007-2018 Joseph Albahari]]></copyright>
+    <tags>linq sql .net-core linqpad admin</tags>
+    <copyright><![CDATA[© 2007-2017 Joseph Albahari]]></copyright>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
@@ -19,7 +29,7 @@
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
-    <releaseNotes>https://www.linqpad.net/LINQPad5.aspx</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools\" />

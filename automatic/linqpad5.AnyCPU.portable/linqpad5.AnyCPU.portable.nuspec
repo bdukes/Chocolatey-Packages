@@ -19,7 +19,7 @@
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
-    <releaseNotes>https://www.linqpad.net/Download.aspx#LINQPad5</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad5.aspx</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools\" />

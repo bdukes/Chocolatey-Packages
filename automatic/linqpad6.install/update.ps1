@@ -11,13 +11,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
 
-    $re = '<td[^>]*>\s*(5\.(?:\d+\.?))+\s*</td>'
+    $re = '<td[^>]*>\s*(6\.(?:\d+\.?))+\s*</td>'
 
     $versionMatches = $download_page | select-string -Pattern $re
     $versionMatch = $versionMatches.Matches[0]
     $version = $versionMatch.Groups[1].Value
 
-    $Latest = @{ URL32 = 'https://www.linqpad.net/GetFile.aspx?LINQPad5.zip'; Version = $version }
+    $Latest = @{ URL32 = 'https://www.linqpad.net/GetFile.aspx?LINQPad6Setup.exe'; Version = $version }
     return $Latest
 }
 
