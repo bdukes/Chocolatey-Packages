@@ -5,26 +5,21 @@
     <id>elm-platform</id>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Christian Jacobsen, Brian Dukes</owners>
-    <version>0.19.0</version>
+    <version>0.19.1</version>
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
-    <projectUrl>http://elm-lang.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
-    <copyright>Copyright (c) 2012-2017, Evan Czaplicki</copyright>
-    <licenseUrl>https://github.com/elm-lang/elm-platform/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://elm-lang.org/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
+    <copyright>Copyright (c) 2012-2019, Evan Czaplicki</copyright>
+    <licenseUrl>https://github.com/elm/compiler/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/elm-lang/elm-platform</projectSourceUrl>
-    <docsUrl>http://elm-lang.org/get-started</docsUrl>
-    <mailingListUrl>https://groups.google.com/forum/?fromgroups#!forum/elm-discuss</mailingListUrl>
-    <bugTrackerUrl>https://github.com/elm-lang/elm-platform/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/elm/compiler</projectSourceUrl>
+    <docsUrl>https://elm-lang.org/docs</docsUrl>
+    <mailingListUrl>https://discourse.elm-lang.org/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/elm/compiler/issues</bugTrackerUrl>
     <tags>elm-platform elm admin</tags>
-    <summary>A bundle of all Elm tools: elm, elm-reactor, elm-repl, and elm-get.</summary>
-    <description>
-    A bundle of all [Elm](http://elm-lang.org) tools, usable through the `elm` executable.
-
-    This bundles together a bunch of projects that make it nice to use Elm: [`elm-compiler`](https://github.com/elm-lang/elm-compiler), [`elm-make`](https://github.com/elm-lang/elm-make), [`elm-reactor`](https://github.com/elm-lang/elm-reactor), [`elm-repl`](https://github.com/elm-lang/elm-repl), and [`elm-package`](https://github.com/elm-lang/elm-package).
-    </description>
-    <releaseNotes>http://elm-lang.org/blog#release-notes</releaseNotes>
+    <description>A delightful language for reliable webapps.</description>
+    <releaseNotes>https://elm-lang.org/news</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
