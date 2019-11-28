@@ -1,9 +1,9 @@
 ﻿$packageArgs = @{
   packageName    = 'imagemagick.tool'
-  url            = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.9-5-portable-Q16-x86.zip'
-  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.9-5-portable-Q16-x64.zip'
-  checksum       = '3232c3bbdb64ea3db1714eaf77650bbd8b6d8083f5526a94db3aa3d67eeb1547'
-  checksum64     = '170be76f2c5811669746fea1ca89504c58f00e35f4165a2bb2c066f17598e611'
+  url            = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.9-6-portable-Q16-x86.zip'
+  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.9-6-portable-Q16-x64.zip'
+  checksum       = '7444700ab473ef7558a5047ae50a21399da3b948f0675755612ea71d378e9b57'
+  checksum64     = 'b2bda2b9ec38c4bdcbcec2ac8025c6d41b0c62eaa7d9e24552ab146d724d8c07'
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
