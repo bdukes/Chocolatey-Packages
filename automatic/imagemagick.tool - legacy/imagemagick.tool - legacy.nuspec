@@ -20,7 +20,7 @@
     <docsUrl>https://legacy.imagemagick.org/script/command-line-processing.php</docsUrl>
     <mailingListUrl>https://imagemagick.org/discourse-server/</mailingListUrl>
     <bugTrackerUrl>https://imagemagick.org/discourse-server/viewforum.php?f=3</bugTrackerUrl>
-    <projectSourceUrl>http://git.imagemagick.org/repos/ImageMagick</projectSourceUrl>
+    <projectSourceUrl>https://github.com/ImageMagick/ImageMagick6</projectSourceUrl>
     <dependencies>
       <dependency id="vcredist2010" version="10.0.40219.1" />
     </dependencies>

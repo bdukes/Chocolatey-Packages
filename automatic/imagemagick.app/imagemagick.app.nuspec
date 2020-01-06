@@ -24,7 +24,7 @@ You can add -PackageParameters LegacySupport=true to the choco install command i
     <docsUrl>https://www.imagemagick.org/script/command-line-processing.php</docsUrl>
     <mailingListUrl>https://imagemagick.org/discourse-server/</mailingListUrl>
     <bugTrackerUrl>https://imagemagick.org/discourse-server/viewforum.php?f=3</bugTrackerUrl>
-    <projectSourceUrl>http://git.imagemagick.org/repos/ImageMagick</projectSourceUrl>
+    <projectSourceUrl>https://github.com/ImageMagick/ImageMagick</projectSourceUrl>
     <dependencies>
       <dependency id="vcredist2010" version="10.0.40219.1" />
     </dependencies>
