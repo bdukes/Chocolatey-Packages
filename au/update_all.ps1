@@ -9,7 +9,7 @@ $Options = [ordered]@{
     Force         = $false                                  #Force all packages
     Timeout       = 100                                     #Connection timeout in seconds
     UpdateTimeout = 1200                                    #Update timeout in seconds
-    Threads       = 10                                      #Number of background jobs to use
+    Threads       = 1                                       #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
     PluginPath    = ''                                      #Path to user plugins
@@ -34,7 +34,7 @@ $Options = [ordered]@{
     #RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
     #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
-    #NoCheckChocoVersion = $true                            #Turn on this switch for all packages
+    NoCheckChocoVersion = $true                             #Turn on this switch for all packages
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
