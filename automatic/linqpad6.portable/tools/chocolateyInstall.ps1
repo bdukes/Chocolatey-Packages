@@ -16,4 +16,4 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-& "$toolsDir\LINQPad.exe" -ngen
+#& "$toolsDir\LINQPad6.exe" -ngen
