@@ -4,7 +4,7 @@
   <metadata>
     <id>linqpad5.AnyCPU.install</id>
     <title>LINQPad 5 (Low-Impact Setup, AnyCPU build)</title>
-    <version>5.40.0</version>
+    <version>5.41</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 5 (Low-Impact Setup, AnyCPU build for "massive" queries)</summary>
