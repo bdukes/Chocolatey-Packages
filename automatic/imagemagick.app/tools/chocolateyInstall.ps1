@@ -3,6 +3,8 @@
   installerType  = 'exe'
   url            = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.10-3-Q16-x86-dll.exe'
   url64          = 'https://imagemagick.org/download/binaries/ImageMagick-7.0.10-3-Q16-x64-dll.exe'
+  fallbackUrl    = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.10-3-Q16-x86-dll.exe'
+  fallbackUrl64  = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-7.0.10-3-Q16-x64-dll.exe'
   checksum       = '850bc12c03bbd35fe7830cce618d777b7dfb5a78b02207012344462bd538fa55'
   checksum64     = '46725d1bfc715a11c91f6a448dfa91e259911cd3ae806cae20cc2654895444f1'
   checksumType   = 'sha256'
@@ -15,8 +17,8 @@ try {
     Get-WebHeaders $packageArgs.url
 }
 catch {
-    $packageArgs.url = $packageArgs.url -replace 'https?://(?:www\.)?imagemagick.org/download/binaries/', 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
-    $packageArgs.url64 = $packageArgs.url64 -replace 'https?://(?:www\.)?imagemagick.org/download/binaries/', 'http://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
+    $packageArgs.url = $packageArgs.fallbackUrl
+    $packageArgs.url64 = $packageArgs.fallbackUrl64
 }
 
 if ($env:chocolateyPackageParameters) {
