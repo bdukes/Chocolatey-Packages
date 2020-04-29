@@ -12,18 +12,17 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_url = [System.Uri]'https://github.com/elm/compiler/releases/latest'
-    $download_page = Invoke-WebRequest -Uri $download_url
+    $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
 
-    $re  = "\/(\d+\.\d+(?:\.\d+)?)\/installer-for-windows\.exe$"
-    $urls = @($download_page.Links | ? href -match $re | % { $_.href })
+    [regex]$re  = '/elm/compiler/releases/download/(\d+(?:\.\d+)+)\/installer-for-windows\.exe'
+    if ($download_page.Content -match $re) {
+        $url = $matches[0];
+        $version = $matches[1];
+        $uri =  New-Object System.Uri @($download_url, $url)
+        return @{ URL = $uri.AbsoluteUri; Version = $version };
+    }
 
-    $versionMatch = $urls[0] | Select-String -Pattern $re
-    $version = $versionMatch.Matches[0].Groups[1].Value
-    $url = $urls[0]
-    $uri =  New-Object System.Uri @($download_url, $url)
-
-    $Latest = @{ URL = $uri.AbsoluteUri; Version = $version }
-    return $Latest
+    return @{};
 }
 
 update
