@@ -22,7 +22,7 @@ function global:au_GetLatest {
     $url = $urls[0]
     $uri =  New-Object System.Uri @($download_url, $url)
 
-    $Latest = @{ URL = $uri; Version = $version }
+    $Latest = @{ URL = $uri.AbsoluteUri; Version = $version }
     return $Latest
 }
 
