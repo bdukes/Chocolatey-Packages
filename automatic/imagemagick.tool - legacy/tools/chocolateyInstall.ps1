@@ -1,11 +1,11 @@
 ﻿$packageArgs = @{
   packageName    = 'imagemagick.tool'
-  url            = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-12-portable-Q16-x86.zip'
-  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-12-portable-Q16-x64.zip'
-  fallbackUrl    = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-12-portable-Q16-x86.zip'
-  fallbackUrl64  = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-12-portable-Q16-x64.zip'
-  checksum       = '191feb9ba872bb51f5b2b33014a8d8fecbe31ed313f476f3d53413a733ea4a2d'
-  checksum64     = '9fa73e2a837b39f33d1d76a9450c34a6903d4ec30642d062a5cd6053c30f1967'
+  url            = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-13-portable-Q16-x86.zip'
+  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-13-portable-Q16-x64.zip'
+  fallbackUrl    = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-13-portable-Q16-x86.zip'
+  fallbackUrl64  = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-13-portable-Q16-x64.zip'
+  checksum       = 'b2a283a7cf9f67e173dae42bce40fc1af2a4a537be2c8fee187fbec2fbd011dc'
+  checksum64     = 'd01c69655013d66786edfcc1290cd5716c12c797d7e72b3cd1ea8be5ec429b4f'
   unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
