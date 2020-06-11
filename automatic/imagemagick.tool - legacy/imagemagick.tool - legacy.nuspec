@@ -8,10 +8,12 @@
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
-    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.]]></description>
+    <description><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
+
+This package installs the static 16-bits-per-pixel portable version of ImageMagick 6.]]></description>
     <projectUrl>https://legacy.imagemagick.org/</projectUrl>
     <tags>imagemagick images picture graphics convert</tags>
-    <copyright><![CDATA[© 1999-2019 ImageMagick Studio LLC]]></copyright>
+    <copyright><![CDATA[© ImageMagick Studio LLC]]></copyright>
     <licenseUrl>https://legacy.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
