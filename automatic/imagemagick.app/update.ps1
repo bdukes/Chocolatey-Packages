@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php'
 
     $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe$"
-    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x64-dll.exe$"
+    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-HDRI-x64-dll.exe$"
     $url32 = $download_page.links | ? href -match $re32 | select -First 1 -expand href
     $url64 = $download_page.links | ? href -match $re64 | select -First 1 -expand href
     $fallbackUrl32 =  $url32 -replace 'https?://(?:www\.)?imagemagick.org/download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
