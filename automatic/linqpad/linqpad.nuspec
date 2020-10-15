@@ -4,7 +4,7 @@
   <metadata>
     <id>linqpad</id>
     <title>LINQPad</title>
-    <version>6.8</version>
+    <version>6.10.13</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 6 Low-Impact Setup</summary>
@@ -31,7 +31,7 @@
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad6" version="[6.8]" />
+      <dependency id="linqpad6" version="[6.10.13]" />
     </dependencies>
   </metadata>
   <files>
