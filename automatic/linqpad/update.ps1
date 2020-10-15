@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
 
-    $re = '<td[^>]*>\s*(6\.(?:\d+\.?))+\s*</td>'
+    $re = '<td[^>]*>\s*(?:<[^>]+>)*(6\.(?:\d+\.?)+)</'
 
     $versionMatches = $download_page | select-string -Pattern $re
     $versionMatch = $versionMatches.Matches[0]

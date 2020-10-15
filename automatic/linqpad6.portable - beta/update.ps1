@@ -13,7 +13,7 @@ function global:au_GetLatest {
 
     $betaCard = $download_page.AllElements | ? class -match 'cardnarrow' | ? innerHtml -match 'beta'
 
-    $versionMatch = $betaCard | Select-String -Pattern 'Version ((?:\d+\.)+\d+)'
+    $versionMatch = $betaCard | Select-String -Pattern 'Version:?\s*(?:<[^>]+>)?\s*((?:\d+\.)+\d+)'
     if ($versionMatch) {
         $version = $versionMatch.Matches[0].Groups[1].Value
     } else {
