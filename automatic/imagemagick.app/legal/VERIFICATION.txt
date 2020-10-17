@@ -1,0 +1,20 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32: https://imagemagick.org/download/binaries/ImageMagick-7.0.10-34-Q16-x86-dll.exe
+   x64: https://imagemagick.org/download/binaries/ImageMagick-7.0.10-34-Q16-HDRI-x64-dll.exe
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: DB5DEDCE7EB31F648FA3148CB8D8F2A8B3B7C59DBCAE359220DE75FA442E2BE6
+   checksum64: 9421E6DB6F17C8A8A5D52828504D8440491F9E058A02ACA6A2FBA7995DE862B4
