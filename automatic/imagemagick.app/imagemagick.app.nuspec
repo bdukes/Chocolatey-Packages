@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
@@ -18,11 +18,11 @@ You can add -PackageParameters LegacySupport=true to the choco install command i
 
 You can add -PackageParameters NoDesktop=true to the choco install command in order to not create a desktop icon]]></description>
     <projectUrl>https://www.imagemagick.org/</projectUrl>
-    <tags>imagemagick images picture graphics convert admin</tags>
+    <tags>imagemagick images picture graphics convert</tags>
     <copyright><![CDATA[© 2020 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>https://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://www.imagemagick.org/script/changelog.php</releaseNotes>
     <docsUrl>https://www.imagemagick.org/script/command-line-processing.php</docsUrl>
