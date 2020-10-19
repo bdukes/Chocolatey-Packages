@@ -48,5 +48,5 @@ try {
 Write-Verbose "Installing with arguments: $($packageArgs.silentArgs)"
 Install-ChocolateyInstallPackage @packageArgs
 
-#Remove the binaries from the tools folder so they do not take up extra space.
-ls $toolsDir\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
+# Remove the binaries from the tools folder so they do not take up extra space.
+Get-ChildItem $toolsDir\*.exe | ForEach-Object { Remove-Item $_ -ErrorAction SilentlyContinue; if (Test-Path $_) { Set-Content "$_.ignore" "" } }

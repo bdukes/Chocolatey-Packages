@@ -1,48 +1,49 @@
-﻿$packageArgs = @{
-  packageName    = 'imagemagick.app'
+﻿$ErrorActionPreference = 'Stop';
+$toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition;
+
+$packageArgs = @{
+  packageName    = $env:chocolateyPackageName
   installerType  = 'exe'
-  url            = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-34-Q16-x86-dll.exe'
-  url64          = 'https://imagemagick.org/download/binaries/ImageMagick-6.9.11-34-Q16-x64-dll.exe'
-  fallbackUrl    = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-34-Q16-x86-dll.exe'
-  fallbackUrl64  = 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/ImageMagick-6.9.11-34-Q16-x64-dll.exe'
-  checksum       = '8e0831e3e255693fd71f2e6df41743771b63e640395a392010c01a4b73a602c3'
-  checksum64     = '59f64ae1501687a1e9f748747c6e64e2d982561cad35207f4a4dee933e3e5ba7'
-  checksumType   = 'sha256'
-  checksumType64 = 'sha256'
+  file           = Get-Item $toolsDir\*_x32.exe
+  file64         = Get-Item $toolsDir\*_x64.exe
   silentArgs     = '/VERYSILENT'
   validExitCodes = @(0)
-}
-
-try {
-    Get-WebHeaders $packageArgs.url
-}
-catch {
-    $packageArgs.url = $packageArgs.fallbackUrl
-    $packageArgs.url64 = $packageArgs.fallbackUrl64
+  softwareName   = 'ImageMagick*'
 }
 
 if ($env:chocolateyPackageParameters) {
-    $packageParams = ConvertFrom-StringData $env:chocolateyPackageParameters.Replace(" ", "`n")
+    $packageParams = ConvertFrom-StringData $env:chocolateyPackageParameters.Replace(" ", "`n");
+    $additionalTasks = @();
     if ($packageParams.InstallDevelopmentHeaders) {
-        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=install_devel'
+        $additionalTasks += 'install_devel';
+    }
+    if ($packageParams.NoDesktop) {
+        $additionalTasks += '!desktop_icon';
+    }
+
+    if ($additionalTasks.length -gt 0) {
+        $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=' + ($additionalTasks -join ',');
     }
 }
 
 try {
     # Uninstall older version of imagemagick, otherwise the installation won’t be silent.
-    $regPath = 'HKLM:\SOFTWARE\ImageMagick\Current'
+    $regPath = 'HKLM:\SOFTWARE\ImageMagick\Current';
     if ($env:chocolateyForceX86) {
-        $regPath = 'HKLM:\SOFTWARE\Wow6432Node\ImageMagick\Current'
+        $regPath = 'HKLM:\SOFTWARE\Wow6432Node\ImageMagick\Current';
     }
     if (Test-Path $regPath) {
-        $uninstallPath = (Get-ItemProperty -Path $regPath).BinPath
-        $uninstallFilePath = "$uninstallPath\unins000.exe"
-        Uninstall-ChocolateyPackage $packageArgs.packageName $packageArgs.installerType $packageArgs.silentArgs $uninstallFilePath
+        $uninstallPath = (Get-ItemProperty -Path $regPath).BinPath;
+        $uninstallFilePath = "$uninstallPath\unins000.exe";
+        Uninstall-ChocolateyPackage $packageArgs.packageName $packageArgs.installerType $packageArgs.silentArgs $uninstallFilePath;
     }
 } catch {
-    Write-Warning "$packageName uninstallation failed, with message $($_.Exception.Message)"
-    Write-Warning "$packageName installation may not be silent"
+    Write-Warning "$packageName uninstallation failed, with message $($_.Exception.Message)";
+    Write-Warning "$packageName installation may not be silent";
 }
 
-Write-Verbose "Installing with arguments: $($packageArgs.silentArgs)"
-Install-ChocolateyPackage @packageArgs
+Write-Verbose "Installing with arguments: $($packageArgs.silentArgs)";
+Install-ChocolateyInstallPackage @packageArgs;
+
+# Remove the binaries from the tools folder so they do not take up extra space.
+Get-ChildItem $toolsDir\*.exe | ForEach-Object { Remove-Item $_ -ErrorAction SilentlyContinue; if (Test-Path $_) { Set-Content "$_.ignore" "" } };

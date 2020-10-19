@@ -22,7 +22,7 @@ You can add -PackageParameters NoDesktop=true to the choco install command in or
     <copyright><![CDATA[© 2020 ImageMagick Studio LLC]]></copyright>
     <licenseUrl>https://www.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.staticaly.com/gh/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://www.imagemagick.org/script/changelog.php</releaseNotes>
     <docsUrl>https://www.imagemagick.org/script/command-line-processing.php</docsUrl>
