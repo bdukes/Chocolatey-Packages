@@ -22,7 +22,7 @@
     <copyright>Copyright 2008-2017 LastPass</copyright>
     <licenseUrl>https://lastpass.com/aboutus_terms.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/0a012c036438e0a3b09def66f8f3e1e5e5d7e62a/icons/lastpass.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@0a012c036438e0a3b09def66f8f3e1e5e5d7e62a/icons/lastpass.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
   <files>

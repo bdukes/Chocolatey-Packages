@@ -17,7 +17,7 @@
     <mailingListUrl>https://defaultprogramseditor.uservoice.com</mailingListUrl>
     <docsUrl>https://defaultprogramseditor.com/#features</docsUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/4f56d99a29b82789c4cfe93ba0a1e76ca48625e9/icons/DefaultProgramsEditor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@4f56d99a29b82789c4cfe93ba0a1e76ca48625e9/icons/DefaultProgramsEditor.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://defaultprogramseditor.com/changelog</releaseNotes>
   </metadata>

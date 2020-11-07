@@ -16,7 +16,7 @@ This package installs the static 16-bits-per-pixel portable version of ImageMagi
     <copyright><![CDATA[© ImageMagick Studio LLC]]></copyright>
     <licenseUrl>https://legacy.imagemagick.org/script/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@c8afd71590e0567e3c66e2a70bd6e4ca61f15715/icons/imagemagick.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://legacy.imagemagick.org/script/changelog.php</releaseNotes>
     <docsUrl>https://legacy.imagemagick.org/script/command-line-processing.php</docsUrl>

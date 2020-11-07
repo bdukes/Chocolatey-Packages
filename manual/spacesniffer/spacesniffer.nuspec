@@ -11,7 +11,7 @@
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
     <tags>spacesniffer disk usage file utilities tools</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/spacesniffer/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <copyright>2016 Uderzo Umberto</copyright>

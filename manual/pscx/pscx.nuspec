@@ -14,7 +14,7 @@
         <summary>PowerShell Community Extensions (PSCX) is aimed at providing a widely useful set of additional cmdlets, providers, aliases, filters, functions and scripts for Windows PowerShell that members of the community have expressed interest in.</summary>
         <copyright />
         <tags>powershell pscx admin</tags>
-        <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/pscx/icon.png</iconUrl>
+        <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/pscx/icon.png</iconUrl>
         <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
         <releaseNotes><![CDATA[PowerShell Community Extensions Release Notes
 

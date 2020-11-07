@@ -9,7 +9,7 @@
     <title>Spawner Data Generator</title>
     <authors>Seth Grover,Ryan Zuwala</authors>
     <projectUrl>http://spawner.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/spawner/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spawner/icon.png</iconUrl>
     <copyright>Copyright (C) 2013 by Seth Grover, with major contributions by Ryan Zuwala.</copyright>
     <licenseUrl>https://sourceforge.net/p/spawner/code/HEAD/tree/trunk/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

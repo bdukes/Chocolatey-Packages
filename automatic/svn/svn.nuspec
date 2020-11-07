@@ -14,7 +14,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/1e408867e16d73530a971974cf9f72e4b95e7b0f/icons/svn.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@1e408867e16d73530a971974cf9f72e4b95e7b0f/icons/svn.svg</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <docsUrl>https://subversion.apache.org/docs/</docsUrl>
     <mailingListUrl>https://subversion.apache.org/mailing-lists.html</mailingListUrl>

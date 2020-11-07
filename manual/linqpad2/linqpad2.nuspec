@@ -16,7 +16,7 @@ This package is the low-impact setup, which creates a desktop shortcut and a fil
     <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright><![CDATA[© 2007-2014 Joseph Albahari]]></copyright>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <dependencies>
       <dependency id="linqpad2.install" version="[2.45.05]" />

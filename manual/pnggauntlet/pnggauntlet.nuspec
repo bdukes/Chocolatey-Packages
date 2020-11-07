@@ -16,7 +16,7 @@ Ultra-configurable</description>
     <tags>pnggauntlet png pngout optipng deflopt image optimize lossless chocolatey</tags>
     <licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/pnggauntlet/gauntlet_shadow.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/pnggauntlet/gauntlet_shadow.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
   </metadata>
   <files>

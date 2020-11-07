@@ -19,7 +19,7 @@
     <copyright>Copyright (c) 2014 Kodowa, Inc. &amp; Light Table contributors</copyright>
     <licenseUrl>https://github.com/LightTable/LightTable/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/bdukes/Chocolatey-Packages/d7c02ae406446bca50b98b872da481852fc65682/lighttable/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/lighttable/icon.png</iconUrl>
     <releaseNotes>https://github.com/LightTable/LightTable/blob/master/deploy/core/changelog.md</releaseNotes>
   </metadata>
   <files>
