@@ -1,19 +1,18 @@
-﻿
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
-$packageName= 'linqpad4.install'
-$url        = 'https://www.linqpad.net/GetFile.aspx?LINQPad4Setup.exe'
+$packageName = 'linqpad4.install'
+$url = 'https://www.linqpad.net/GetFile.aspx?LINQPad4Setup.exe'
 
 $packageArgs = @{
-  packageName   = $packageName
-  unzipLocation = $toolsDir
-  fileType      = 'exe'
-  url           = $url
-  softwareName  = 'linqpad*'
-  checksum      = '244811fd6a1c3eba338b883e315cc6774bd1b0c3a44f4412b4fca06e03f56571'
-  checksumType  = 'sha256'
-  silentArgs    = "/silent"
-  validExitCodes= @(0)
+  packageName    = $packageName
+  unzipLocation  = $toolsDir
+  fileType       = 'exe'
+  url            = $url
+  softwareName   = 'linqpad*'
+  checksum       = '38C8DBE4DFD305D18EC26CDB838B3AA744C0827E2C6A38A02AC5097A2B079B50'
+  checksumType   = 'sha256'
+  silentArgs     = "/silent"
+  validExitCodes = @(0)
 }
 
 Install-ChocolateyPackage @packageArgs

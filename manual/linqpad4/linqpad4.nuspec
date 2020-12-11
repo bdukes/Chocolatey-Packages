@@ -3,23 +3,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>linqpad4</id>
-    <title>LINQPad</title>
-    <version>4.58.0</version>
+    <title>LINQPad 4 (End-of-Life)</title>
+    <version>4.59</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 4 Low-Impact Setup</summary>
     <description>
 LINQPad lets you interactively query databases in a modern query language: LINQ.  LINQPad supports everything in C# 5.0 and Framework 4.x (LINQ to Objects, SQL, EF, XML, Parallel LINQ, etc.).  It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn LINQ: it comes loaded with 500 examples from the book, C# 4.0 in a Nutshell.  And LINQPad is more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any expression, statement block or program with rich output formatting – the ultimate in dynamic development.
-This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
-    <projectUrl>http://www.linqpad.net/</projectUrl>
+This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.
+
+End-of-life products are no longer updated and do not support the latest protocols. In particular, the current NuGet package and feed formats are unsupported in the older versions of LINQPad.
+</description>
+    <projectUrl>https://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 linqpad admin</tags>
-    <licenseUrl>http://www.linqpad.net/eula.txt</licenseUrl>
+    <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright><![CDATA[© 2007-2017 Joseph Albahari]]></copyright>
     <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <dependencies>
-      <dependency id="linqpad4.install" version="[4.58.0]" />
+      <dependency id="linqpad4.install" version="[4.59]" />
     </dependencies>
   </metadata>
   <files>
