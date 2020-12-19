@@ -4,7 +4,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>6.9.11.50</version>
+    <version>6.9.11.51</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -26,7 +26,7 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <bugTrackerUrl>https://imagemagick.org/discourse-server/viewforum.php?f=3</bugTrackerUrl>
     <projectSourceUrl>https://github.com/ImageMagick/ImageMagick6</projectSourceUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[6.9.11.50]" />
+      <dependency id="imagemagick.app" version="[6.9.11.51]" />
     </dependencies>
   </metadata>
   <files>
