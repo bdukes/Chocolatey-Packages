@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_list = Invoke-WebRequest -Uri 'https://www.mercurial-scm.org/sources.js';
 
-    $re  = 'https.+/windows/Mercurial-(\d+\.\d+(?:\.\d+)?)(?:-x86|-x64)-python2\.exe';
+    $re  = 'https.+/windows/Mercurial-(\d+\.\d+(?:\.\d+)?)(?:-x86|-x64)\.exe';
     $urls = $download_list.Content.Split("`n") |
                 Where-Object { $_ -match $re } |
                 Select-String -Pattern $re |
