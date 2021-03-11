@@ -20,8 +20,8 @@ function global:au_GetLatest {
     $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x64.zip$"
     $url32 = $download_page.links | ? href -match $re32 | select -First 1 -expand href
     $url64 = $download_page.links | ? href -match $re64 | select -First 1 -expand href
-    $fallbackUrl32 =  $url32 -replace 'https?://(?:www\.)?imagemagick.org/download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
-    $fallbackUrl64 =  $url64 -replace 'https?://(?:www\.)?imagemagick.org/download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
+    $fallbackUrl32 =  $url32 -replace 'https?://(?:www\.|download\.)?imagemagick.org/(ImageMagick/)?download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
+    $fallbackUrl64 =  $url64 -replace 'https?://(?:www\.|download\.)?imagemagick.org/(ImageMagick/)?download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
 
     $versionMatch = $url64 | select-string -Pattern $re64
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
