@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-6.9.12-14-Q16-x86-dll.exe
-   x64: https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-6.9.12-14-Q16-x64-dll.exe
+   x32: https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-6.9.12-15-Q16-x86-dll.exe
+   x64: https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-6.9.12-15-Q16-x64-dll.exe
 
    to download the installer.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 0FC9669B28047FB73D8FC928AE690AF64FECFB8813A07250B86580DE70BA6EC4
-   checksum64: AF9CBD49D17C04ADDBB57F04C8A7339BC433EC60DD8D170C21541C3DCC7E9081
+   checksum32: CD4E12ADFB031A302F95BB26F4BFB333557E734B6666CF5D34D1125012F3C769
+   checksum64: A1669FD0E98B64C538E31A947E672CC2FD18F319BAB8ECD543E94B536A621E56
