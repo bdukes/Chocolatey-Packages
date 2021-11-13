@@ -18,14 +18,20 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://legacy.imagemagick.org/script/download.php'
 
-    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x86.zip$"
-    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x64.zip$"
+    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x86\.zip$"
+    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x64\.zip$"
+    $reFullVersion = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)[a-zA-Z0-9-]*\.exe$"
     $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
     $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
+    $versionUrl = $download_page.links | Where-Object href -match $reFullVersion | Select-Object -First 1 -expand href
 
-    $versionMatch = $url64 | select-string -Pattern $re64
+    if ($versionUrl) {
+        $versionMatch = $versionUrl | select-string -Pattern $reFullVersion
+    } else {
+        $versionMatch = $url64 | select-string -Pattern $re64
+    }
+
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
-
     return @{
         URL32       = $url32
         URL64       = $url64
