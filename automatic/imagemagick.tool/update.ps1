@@ -2,15 +2,17 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^\s*url64\s*=\s*)('.*')"         = "`$1'$($Latest.URL64)'"
-            "(^\s*url\s*=\s*)('.*')"           = "`$1'$($Latest.URL32)'"
-            "(^\s*fallbackUrl64\s*=\s*)('.*')" = "`$1'$($Latest.FallbackUrl64)'"
-            "(^\s*fallbackUrl\s*=\s*)('.*')"   = "`$1'$($Latest.FallbackUrl32)'"
-            "(^\s*checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum32)'"
-            "(^\s*checksum64\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum64)'"
+        '.\legal\VERIFICATION.txt' = @{
+            "(?i)(\s+x32:).*"     = "`${1} $($Latest.URL32)"
+            "(?i)(\s+x64:).*"     = "`${1} $($Latest.URL64)"
+            "(?i)(checksum32:).*" = "`${1} $($Latest.Checksum32)"
+            "(?i)(checksum64:).*" = "`${1} $($Latest.Checksum64)"
         }
-     }
+    }
+}
+
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
@@ -18,21 +20,17 @@ function global:au_GetLatest {
 
     $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x86.zip$"
     $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-portable-Q16-x64.zip$"
-    $url32 = $download_page.links | ? href -match $re32 | select -First 1 -expand href
-    $url64 = $download_page.links | ? href -match $re64 | select -First 1 -expand href
-    $fallbackUrl32 =  $url32 -replace 'https?://(?:www\.|download\.)?imagemagick.org/(ImageMagick/)?download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
-    $fallbackUrl64 =  $url64 -replace 'https?://(?:www\.|download\.)?imagemagick.org/(ImageMagick/)?download/binaries/', 'https://ftp.icm.edu.pl/pub/graphics/ImageMagick/binaries/'
+    $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
+    $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
 
     $versionMatch = $url64 | select-string -Pattern $re64
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
 
     return @{
-        URL32 = $url32
-        URL64 = $url64
+        URL32   = $url32
+        URL64   = $url64
         Version = $version
-        FallbackUrl32 = $fallbackUrl32
-        FallbackUrl64 = $fallbackUrl64
     }
 }
 
-update
+update -ChecksumFor none;
