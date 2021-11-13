@@ -1,6 +1,6 @@
 {
   "trigger": ["master"],
-  "pool": { "vmImage": "vs2017-win2016" },
+  "pool": { "vmImage": "windows-latest" },
   "variables":
     [
       { "group": "Chocolatey CI" },
@@ -13,10 +13,7 @@
     ],
   "steps":
     [
-      {
-        "checkout": "self",
-        "persistCredentials": true
-      },
+      { "checkout": "self", "persistCredentials": true },
       {
         "powershell": 'git config --global user.email "bdukes@engagesoftware.com"; git config --global user.name "Brian Dukes (via Azure DevOps)"; git config --global core.safecrlf false;',
         "displayName": "Configure Git",
