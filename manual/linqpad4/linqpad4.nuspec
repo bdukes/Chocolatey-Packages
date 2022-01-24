@@ -13,12 +13,12 @@ LINQPad lets you interactively query databases in a modern query language: LINQ.
 This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.
 
 End-of-life products are no longer updated and do not support the latest protocols. In particular, the current NuGet package and feed formats are unsupported in the older versions of LINQPad.
-</description>
+    </description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 linqpad admin</tags>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright><![CDATA[© 2007-2017 Joseph Albahari]]></copyright>
+    <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
     <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <dependencies>

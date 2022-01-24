@@ -2,12 +2,12 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>linqpad6.install</id>
-    <title>LINQPad 6 (Low-Impact Setup)</title>
-    <version>6.15.12</version>
+    <id>linqpad7.portable</id>
+    <title>LINQPad 7 (Portable)</title>
+    <version>7.1.5</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
-    <summary>LINQPad 6 Low-Impact Setup</summary>
+    <summary>LINQPad 7 (Portable)</summary>
     <description>
 ## The .NET Programmer’s Playground
 
@@ -17,10 +17,9 @@
 * [Script and automate](https://www.linqpad.net/lprun.aspx) in your favorite .NET language
 * Super lightweight — single 20MB executable!
 * Standard edition free, with no expiry
-
-  This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
-    <projectUrl>https://www.linqpad.net/</projectUrl>
-    <tags>linq sql .net-core linqpad admin</tags>
+    </description>
+    <projectUrl>http://www.linqpad.net/</projectUrl>
+    <tags>linq sql .net-core .net linqpad</tags>
     <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -31,7 +30,7 @@
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
     <dependencies>
-      <dependency id="dotnetcore-sdk" version="3.0.100" />
+      <dependency id="dotnet-sdk" version="5.0.100" />
     </dependencies>
   </metadata>
   <files>

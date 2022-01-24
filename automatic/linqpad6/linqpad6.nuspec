@@ -23,8 +23,8 @@
     <tags>linq sql .net-core linqpad admin</tags>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright><![CDATA[© 2007-2017 Joseph Albahari]]></copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
+    <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@2fc1a88ce1b653e21051fa0d29325e3d24fd6400/linqpad/linqpad7.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>

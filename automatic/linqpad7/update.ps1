@@ -2,8 +2,8 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        'linqpad.nuspec' = @{
-            '(^\s*<dependency id="linqpad7" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+        'linqpad7.nuspec' = @{
+            '(^\s*<dependency id="linqpad7.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
         }
     }
 }
