@@ -24,7 +24,7 @@
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@2fc1a88ce1b653e21051fa0d29325e3d24fd6400/linqpad/linqpad7.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@b6a7c4b9f2378a716b1300f0d45242e24d44bbf9/icons/linqpad7.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
