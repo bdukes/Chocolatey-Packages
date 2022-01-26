@@ -12,7 +12,7 @@ $packageArgs = @{
   softwareName   = 'linqpad*'
   checksum       = 'fc6bbf68ae586bdc69df74889055abeda007d0880450aee07f6d175375779fd3'
   checksumType   = 'sha256'
-  silentArgs     = "/silent"
+  silentArgs     = "/verysilent"
   validExitCodes = @(0)
 }
 
