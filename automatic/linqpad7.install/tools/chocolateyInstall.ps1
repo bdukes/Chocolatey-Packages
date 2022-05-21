@@ -17,4 +17,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-Install-ChocolateyPath "${env:ProgramFiles(x86)}\LinqPad7"
+Install-ChocolateyPath "${env:ProgramFiles}\LinqPad7"
