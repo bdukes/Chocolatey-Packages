@@ -9,7 +9,7 @@
     <title>mob</title>
     <authors>Dr. Simon Harrer</authors>
     <projectUrl>https://mob.sh/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bdukes/Chocolatey-Packages/71925fd2a3412bbc53f4910dff24975911029490/icons/mob.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@71925fd2a3412bbc53f4910dff24975911029490/icons/mob.svg</iconUrl>
     <copyright>Copyright (c) 2020 Dr. Simon Harrer</copyright>
     <licenseUrl>https://github.com/remotemobprogramming/mob/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
