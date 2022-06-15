@@ -15,4 +15,5 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs;
 
 $exeFile = Get-Item "$toolsDir/*.exe";
+New-Item -Path ($exeFile.FullName + '.ignore') -ItemType File;
 Move-Item $exeFile (Join-Path $toolsDir 'rustdesk.exe') -Force;
