@@ -22,8 +22,8 @@ You can add -PackageParameters InstallDevelopmentHeaders=true to the choco insta
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <releaseNotes>https://legacy.imagemagick.org/script/changelog.php</releaseNotes>
     <docsUrl>https://legacy.imagemagick.org/script/command-line-processing.php</docsUrl>
-    <mailingListUrl>https://imagemagick.org/discourse-server/</mailingListUrl>
-    <bugTrackerUrl>https://imagemagick.org/discourse-server/viewforum.php?f=3</bugTrackerUrl>
+    <mailingListUrl>https://github.com/ImageMagick/ImageMagick6/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/ImageMagick/ImageMagick6/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/ImageMagick/ImageMagick6</projectSourceUrl>
     <dependencies>
       <dependency id="imagemagick.app" version="[6.9.12.54]" />
