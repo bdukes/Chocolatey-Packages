@@ -12,7 +12,13 @@
 
 This package installs the dynamic 16 bits-per-pixel (with high dynamic-range imaging enabled for x64) version of ImageMagick.
 
-You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++]]></description>
+You can add -PackageParameters InstallDevelopmentHeaders=true to the choco install command in order to install the development headers and libraries for C and C++
+      
+You can add -PackageParameters LegacySupport=true to the choco install command in order to install the legacy utilities (e.g. convert)
+
+You can add -PackageParameters NoDesktop=true to the choco install command in order to not create a desktop icon
+    
+You can add -PackageParameters InstallOldFFmpeg=true to the choco install command to install the FFmpeg included with ImageMagick]]></description>
     <projectUrl>https://www.imagemagick.org/</projectUrl>
     <tags>imagemagick images picture graphics convert admin</tags>
     <copyright><![CDATA[© ImageMagick Studio LLC]]></copyright>
