@@ -18,7 +18,7 @@ You can add -PackageParameters LegacySupport=true to the choco install command i
 
 You can add -PackageParameters NoDesktop=true to the choco install command in order to not create a desktop icon
     
-You can add -PackageParameters InstallOldFFmpeg=true to the choco install command to install FFmpeg 4.2.3 (2020), included with ImageMagick]]></description>
+You can add -PackageParameters InstallOldFFmpeg=true to the choco install command to install the FFmpeg included with ImageMagick]]></description>
     <projectUrl>https://www.imagemagick.org/</projectUrl>
     <tags>imagemagick images picture graphics convert</tags>
     <copyright><![CDATA[© 2020 ImageMagick Studio LLC]]></copyright>
