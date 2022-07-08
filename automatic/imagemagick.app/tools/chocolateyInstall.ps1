@@ -23,18 +23,18 @@ if ($env:chocolateyPackageParameters) {
     if ($packageParams.NoDesktop) {
         $additionalTasks += '!desktop_icon'
     }
-    if ($false -eq $(packageParams.InstallOldFFmpeg) {
+    if (-not $packageParams.InstallOldFFmpeg) {
         $additionalTasks += '!install_FFmpeg'
-        # If FFmpeg is already present, warn user of PATH conflicts
-        if ($null -eq -not $(Get-Command ffmpeg)) {
-            Write-Warning "FFmpeg is already present on the system. Installing ImageMagicks's FFmpeg will cause a PATH conflict and ImageMagick's outdated FFmpeg will be selected."
+        # If NOT installing FFmpeg when NOT present, warn of unavailable features. Suggest 'choco install ffmpeg'.
+        if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue)) {
+            Write-Warning "FFmpeg is not present on this system and ImageMagick's outdated FFmpeg has not been enabled. Some ImageMagick features will be unavailable. Install FFmpeg via 'choco install ffmpeg'."
         }
     }
-    # If NOT installing FFmpeg when NOT present, warn of unavailable features. Suggest 'choco install ffmpeg'.
-    elseif ($null -eq $(Get-Command ffmpeg)){
-        Write-Warning "FFmpeg is not present on this system and ImageMagick's outdated FFmpeg has not been enabled. Some ImageMagick features will be unavailable. Install FFmpeg via 'choco install ffmpeg'."
+    # If FFmpeg is already present, warn user of PATH conflicts
+    elseif (Get-Command ffmpeg -ErrorAction SilentlyContinue) {
+        Write-Warning "FFmpeg is already present on the system. Installing ImageMagicks's FFmpeg will cause a PATH conflict and ImageMagick's outdated FFmpeg will be selected."
     }
-    
+
     if ($additionalTasks.length -gt 0) {
         $packageArgs.silentArgs = $packageArgs.silentArgs + ' /MERGETASKS=' + ($additionalTasks -join ',')
     }
