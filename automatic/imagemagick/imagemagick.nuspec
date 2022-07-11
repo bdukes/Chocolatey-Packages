@@ -4,7 +4,7 @@
   <metadata>
     <id>imagemagick</id>
     <title>ImageMagick</title>
-    <version>7.1.0.41</version>
+    <version>7.1.0.43</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
@@ -32,7 +32,7 @@ You can add -PackageParameters InstallOldFFmpeg=true to the choco install comman
     <bugTrackerUrl>https://github.com/ImageMagick/ImageMagick/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/ImageMagick/ImageMagick</projectSourceUrl>
     <dependencies>
-      <dependency id="imagemagick.app" version="[7.1.0.41]" />
+      <dependency id="imagemagick.app" version="[7.1.0.43]" />
     </dependencies>
   </metadata>
   <files>
