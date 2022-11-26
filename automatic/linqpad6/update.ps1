@@ -1,4 +1,4 @@
-import-module au
+Import-Module au;
 
 function global:au_SearchReplace {
     @{
@@ -9,16 +9,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad6.aspx' -UseBasicParsing;
 
-    $re = '<td[^>]*>\s*(?:<[^>]+>)*(6\.(?:\d+\.?)+)</'
+    $re = '<h3>(6\.(?:\d+\.?)+) Release Notes</h3>';
 
-    $versionMatches = $download_page | select-string -Pattern $re
-    $versionMatch = $versionMatches.Matches[0]
-    $version = $versionMatch.Groups[1].Value
+    $versionMatches = $download_page | select-string -Pattern $re;
+    $versionMatch = $versionMatches.Matches[0];
+    $version = $versionMatch.Groups[1].Value;
 
-    $Latest = @{ Version = $version }
-    return $Latest
+    return @{ 
+        Version = $version; 
+    };
 }
 
 update

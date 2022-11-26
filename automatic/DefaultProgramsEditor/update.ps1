@@ -9,13 +9,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://defaultprogramseditor.com/'
+    $download_page = Invoke-WebRequest -Uri 'https://defaultprogramseditor.com/' -UseBasicParsing;
 
-    $linkText = $download_page.links | ? innerText -match 'Version (?:\d+\.)+\d+' | select -First 1 -expand innerText
-    $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
+    $versionMatch = $download_page | select-string -Pattern '(?:\d+\.)+\d+'
     $version = $versionMatch.Matches[0].Value
 
-    return @{ URL32 = 'https://defaultprogramseditor.com/download'; Version = $version }
+    return @{ 
+        URL32   = 'https://defaultprogramseditor.com/download'; 
+        Version = $version;
+    }
 }
 
 update
