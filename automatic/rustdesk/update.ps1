@@ -1,4 +1,8 @@
-import-module au
+Import-Module au;
+Import-Module '../../_scripts/Get-GitHubRelease.psm1';
+
+$owner = 'rustdesk';
+$repository = 'rustdesk';
 
 function global:au_SearchReplace {
     @{
@@ -9,17 +13,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_url = [System.Uri]'https://github.com/rustdesk/rustdesk/releases/latest'
-    $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
+    $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
+    [regex]$re = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x64\.zip';
+    $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
+    $version = $matches[1];
 
-    [regex]$re64 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x64\.zip'
-    if ($download_page.Content -match $re64) {
-        return @{
-            Version = $matches[1];
-        };
-    }
-
-    return @{ };
+    return @{ 
+        Version = $version 
+    };
 }
 
 update

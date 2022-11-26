@@ -1,4 +1,8 @@
-import-module au
+Import-Module au;
+Import-Module '../../_scripts/Get-GitHubRelease.psm1';
+
+$owner = 'rustdesk';
+$repository = 'rustdesk';
 
 function global:au_SearchReplace {
     @{
@@ -14,25 +18,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_url = [System.Uri]'https://github.com/rustdesk/rustdesk/releases/latest'
-    $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
-
-    [regex]$re32 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x32-portable\.zip'
-    [regex]$re64 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x64-portable\.zip'
-    if ($download_page.Content -match $re32) {
-        $url32 = $matches[0];
-        $version = $matches[1];
-        $uri32 = New-Object System.Uri @($download_url, $url32)
-    }
-    if ($download_page.Content -match $re64) {
-        $url64 = $matches[0];
-        $version = $matches[1];
-        $uri64 = New-Object System.Uri @($download_url, $url64)
-    }
+    $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
+    [regex]$re32 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x32-portable\.zip';
+    [regex]$re64 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x64-portable\.zip';
+    $url32 = $release.assets.browser_download_url | Where-Object { $_ -match $re32 } | Select-Object -First 1;
+    $url64 = $release.assets.browser_download_url | Where-Object { $_ -match $re64 } | Select-Object -First 1;
+    $version = $matches[1];
 
     return @{
-        URL32   = $uri32.AbsoluteUri;
-        URL64   = $uri64.AbsoluteUri;
+        URL32   = $url32;
+        URL64   = $url64;
         Version = $version;
     };
 }

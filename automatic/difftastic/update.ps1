@@ -1,4 +1,8 @@
-import-module au
+Import-Module au;
+Import-Module '../../_scripts/Get-GitHubRelease.psm1';
+
+$owner = 'Wilfred';
+$repository = 'difftastic';
 
 function global:au_SearchReplace {
     @{
@@ -11,18 +15,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_url = [System.Uri]'https://github.com/Wilfred/difftastic/releases/latest'
-    $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
-
-    [regex]$re = '/Wilfred/difftastic/releases/download/(\d+(?:\.\d+)+)/difft-x86_64-pc-windows-msvc\.zip'
-    if ($download_page.Content -match $re) {
-        $url = $matches[0];
-        $version = $matches[1];
-        $uri = New-Object System.Uri @($download_url, $url)
-    }
+    $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
+    [regex]$re = '/Wilfred/difftastic/releases/download/(\d+(?:\.\d+)+)/difft-x86_64-pc-windows-msvc\.zip';
+    $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
+    $version = $matches[1];
 
     return @{
-        URL64   = $uri.AbsoluteUri;
+        URL64   = $url;
         Version = $version;
     };
 }

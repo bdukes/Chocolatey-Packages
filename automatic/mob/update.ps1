@@ -1,4 +1,8 @@
-import-module au
+Import-Module au;
+Import-Module '../../_scripts/Get-GitHubRelease.psm1';
+
+$owner = 'remotemobprogramming';
+$repository = 'mob';
 
 function global:au_SearchReplace {
     @{
@@ -11,18 +15,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_url = [System.Uri]'https://github.com/remotemobprogramming/mob/releases/latest'
-    $download_page = Invoke-WebRequest -Uri $download_url -UseBasicParsing
+    $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
+    [regex]$re = '/remotemobprogramming/mob/releases/download/v(\d+(?:\.\d+)+)/.+_windows_amd64\.tar\.gz';
+    $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
+    $version = $matches[1];
 
-    [regex]$re = '/remotemobprogramming/mob/releases/download/v(\d+(?:\.\d+)+)/.+_windows_amd64\.tar\.gz'
-    if ($download_page.Content -match $re) {
-        $url = $matches[0];
-        $version = $matches[1];
-        $uri = New-Object System.Uri @($download_url, $url)
-        return @{ URL = $uri.AbsoluteUri; Version = $version };
-    }
-
-    return @{};
+    return @{ 
+        URL     = $url; 
+        Version = $version 
+    };
 }
 
 update
