@@ -6,9 +6,9 @@ $packageArgs = @{
   unzipLocation  = $toolsDir
   url            = 'https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-windows_x32-portable.zip'
   url64bit       = 'https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9-windows_x64-portable.zip'
-  checksum       = '7b8111bb2cf1e0e762a23a7ed82444d52831be7180bcc6e888b7fa5bb9987c40'
+  checksum       = '91ea1f1a1ee9eef31b34cfb0e694b2a8300a5b5ebfe26f857d4428447035223e'
   checksumType   = 'sha256'
-  checksum64     = '82fc31db2ff28dc07e0cb2a7c59f3f63bb624b0f0b03f3f9bcb68b288968c7b1'
+  checksum64     = 'd3ec9dfc24d21c2ca73da8debb165acd1e690aeb21911249d544667f26b0df0f'
   checksumType64 = 'sha256'
 }
 
