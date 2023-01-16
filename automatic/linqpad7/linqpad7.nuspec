@@ -4,7 +4,7 @@
   <metadata>
     <id>linqpad7</id>
     <title>LINQPad</title>
-    <version>7.5.15.20221129</version>
+    <version>7.6.6</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 7 Low-Impact Setup</summary>
@@ -31,7 +31,7 @@
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad7.install" version="[7.5.15.20221129]" />
+      <dependency id="linqpad7.install" version="[7.6.6]" />
     </dependencies>
   </metadata>
   <files>
