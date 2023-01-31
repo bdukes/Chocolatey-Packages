@@ -27,7 +27,8 @@ function global:au_GetLatest {
 
     if ($versionUrl) {
         $versionMatch = $versionUrl | select-string -Pattern $reFullVersion
-    } else {
+    }
+    else {
         $versionMatch = $url64 | select-string -Pattern $re64
     }
 
@@ -35,7 +36,7 @@ function global:au_GetLatest {
     return @{
         URL32       = $url32
         URL64       = $url64
-        Version     = $version
+        Version     = $version + '00'
         PackageName = 'imagemagick.tool'
     }
 }

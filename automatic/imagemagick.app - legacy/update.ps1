@@ -8,7 +8,7 @@ function global:au_SearchReplace {
             "(?i)(checksum32:).*" = "`${1} $($Latest.Checksum32)"
             "(?i)(checksum64:).*" = "`${1} $($Latest.Checksum64)"
         }
-     }
+    }
 }
 
 function global:au_BeforeUpdate {
@@ -29,7 +29,7 @@ function global:au_GetLatest {
     return @{
         URL32       = $url32
         URL64       = $url64
-        Version     = $version
+        Version     = $version + '00'
         PackageName = 'imagemagick.app'
     }
 }

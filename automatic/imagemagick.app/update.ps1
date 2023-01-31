@@ -3,16 +3,16 @@
 function global:au_SearchReplace {
     @{        
         ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
-          "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
-          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
-          "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+            "(?i)(\s+x32:).*"     = "`${1} $($Latest.URL32)"
+            "(?i)(\s+x64:).*"     = "`${1} $($Latest.URL64)"
+            "(?i)(checksum32:).*" = "`${1} $($Latest.Checksum32)"
+            "(?i)(checksum64:).*" = "`${1} $($Latest.Checksum64)"
         }
-     }
+    }
 }
 
 function global:au_BeforeUpdate {
-     Get-RemoteFiles -Purge
+    Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
@@ -27,9 +27,9 @@ function global:au_GetLatest {
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
 
     return @{
-        Url32 = $url32
-        Url64 = $url64
-        Version = $version
+        Url32   = $url32
+        Url64   = $url64
+        Version = $version + '00'
     }
 }
 
