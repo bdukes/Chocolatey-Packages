@@ -32,7 +32,7 @@ You can add -PackageParameters InstallOldFFmpeg=true to the choco install comman
     <bugTrackerUrl>https://github.com/ImageMagick/ImageMagick/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/ImageMagick/ImageMagick</projectSourceUrl>
     <dependencies>
-      <dependency id="vcredist2010" version="10.0.40219.1" />
+      <dependency id="vcredist140" version="14.34.31938" />
     </dependencies>
   </metadata>
   <files>
