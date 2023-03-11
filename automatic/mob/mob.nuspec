@@ -5,7 +5,7 @@
     <id>mob</id>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Brian Dukes</owners>
-    <version>4.3.0</version>
+    <version>4.3.1</version>
     <title>mob</title>
     <authors>Dr. Simon Harrer</authors>
     <projectUrl>https://mob.sh/</projectUrl>
