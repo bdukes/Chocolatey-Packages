@@ -7,27 +7,21 @@ $repository = 'rustdesk';
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^\s*url\s*=\s*)('.*')"            = "`$1'$($Latest.URL32)'"
-            "(^\s*url64bit\s*=\s*)('.*')"       = "`$1'$($Latest.URL64)'"
-            "(^\s*checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-            "(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-            "(^\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-            "(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+            "(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL)'"
+            "(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum)'"
+            "(^\s*checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType)'"
         }
     }
 }
 
 function global:au_GetLatest {
     $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
-    [regex]$re32 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x32-portable\.zip';
-    [regex]$re64 = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-windows_x64-portable\.zip';
-    $url32 = $release.assets.browser_download_url | Where-Object { $_ -match $re32 } | Select-Object -First 1;
-    $url64 = $release.assets.browser_download_url | Where-Object { $_ -match $re64 } | Select-Object -First 1;
+    [regex]$re = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-x86_64\.exe';
+    $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
     $version = $matches[1];
 
     return @{
-        URL32   = $url32;
-        URL64   = $url64;
+        URL     = $url;
         Version = $version;
     };
 }
