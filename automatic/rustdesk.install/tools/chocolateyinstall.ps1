@@ -3,10 +3,10 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  url            = 'https://github.com/rustdesk/rustdesk/releases/download/1.2.2/rustdesk-1.2.2-x86_64.exe'
+  url            = 'https://github.com/rustdesk/rustdesk/releases/download/1.2.3/rustdesk-1.2.3-x86_64.exe'
   silentArgs     = "--silent-install"
   validExitCodes = @(0)
-  checksum       = '7D8790E65A906706A93734B91EFA6DFDB732F9897E04707233FE48033BD5654E'
+  checksum       = '0856e5c8c3ee94edfddb80be160ee6857ab72d972065be86783af2c907a7cd54'
   checksumType   = 'sha256'
 }
 
