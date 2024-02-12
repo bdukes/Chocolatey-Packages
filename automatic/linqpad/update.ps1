@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{
         'linqpad.nuspec' = @{
-            '(^\s*<dependency id="linqpad7" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+            '(^\s*<dependency id="linqpad8" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
         }
     }
 }
@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
 
-    $re = '<td[^>]*>\s*(?:<[^>]+>)*(7\.(?:\d+\.?)+)</'
+    $re = '<td[^>]*>\s*(?:<[^>]+>)*(8\.(?:\d+\.?)+)</'
 
     $versionMatches = $download_page | select-string -Pattern $re
     $versionMatch = $versionMatches.Matches[0]
