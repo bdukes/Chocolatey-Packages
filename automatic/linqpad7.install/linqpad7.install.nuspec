@@ -29,7 +29,7 @@
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
-    <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad7.aspx</releaseNotes>
     <dependencies>
       <dependency id="dotnet-sdk" version="5.0.100" />
     </dependencies>
