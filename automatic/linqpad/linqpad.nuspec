@@ -7,7 +7,7 @@
     <version>7.8.10</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
-    <summary>LINQPad 7 Low-Impact Setup</summary>
+    <summary>LINQPad 8 Low-Impact Setup</summary>
     <description>
 ## The .NET Programmer’s Playground
 
@@ -29,9 +29,9 @@
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
-    <releaseNotes>https://www.linqpad.net/LINQPad6.aspx</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad8.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad7" version="[7.8.10]" />
+      <dependency id="linqpad8" version="[7.8.10]" />
     </dependencies>
   </metadata>
   <files>
