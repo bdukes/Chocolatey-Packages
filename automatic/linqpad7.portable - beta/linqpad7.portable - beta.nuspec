@@ -25,7 +25,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@b6a7c4b9f2378a716b1300f0d45242e24d44bbf9/icons/linqpad7.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
-    <releaseNotes>https://www.linqpad.net/LINQPad6.aspx#beta</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad7.aspx#beta</releaseNotes>
     <dependencies>
       <dependency id="dotnet-sdk" version="5.0.100" />
     </dependencies>
