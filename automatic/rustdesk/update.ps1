@@ -14,9 +14,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
-    [regex]$re = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+)/.+-x86_64\.exe';
+    [regex]$re = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+(?:-\d+)?)/.+-x86_64\.exe';
     $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
     $version = $matches[1];
+    $version = $version -replace '-', '.';
 
     return @{ 
         Version = $version 
