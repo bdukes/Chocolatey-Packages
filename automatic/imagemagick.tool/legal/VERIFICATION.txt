@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-portable-Q16-x86.zip
-   x64: https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-portable-Q16-x64.zip
+   x32: https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-31-portable-Q16-x86.zip
+   x64: https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-31-portable-Q16-x64.zip
 
    to download the installer.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 0517E6FDFF5540DD5A66BD8568713AED1BF3F2DF6A1B28656A51AE277D63454D
-   checksum64: BCE5DA27340EC7561651446FCFFC7C87B09F40490EBB15066F8C0217FB325A1E
+   checksum32: 86017A75C904EF3657B7B9B25DA7C6E7B4EA111E997A8FDF93EA16BFFAFDE0E9
+   checksum64: 90BD50D44C4AF291107BF2D89FC468A7253BB81C0E48053049954464ED19319E
