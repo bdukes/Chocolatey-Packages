@@ -4,8 +4,8 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition;
 
 $packageArgs = @{
   packageName   = 'mob'
-  url           = 'https://github.com/remotemobprogramming/mob/releases/download/v5.3.1/mob_v5.3.1_windows_amd64.tar.gz'
-  checksum      = 'e4deb4e0eb7b22cb2e77fa51e4631d6687a8bb848421d3af28224c25d2caec9c'
+  url           = 'https://github.com/remotemobprogramming/mob/releases/download/v5.3.2/mob_v5.3.2_windows_amd64.tar.gz'
+  checksum      = '315d71fd99da9a2bdfeb3ae8e7ee01e9ca509a5cdfa49111c73abc9dad997bc5'
   checksumType  = 'sha256'
   unzipLocation = $toolsDir
 }
