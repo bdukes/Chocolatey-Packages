@@ -4,7 +4,7 @@
   <metadata>
     <id>linqpad8</id>
     <title>LINQPad</title>
-    <version>8.6.4</version>
+    <version>8.6.6</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 8 Low-Impact Setup</summary>
@@ -31,7 +31,7 @@
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/LINQPad8.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad8.install" version="[8.6.4]" />
+      <dependency id="linqpad8.install" version="[8.6.6]" />
     </dependencies>
   </metadata>
   <files>
