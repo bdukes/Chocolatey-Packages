@@ -5,8 +5,8 @@ $exeFile = Join-Path $toolsDir 'rustdesk.exe';
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
   fileFullPath = $exeFile
-  url          = 'https://github.com/rustdesk/rustdesk/releases/download/1.3.3/rustdesk-1.3.3-x86_64.exe'
-  checksum     = 'fcd49724b1f9e36135e6a1ef0236b701b6f9be19a569626d82245a4043aa9efa'
+  url          = 'https://github.com/rustdesk/rustdesk/releases/download/1.3.4/rustdesk-1.3.4-x86_64.exe'
+  checksum     = '2454d0017268909f5bf81324d03c47b2a8cab5e52cd20d3968020037a9173430'
   checksumType = 'sha256'
 }
 
