@@ -10,10 +10,10 @@ if (Test-Path $installedPath) {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  url            = 'https://github.com/rustdesk/rustdesk/releases/download/1.3.5/rustdesk-1.3.5-x86_64.exe'
+  url            = 'https://github.com/rustdesk/rustdesk/releases/download/1.3.6/rustdesk-1.3.6-x86_64.exe'
   silentArgs     = "--silent-install"
   validExitCodes = @(0)
-  checksum       = '30d13a97c091946a706802e0ec521b6ca31433815ce8f8737454a98d74b0b236'
+  checksum       = '0263b7d994498ecdeb4c8564762e0c59c239031e23e2104dced98ff0537e0b9a'
   checksumType   = 'sha256'
 }
 
