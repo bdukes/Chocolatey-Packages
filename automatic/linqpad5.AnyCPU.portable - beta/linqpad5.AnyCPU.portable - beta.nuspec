@@ -4,7 +4,7 @@
   <metadata>
     <id>linqpad5.AnyCPU.portable</id>
     <title>LINQPad 5 (Portable, AnyCPU build)</title>
-    <version>5.52.01-beta</version>
+    <version>5.53.0-beta</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 5 (Portable, AnyCPU build for "massive" queries)</summary>
