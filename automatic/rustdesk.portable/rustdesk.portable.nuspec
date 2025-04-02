@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustdesk.portable</id>
-    <version>1.3.8</version>
+    <version>1.3.9</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Brian Dukes</owners>
     <title>RustDesk (Portable)</title>
