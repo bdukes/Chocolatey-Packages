@@ -33,4 +33,4 @@ function global:au_GetLatest {
     }
 }
 
-AU\Update-Package -NoCheckChocoVersion -ChecksumFor none
+Chocolatey-AU\Update-Package -NoCheckChocoVersion -ChecksumFor none;
