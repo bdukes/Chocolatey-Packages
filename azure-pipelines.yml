@@ -23,7 +23,7 @@
         "displayName": "Output environment details",
       },
       {
-        "powershell": 'git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au; . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version;',
+        "powershell": 'git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au; . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version;',
         "displayName": "Install AU",
       },
       {

@@ -39,3 +39,20 @@ function global:au_AfterUpdate {
 }
 
 Update-Package -ChecksumFor 64
+  @{
+      'tools\chocolateyInstall.ps1' = @{
+          "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
+          "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+          "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      }
+      'tools\VERIFICATION.txt' = @{
+        "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.Url64)>"
+      }
+  }
+}
+
+function global:au_AfterUpdate {
+  Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
+}
+
+Update-Package -ChecksumFor 64

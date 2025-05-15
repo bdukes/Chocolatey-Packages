@@ -23,8 +23,18 @@ function global:au_SearchReplace {
         '(^\s*<dependency id="rustdesk.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
       }
   }
+  @{
+      'rustdesk.nuspec' = @{
+        '(^\s*<dependency id="rustdesk.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+      }
+  }
 }
 
+function global:au_AfterUpdate {
+  Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
+}
+
+Update-Package -ChecksumFor all
 function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
