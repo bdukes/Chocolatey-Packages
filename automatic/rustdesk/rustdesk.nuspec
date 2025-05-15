@@ -5,12 +5,12 @@
     <id>rustdesk</id>
     <version>1.4.0</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
-    <owners>Brian Dukes</owners>
+    <owners>bdukes virtualex</owners>
     <title>RustDesk (Install)</title>
     <authors>Purslane Ltd.</authors>
     <projectUrl>https://rustdesk.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/rustdesk/rustdesk@05e269a0bb0f6f67e63c33d1aadaf9cb875af7d1/128x128%402x.png</iconUrl>
-    <copyright>Copyright © 2023 Purslane Ltd.</copyright>
+    <copyright>Copyright © 2025 Purslane Ltd.</copyright>
     <licenseUrl>https://github.com/rustdesk/rustdesk/blob/master/LICENCE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rustdesk/rustdesk</projectSourceUrl>
@@ -20,7 +20,7 @@
     <tags>rustdesk.install admin teamviewer remote-desktop</tags>
     <summary>Open source virtual / remote desktop infrastructure for everyone! The open source TeamViewer alternative. Display and control your PC and Android devices.</summary>
     <description>A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our public rendezvous/relay server, or [self-hosting](https://rustdesk.com/server), or write your own server.</description>
-    <releaseNotes>[https://github.com/rustdesk/rustdesk/releases](https://github.com/rustdesk/rustdesk/releases)</releaseNotes>
+    <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.0</releaseNotes>
     <dependencies>
       <dependency id="rustdesk.install" version="[1.4.0]" />
     </dependencies>
