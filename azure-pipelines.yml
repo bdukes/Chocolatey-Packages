@@ -2,16 +2,7 @@
   "trigger": ["master"],
   "pr": ["master"],
   "pool": { "vmImage": "windows-latest" },
-  "variables":
-    [
-      { "group": "Chocolatey CI" },
-      { "name": "au_version", "value": "" },
-      { "name": "au_push", "value": "true" },
-      { "name": "au_test_groups", "value": "1" },
-      { "name": "github_user_repo", "value": "bdukes/Chocolatey-Packages" },
-      { "name": "gist_id", "value": "fd3d636b9b4617772f9b99ceb88838fa" },
-      { "name": "gist_id_test", "value": "" },
-    ],
+  "variables": [{ "group": "Chocolatey CI" }],
   "steps":
     [
       { "checkout": "self", "persistCredentials": true },
@@ -24,7 +15,7 @@
         "displayName": "Output environment details",
       },
       {
-        "powershell": 'git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au; . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version;',
+        "powershell": "choco install chocolatey-au",
         "displayName": "Install AU",
       },
       {

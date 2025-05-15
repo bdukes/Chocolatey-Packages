@@ -1,4 +1,4 @@
-Import-Module au;
+import-module Chocolatey-AU;;
 Import-Module '../../_scripts/Get-GitHubRelease.psm1';
 
 $owner = 'remotemobprogramming';
