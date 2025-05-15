@@ -1,27 +1,32 @@
-import-module Chocolatey-AU;;
+Import-Module Chocolatey-AU;
 Import-Module '../../_scripts/Get-GitHubRelease.psm1';
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1";
 
-$owner = 'rustdesk';
-$repository = 'rustdesk';
-
-function global:au_SearchReplace {
-    @{
-        'rustdesk.nuspec' = @{
-            '(^\s*<dependency id="rustdesk.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
-        }
-    }
-}
+$release = Get-GitHubRelease rustdesk rustdesk;
 
 function global:au_GetLatest {
-    $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
-    [regex]$re = '/rustdesk/rustdesk/releases/download/(\d+(?:\.\d+)+(?:-\d+)?)/.+-x86_64\.exe';
-    $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
-    $version = $matches[1];
-    $version = $version -replace '-', '.';
 
-    return @{ 
-        Version = $version 
-    };
+  $version = $release.tag_name;
+
+  $tag = $version;
+  $ReleaseNotes = "https://github.com/rustdesk/rustdesk/releases/tag/$($tag)";
+
+  @{
+    Version           = $version
+    ReleaseNotes      = $ReleaseNotes
+  }
 }
 
-update
+function global:au_SearchReplace {
+  @{
+      'rustdesk.nuspec' = @{
+        '(^\s*<dependency id="rustdesk.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+      }
+  }
+}
+
+function global:au_AfterUpdate {
+  Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes;
+}
+
+Update-Package -ChecksumFor all;
