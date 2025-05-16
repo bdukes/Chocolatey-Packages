@@ -19,7 +19,21 @@
     <bugTrackerUrl>https://github.com/rustdesk/rustdesk/issues</bugTrackerUrl>
     <tags>rustdesk.portable teamviewer remote-desktop</tags>
     <summary>Open source virtual / remote desktop infrastructure for everyone! The open source TeamViewer alternative. Display and control your PC and Android devices.</summary>
-    <description>A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our public rendezvous/relay server, or [self-hosting](https://rustdesk.com/server), or write your own server.</description>
+    <description>A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our public rendezvous/relay server, or [self-hosting](https://rustdesk.com/server), or write your own server.
+
+---
+
+## Usage
+
+Example:
+
+```shell
+rustdesk-qs.exe --portable-service
+```
+
+---
+
+    </description>
     <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.0</releaseNotes>
   </metadata>
   <files>
