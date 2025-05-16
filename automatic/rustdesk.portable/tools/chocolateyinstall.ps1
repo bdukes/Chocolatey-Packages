@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$exeFile               = Join-Path $toolsDir 'rustdesk.exe'
+$exeFile               = Join-Path $toolsDir 'rustdesk-qs.exe'
 
 $url                   = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.0/rustdesk-1.4.0-x86-sciter.exe'
 $checksum              = '6abc7a882dd5d581d709534f414abdf55c11790eb4bad46dc5e86edf5fb35c33'
