@@ -14,7 +14,7 @@ $packageArgs = @{
   checksumType          = $checksumType
   checksumType64        = $checksumType64
   silentArgs            = "/qn /norestart"
-  validExitCodes        = @(0)
+  validExitCodes        = @(0, 3010)
 }
 
 Install-ChocolateyPackage @packageArgs
