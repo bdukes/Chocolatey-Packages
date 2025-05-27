@@ -28,9 +28,6 @@ function global:au_SearchReplace {
           "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
           "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
       }
-      'tools\VERIFICATION.txt' = @{
-        "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.Url64)>"
-      }
   }
 }
 
