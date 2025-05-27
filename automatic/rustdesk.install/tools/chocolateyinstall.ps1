@@ -4,11 +4,6 @@ $url64                 = 'https://github.com/rustdesk/rustdesk/releases/download
 $checksum64            = '0207c07e89f2c1ebfc239db8b3c2bc5c48db3992931af72d23faf9eb57908dd2'
 $ChecksumType64        = 'sha256'
 
-$installedPath = 'C:\Program Files\RustDesk\rustdesk.exe'
-if (Test-Path $installedPath) {
-    & $installedPath --uninstall
-}
-
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
   fileType              = 'msi'
@@ -18,12 +13,8 @@ $packageArgs = @{
   checksum64            = $checksum64
   checksumType          = $checksumType
   checksumType64        = $checksumType64
-  silentArgs            = "/q /norestart"
+  silentArgs            = "/qn"
   validExitCodes        = @(0)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-if (Test-Path $installedPath) {
-  & $installedPath --install-service
-}
