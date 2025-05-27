@@ -13,7 +13,7 @@ $packageArgs = @{
   checksum64            = $checksum64
   checksumType          = $checksumType
   checksumType64        = $checksumType64
-  silentArgs            = "/qn"
+  silentArgs            = "/qn /norestart"
   validExitCodes        = @(0)
 }
 
