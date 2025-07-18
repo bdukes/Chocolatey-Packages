@@ -27,6 +27,8 @@
             "api_key": "$(api_key)",
             "github_api_key": "$(github_api_key)",
             "au_Push": "true",
+            "github_user_repo": "bdukes/Chocolatey-Packages",
+            "gist_id": "fd3d636b9b4617772f9b99ceb88838fa",
           },
       },
       {
