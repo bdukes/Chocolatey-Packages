@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>difftastic</id>
@@ -10,7 +11,7 @@
     <authors>Wilfred Hughes</authors>
     <projectUrl>https://difftastic.wilfred.me.uk/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/Wilfred/difftastic@0.35.0/img/logo.png</iconUrl>
-    <copyright>Copyright © 2021-2022 Wilfred Hughes</copyright>
+    <copyright>Copyright © 2021-2025 Wilfred Hughes</copyright>
     <licenseUrl>https://github.com/Wilfred/difftastic/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Wilfred/difftastic</projectSourceUrl>
@@ -20,7 +21,8 @@
     <tags>difftastic portable diff syntax</tags>
     <summary>A structural diff that understands syntax.</summary>
     <description>Difftastic is a structural diff tool that compares files based on their syntax.</description>
-    <releaseNotes>[https://github.com/Wilfred/difftastic/blob/master/CHANGELOG.md](https://github.com/Wilfred/difftastic/blob/master/CHANGELOG.md)</releaseNotes>
+    <releaseNotes>
+      [https://github.com/Wilfred/difftastic/blob/master/CHANGELOG.md](https://github.com/Wilfred/difftastic/blob/master/CHANGELOG.md)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

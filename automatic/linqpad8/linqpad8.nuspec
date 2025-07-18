@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>linqpad8</id>
@@ -9,22 +10,26 @@
     <owners>Brian Dukes</owners>
     <summary>LINQPad 8 Low-Impact Setup</summary>
     <description>
-## The .NET Programmer’s Playground
+      ## The .NET Programmer’s Playground
 
-* [Instantly test](https://www.linqpad.net/#scratchpad) any C#/F#/VB snippet or program
-* [Query databases in LINQ](https://www.linqpad.net/#db) (or SQL) — SQL/Azure, Oracle, SQLite, Postgres &amp; MySQL
-* Enjoy [rich output formatting](https://www.linqpad.net/#dump), optional autocompletion and integrated debugging
-* [Script and automate](https://www.linqpad.net/lprun.aspx) in your favorite .NET language
-* Super lightweight — single 20MB executable!
-* Standard edition free, with no expiry
+      * [Instantly test](https://www.linqpad.net/#scratchpad) any C#/F#/VB snippet or program
+      * [Query databases in LINQ](https://www.linqpad.net/#db) (or SQL) — SQL/Azure, Oracle, SQLite,
+      Postgres &amp; MySQL
+      * Enjoy [rich output formatting](https://www.linqpad.net/#dump), optional autocompletion and
+      integrated debugging
+      * [Script and automate](https://www.linqpad.net/lprun.aspx) in your favorite .NET language
+      * Super lightweight — single 20MB executable!
+      * Standard edition free, with no expiry
 
-  This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
+      This package is the low-impact setup, which creates a desktop shortcut and a file association
+      for .LINQ files.</description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-core .net linqpad admin</tags>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@b6a7c4b9f2378a716b1300f0d45242e24d44bbf9/icons/linqpad7.png</iconUrl>
+    <copyright><![CDATA[© LINQPad Pty Ltd 2007-2025]]></copyright>
+    <iconUrl>
+      https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@b6a7c4b9f2378a716b1300f0d45242e24d44bbf9/icons/linqpad7.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>

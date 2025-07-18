@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spawner</id>
@@ -9,7 +10,8 @@
     <title>Spawner Data Generator</title>
     <authors>Seth Grover,Ryan Zuwala</authors>
     <projectUrl>http://spawner.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spawner/icon.png</iconUrl>
+    <iconUrl>
+      https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spawner/icon.png</iconUrl>
     <copyright>Copyright (C) 2013 by Seth Grover, with major contributions by Ryan Zuwala.</copyright>
     <licenseUrl>https://sourceforge.net/p/spawner/code/HEAD/tree/trunk/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -19,7 +21,9 @@
     <bugTrackerUrl>https://sourceforge.net/p/spawner/feature-requests/</bugTrackerUrl>
     <tags>spawner sql database data-generator</tags>
     <summary>Spawner is a tool for generating test data suitable for populating databases.</summary>
-    <description>Spawner is a generator of sample/test data for databases. It can be configured to output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x database. Includes many field types, most of which are configurable.</description>
+    <description>Spawner is a generator of sample/test data for databases. It can be configured to
+      output delimited text or SQL insert statements. It can also insert directly into a MySQL 5.x
+      database. Includes many field types, most of which are configurable.</description>
     <releaseNotes>https://sourceforge.net/p/spawner/code/HEAD/tree/trunk/CHANGES</releaseNotes>
   </metadata>
   <files>

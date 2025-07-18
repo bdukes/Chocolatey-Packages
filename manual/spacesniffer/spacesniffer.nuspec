@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spacesniffer</id>
@@ -11,10 +12,11 @@
     <projectUrl>http://www.uderzo.it/main_products/space_sniffer/index.html</projectUrl>
     <tags>spacesniffer disk usage file utilities tools</tags>
     <licenseUrl>http://www.uderzo.it/main_products/space_sniffer/donate.html</licenseUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spacesniffer/icon.png</iconUrl>
+    <iconUrl>
+      https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@d7c02ae406446bca50b98b872da481852fc65682/spacesniffer/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
-    <copyright>2016 Uderzo Umberto</copyright>
+    <copyright>Copyright (C) 2000-2016 Uderzo Umberto</copyright>
     <docsUrl>http://www.uderzo.it/main_products/space_sniffer/tips_and_tricks.html</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->

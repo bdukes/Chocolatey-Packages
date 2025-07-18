@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>linqpad5</id>
@@ -9,14 +10,22 @@
     <owners>Brian Dukes</owners>
     <summary>LINQPad 5 Low-Impact Setup</summary>
     <description>
-  LINQPad lets you interactively query databases in a modern query language: LINQ.  LINQPad supports everything in C# 6.0 and Framework 4.6 (LINQ to Objects, SQL, EF, XML, Parallel LINQ, etc.).  It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn LINQ: it comes loaded with 500 examples from the book, C# 6.0 in a Nutshell.  And LINQPad is more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any expression, statement block or program with rich output formatting – the ultimate in dynamic development.
-  This package is the low-impact setup, which creates a desktop shortcut and a file association for .LINQ files.</description>
+      LINQPad lets you interactively query databases in a modern query language: LINQ. LINQPad
+      supports everything in C# 6.0 and Framework 4.6 (LINQ to Objects, SQL, EF, XML, Parallel LINQ,
+      etc.). It also supports OData, Azure, and a lot more. LINQPad is also a great way to learn
+      LINQ: it comes loaded with 500 examples from the book, C# 6.0 in a Nutshell. And LINQPad is
+      more than a LINQ tool: it's an ergonomic C#/VB/F# scratchpad that instantly executes any
+      expression, statement block or program with rich output formatting – the ultimate in dynamic
+      development.
+      This package is the low-impact setup, which creates a desktop shortcut and a file association
+      for .LINQ files.</description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
     <tags>linq sql .net-4 .net-4.6 linqpad admin</tags>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright><![CDATA[© 2007-2022 Joseph Albahari]]></copyright>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
+    <copyright><![CDATA[© LINQPad Pty Ltd 2007-2025]]></copyright>
+    <iconUrl>
+      https://cdn.jsdelivr.net/gh/bdukes/Chocolatey-Packages@3076028cf4247a1e2e930553372f87432768419f/linqpad/linqpadmed.png</iconUrl>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>

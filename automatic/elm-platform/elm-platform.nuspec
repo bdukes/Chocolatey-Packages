@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter
+enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>elm-platform</id>
@@ -9,8 +10,9 @@
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
     <projectUrl>https://elm-lang.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
-    <copyright>Copyright (c) 2012-2019, Evan Czaplicki</copyright>
+    <iconUrl>
+      https://raw.githubusercontent.com/bdukes/Chocolatey-Packages/6fa873f219a4d02bbbcdd40f7315778bf8e751f1/icons/elm-platform.png</iconUrl>
+    <copyright>Copyright (c) 2012-present Evan Czaplicki</copyright>
     <licenseUrl>https://github.com/elm/compiler/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/elm/compiler</projectSourceUrl>
