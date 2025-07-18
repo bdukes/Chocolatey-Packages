@@ -9,7 +9,7 @@ This contains Chocolatey packages, both manually and automatically maintained.
 ## Folder Structure
 
 - `au` - The scripts for running Automatic Updater (AU) are here.
-- `automatic` - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
+- `automatic` - where automatic packaging and packages are kept. These are packages that are automatically maintained using [Chocolatey-AU](https://chocolatey.org/packages/chocolatey-au).
 - `icons` - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 - `manual` - where packages that are not automatic are kept.
 
