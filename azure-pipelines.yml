@@ -23,7 +23,11 @@
         "inputs": { "filePath": "au/update_all.ps1" },
         "displayName": "Update all packages",
         "env":
-          { "api_key": "$(api_key)", "github_api_key": "$(github_api_key)" },
+          {
+            "api_key": "$(api_key)",
+            "github_api_key": "$(github_api_key)",
+            "au_Push": "true",
+          },
       },
       {
         "task": "CopyFiles@2",
