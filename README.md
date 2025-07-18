@@ -21,5 +21,5 @@ For setting up your own automatic package repository, please see [Automatic Pack
 
 ### AU
 
-- PowerShell v4+.
-- The [AU module](https://chocolatey.org/packages/au).
+- Windows PowerShell v5.
+- The [Chocolatey-AU module](https://chocolatey.org/packages/chocolatey-au).
