@@ -15,7 +15,7 @@
         "displayName": "Output environment details",
       },
       {
-        "powershell": "Write-Host '##[command]choco install chocolatey-au;'; choco install chocolatey-au;",
+        "powershell": "Write-Host '##[command]choco install chocolatey-au; choco install wormies-au-helpers;'; choco install chocolatey-au; choco install wormies-au-helpers;",
         "displayName": "Install AU",
       },
       {
