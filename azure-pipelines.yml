@@ -15,8 +15,8 @@
         "displayName": "Output environment details",
       },
       {
-        "powershell": "choco install chocolatey-au",
-        "displayName": "Install AU",
+        "powershell": "choco install chocolatey-au wormies-au-helpers",
+        "displayName": "Install AU & Helpers",
       },
       {
         "task": "PowerShell@2",
