@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustdesk.install</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>bdukes virtualex</owners>
     <title>RustDesk (Install)</title>
@@ -20,7 +20,7 @@
     <tags>rustdesk.install admin teamviewer remote-desktop</tags>
     <summary>Open source virtual / remote desktop infrastructure for everyone! The open source TeamViewer alternative. Display and control your PC and Android devices.</summary>
     <description>A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our public rendezvous/relay server, or [self-hosting](https://rustdesk.com/server), or write your own server.</description>
-    <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.0</releaseNotes>
+    <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

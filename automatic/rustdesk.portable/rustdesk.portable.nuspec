@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustdesk.portable</id>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>bdukes virtualex</owners>
     <title>RustDesk (Portable)</title>
@@ -34,7 +34,7 @@ rustdesk-qs.exe --portable-service
 ---
 
     </description>
-    <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.0</releaseNotes>
+    <releaseNotes>https://github.com/rustdesk/rustdesk/releases/tag/1.4.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

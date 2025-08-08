@@ -3,11 +3,11 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $exeFile               = Join-Path $toolsDir 'rustdesk-qs.exe'
 
-$url                   = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.0/rustdesk-1.4.0-x86-sciter.exe'
-$checksum              = '6abc7a882dd5d581d709534f414abdf55c11790eb4bad46dc5e86edf5fb35c33'
+$url                   = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86-sciter.exe'
+$checksum              = '76720e622e36bc36a1e594d706f2abc3647931ba59709d2ba9dc15d0354314be'
 $ChecksumType          = 'sha256'
-$url64                 = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.0/rustdesk-1.4.0-x86_64.exe'
-$checksum64            = '118d2ca9c9388a7f781ae56c0bfe1e765e7c3272312bea5569b4cb5710d8c419'
+$url64                 = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86_64.exe'
+$checksum64            = 'ba5af57afc8e97381af7201ee35b202aa62f5b162863d9135a3a8908f32ff08a'
 $ChecksumType64        = 'sha256'
 
 $packageArgs = @{
