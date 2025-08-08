@@ -7,15 +7,15 @@
     [
       { "checkout": "self", "persistCredentials": true },
       {
-        "powershell": 'git config --global user.email "bdukes@engagesoftware.com"; git config --global user.name "Brian Dukes (via Azure DevOps)"; git config --global core.safecrlf false;',
+        "powershell": "Write-Host '##[command]git config --global user.email \"bdukes@engagesoftware.com\"; git config --global user.name \"Brian Dukes (via Azure DevOps)\"; git config --global core.safecrlf false;'; git config --global user.email \"bdukes@engagesoftware.com\"; git config --global user.name \"Brian Dukes (via Azure DevOps)\"; git config --global core.safecrlf false;",
         "displayName": "Configure Git",
       },
       {
-        "powershell": "Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version; $PSVersionTable; git --version; choco --version;",
+        "powershell": "Write-Host '##[command]Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version; $PSVersionTable; git --version; choco --version;'; Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version; $PSVersionTable; git --version; choco --version;",
         "displayName": "Output environment details",
       },
       {
-        "powershell": "choco install chocolatey-au",
+        "powershell": "Write-Host '##[command]choco install chocolatey-au;'; choco install chocolatey-au;",
         "displayName": "Install AU",
       },
       {
