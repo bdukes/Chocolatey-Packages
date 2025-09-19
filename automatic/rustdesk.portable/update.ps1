@@ -24,6 +24,11 @@ function global:au_GetLatest {
   }
 }
 
+function global:au_BeforeUpdate {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
+  $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64 -Algorithm $Latest.ChecksumType64
+}
+
 function global:au_SearchReplace {
   @{
       'tools\chocolateyInstall.ps1' = @{
@@ -41,4 +46,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor none
