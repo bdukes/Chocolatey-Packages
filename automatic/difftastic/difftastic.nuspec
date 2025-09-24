@@ -4,7 +4,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>difftastic</id>
-    <version>0.64.0</version>
+    <version>0.65.0</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Brian Dukes</owners>
     <title>Difftastic</title>
