@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64                 = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.2/rustdesk-1.4.2-x86_64.msi'
-$checksum64            = '1e9a1f508761517e274df07f12169bd2b125c22fd189b86cbc3c1c5f363f2160'
+$url64                 = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.3/rustdesk-1.4.3-x86_64.msi'
+$checksum64            = '452fee8b85100f41b916e8ac29d30e255d149738c20413e34ee21bb0cfa36a32'
 $ChecksumType64        = 'sha256'
 
 $packageArgs = @{
