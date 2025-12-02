@@ -18,8 +18,8 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php'
 
-    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x86.zip$"
-    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x64.zip$"
+    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x86.7z$"
+    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x64.7z$"
     $reFullVersion = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)[a-zA-Z0-9-]*\.exe$"
     $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
     $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
