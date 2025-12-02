@@ -2,8 +2,8 @@ import-module Chocolatey-AU;
 
 function global:au_SearchReplace {
     @{
-        'linqpad.nuspec' = @{
-            '(^\s*<dependency id="linqpad9" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+        'linqpad9.nuspec' = @{
+            '(^\s*<dependency id="linqpad9.install" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
         }
     }
 }

@@ -2,8 +2,8 @@ import-module Chocolatey-AU;
 
 function global:au_SearchReplace {
     @{
-        'linqpad.nuspec' = @{
-            '(^\s*<dependency id="linqpad9" version=")(\[.*\])(" />)' = "`$1[$($Latest.Version)]`$3"
+        'tools\chocolateyInstall.ps1' = @{
+            "(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $versionMatch = $versionMatches.Matches[0]
     $version = $versionMatch.Groups[1].Value
 
-    $Latest = @{ Version = $version }
+    $Latest = @{ URL32 = 'https://www.linqpad.net/GetFile.aspx?LINQPad9.zip'; Version = $version }
     return $Latest
 }
 

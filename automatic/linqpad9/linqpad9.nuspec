@@ -3,7 +3,7 @@
 enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>linqpad</id>
+    <id>linqpad9</id>
     <title>LINQPad</title>
     <version>9.4.6</version>
     <authors>Joseph Albahari</authors>
@@ -24,7 +24,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
       This package is the low-impact setup, which creates a desktop shortcut and a file association
       for .LINQ files.</description>
     <projectUrl>https://www.linqpad.net/</projectUrl>
-    <tags>linq sql .net-core linqpad admin</tags>
+    <tags>linq sql .net-core .net linqpad admin</tags>
     <licenseUrl>https://www.linqpad.net/eula.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright><![CDATA[© LINQPad Pty Ltd 2007-2025]]></copyright>
@@ -34,9 +34,9 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
     <docsUrl>https://www.linqpad.net/FAQ.aspx</docsUrl>
     <mailingListUrl>http://forum.linqpad.net/</mailingListUrl>
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
-    <releaseNotes>https://www.linqpad.net/LINQPad8.aspx</releaseNotes>
+    <releaseNotes>https://www.linqpad.net/LINQPad9.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad9" version="[9.4.6]" />
+      <dependency id="linqpad9.install" version="[9.4.6]" />
     </dependencies>
   </metadata>
   <files>
