@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustdesk.install</id>
-    <version>1.4.4</version>
+    <version>1.4.4.20260105</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>bdukes virtualex</owners>
     <title>RustDesk (Install)</title>
     <authors>Purslane Ltd.</authors>
     <projectUrl>https://rustdesk.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/rustdesk/rustdesk@05e269a0bb0f6f67e63c33d1aadaf9cb875af7d1/128x128%402x.png</iconUrl>
-    <copyright>Copyright © 2025 Purslane Ltd.</copyright>
+    <copyright>Copyright © 2026 Purslane Ltd.</copyright>
     <licenseUrl>https://github.com/rustdesk/rustdesk/blob/master/LICENCE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rustdesk/rustdesk</projectSourceUrl>
