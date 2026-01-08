@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 
-$packageName = 'linqpad8.install'
+$packageName = 'linqpad9.install'
 $url = 'https://www.linqpad.net/GetFile.aspx?LINQPad9Setup.exe'
 
 $packageArgs = @{
