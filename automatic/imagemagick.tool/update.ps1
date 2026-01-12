@@ -23,10 +23,10 @@ function global:au_GetLatest {
     $versionUrl = $download_page | Select-String -Pattern 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)[a-zA-Z0-9-]*\.exe';
 
     if ($versionUrl) {
-        $versionMatch = $versionUrl | select-string -Pattern $reFullVersion;
+        $versionMatch = $versionUrl;
     }
     else {
-        $versionMatch = $url64 | select-string -Pattern $re64;
+        $versionMatch = $url64;
     }
 
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.';

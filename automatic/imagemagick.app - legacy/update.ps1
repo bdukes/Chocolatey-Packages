@@ -21,8 +21,7 @@ function global:au_GetLatest {
     $url32 = $download_page | Select-String -Pattern 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe';
     $url64 = $download_page | Select-String -Pattern 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x64-dll.exe';
 
-    $versionMatch = $url64 | select-string -Pattern $re64;
-    $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.';
+    $version = $url64.Matches[0].Groups[1].Value -replace '-', '.';
 
     return @{
         URL32       = $url32
