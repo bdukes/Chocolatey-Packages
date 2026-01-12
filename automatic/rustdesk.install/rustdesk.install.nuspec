@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustdesk.install</id>
-    <version>1.4.4.20260105</version>
+    <version>1.4.5</version>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>bdukes virtualex</owners>
     <title>RustDesk (Install)</title>
