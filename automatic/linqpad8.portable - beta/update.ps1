@@ -9,16 +9,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad8.aspx'
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad8.aspx' -UseBasicParsing;
 
-    $betaCard = $download_page.AllElements | ? class -match 'cardnarrow' | ? innerHtml -match 'beta'
-
-    $versionMatch = $betaCard | Select-String -Pattern 'Version:?\s*(?:<[^>]+>)?\s*((?:\d+\.)+\d+)'
+    $versionMatch = $download_page | Select-String -Pattern 'Current beta version:?\s*(?:<[^>]+>)?\s*((?:\d+\.)+\d+)';
     if ($versionMatch) {
-        $version = $versionMatch.Matches[0].Groups[1].Value
+        $version = $versionMatch.Matches[0].Groups[1].Value;
     }
     else {
-        $version = '0.0.0'
+        $version = '0.0.0';
     }
 
     return @{

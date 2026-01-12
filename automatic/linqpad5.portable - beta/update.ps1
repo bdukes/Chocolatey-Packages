@@ -9,16 +9,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad5.aspx'
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad5.aspx' -UseBasicParsing;
 
-    $re = "GetFile\.aspx\?preview\+LINQPad5\.zip$"
-    $linkText = $download_page.links | ? href -match $re | select -First 1 -expand outerHTML
-
-    $versionMatch = $linkText | select-string -Pattern '(?:\d+\.)+\d+'
+    $versionMatch = $download_page | select-string -Pattern 'GetFile\.aspx\?preview\+LINQPad5\.zip">[^<]*(?:\d+\.)+\d+';
     if ($versionMatch) {
-        $version = $versionMatch.Matches[0].Value
+        $version = $versionMatch.Matches[0].Value;
     } else {
-        $version = '0.0.0'
+        $version = '0.0.0';
     }
 
     return @{

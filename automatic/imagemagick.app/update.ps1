@@ -16,15 +16,13 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php'
+    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php' -UseBasicParsing;
 
-    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe$"
-    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-HDRI-x64-dll.exe$"
-    $url32 = $download_page.links | ? href -match $re32 | select -First 1 -expand href
-    $url64 = $download_page.links | ? href -match $re64 | select -First 1 -expand href
+    $url32 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe';
+    $url64 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-HDRI-x64-dll.exe';
 
-    $versionMatch = $url64 | select-string -Pattern $re64
-    $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
+    $versionMatch = $url64 | select-string -Pattern $re64;
+    $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.';
 
     return @{
         Url32   = $url32

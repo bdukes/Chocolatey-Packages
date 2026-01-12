@@ -16,23 +16,20 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php'
+    $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php' -UseBasicParsing;
 
-    $re32 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x86.7z$"
-    $re64 = "^http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x64.7z$"
-    $reFullVersion = "^http.+ImageMagick-(\d+\.\d+\.\d+-\d+)[a-zA-Z0-9-]*\.exe$"
-    $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
-    $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
-    $versionUrl = $download_page.links | Where-Object href -match $reFullVersion | Select-Object -First 1 -expand href
+    $url32 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x86.7z';
+    $url64 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+(?:-\d+)?)-portable-Q16-x64.7z';
+    $versionUrl = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)[a-zA-Z0-9-]*\.exe';
 
     if ($versionUrl) {
-        $versionMatch = $versionUrl | select-string -Pattern $reFullVersion
+        $versionMatch = $versionUrl | select-string -Pattern $reFullVersion;
     }
     else {
-        $versionMatch = $url64 | select-string -Pattern $re64
+        $versionMatch = $url64 | select-string -Pattern $re64;
     }
 
-    $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.'
+    $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.';
 
     return @{
         URL32   = $url32

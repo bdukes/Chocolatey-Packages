@@ -9,11 +9,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx'
+    $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/Download.aspx' -UseBasicParsing;
 
-    $re = '<td[^>]*>\s*(?:<[^>]+>)*(9\.(?:\d+\.?)+)</'
-
-    $versionMatches = $download_page | select-string -Pattern $re
+    $versionMatches = $download_page | select-string -Pattern '<td[^>]*>\s*(?:<[^>]+>)*(9\.(?:\d+\.?)+)</';
     $versionMatch = $versionMatches.Matches[0]
     $version = $versionMatch.Groups[1].Value
 
