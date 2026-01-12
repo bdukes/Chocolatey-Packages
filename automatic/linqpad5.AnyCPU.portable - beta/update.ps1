@@ -11,9 +11,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.linqpad.net/LINQPad5.aspx' -UseBasicParsing;
 
-    $versionMatch = $download_page | select-string -Pattern 'GetFile\.aspx\?preview\+LINQPad5-AnyCPU\.zip">[^<]*(?:\d+\.)+\d+';
+    $versionMatch = $download_page | select-string -Pattern 'GetFile\.aspx\?preview\+LINQPad5-AnyCPU\.zip">[^<]*?((?:\d+\.)+\d+)';
     if ($versionMatch) {
-        $version = $versionMatch.Matches[0].Value;
+        $version = $versionMatch.Matches[0].Groups[1].Value;
     } else {
         $version = '0.0.0';
     }
