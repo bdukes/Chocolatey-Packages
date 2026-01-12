@@ -5,7 +5,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
   <metadata>
     <id>imagemagick.app</id>
     <title>ImageMagick (Install)</title>
-    <version>7.1.2.1100</version>
+    <version>7.1.2.1200</version>
     <authors>ImageMagick Studio LLC</authors>
     <owners>Brian Dukes</owners>
     <summary><![CDATA[ImageMagick® is a software suite to create, edit, compose, or convert bitmap images]]></summary>
