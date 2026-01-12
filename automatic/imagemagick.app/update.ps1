@@ -24,8 +24,8 @@ function global:au_GetLatest {
     $version = $url64.Matches[0].Groups[1].Value -replace '-', '.';
 
     return @{
-        Url32   = $url32
-        Url64   = $url64
+        Url32   = $url32.Matches[0].Value
+        Url64   = $url64.Matches[0].Value
         Version = $version + '00'
     }
 }
