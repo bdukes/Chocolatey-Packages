@@ -11,8 +11,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.imagemagick.org/script/download.php' -UseBasicParsing;
 
-    $url32 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe';
-    $url64 = $download_page | Select-String 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-HDRI-x64-dll.exe';
+    $url32 = $download_page | Select-String -Pattern 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-x86-dll.exe';
+    $url64 = $download_page | Select-String -Pattern 'http.+ImageMagick-(\d+\.\d+\.\d+-\d+)-Q16-HDRI-x64-dll.exe';
 
     $versionMatch = $url64 | select-string -Pattern $re64;
     $version = $versionMatch.Matches[0].Groups[1].Value -replace '-', '.';
