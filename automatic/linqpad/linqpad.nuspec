@@ -5,7 +5,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
   <metadata>
     <id>linqpad</id>
     <title>LINQPad</title>
-    <version>9.5.10</version>
+    <version>9.6.6</version>
     <authors>Joseph Albahari</authors>
     <owners>Brian Dukes</owners>
     <summary>LINQPad 9 Low-Impact Setup</summary>
@@ -36,7 +36,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
     <bugTrackerUrl>https://linqpad.uservoice.com/</bugTrackerUrl>
     <releaseNotes>https://www.linqpad.net/LINQPad8.aspx</releaseNotes>
     <dependencies>
-      <dependency id="linqpad9" version="[9.5.10]" />
+      <dependency id="linqpad9" version="[9.6.6]" />
     </dependencies>
   </metadata>
   <files>
