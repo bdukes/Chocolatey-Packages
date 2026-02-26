@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $release = Get-GitHubRelease -Owner:$owner -Name:$repository;
-    [regex]$re = '/remotemobprogramming/mob/releases/download/v(\d+(?:\.\d+)+)/.+_windows_amd64\.tar\.gz';
+    [regex]$re = '/remotemobprogramming/mob/releases/download/v?(\d+(?:\.\d+)+)/.+_windows_amd64\.tar\.gz';
     $url = $release.assets.browser_download_url | Where-Object { $_ -match $re } | Select-Object -First 1;
     $version = $matches[1];
 
