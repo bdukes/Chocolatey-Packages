@@ -6,7 +6,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
     <id>mob</id>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Brian Dukes</owners>
-    <version>5.4.0</version>
+    <version>5.4.2</version>
     <title>mob</title>
     <authors>Dr. Simon Harrer</authors>
     <projectUrl>https://mob.sh/</projectUrl>
