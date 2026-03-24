@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $url64                 = 'https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86_64.msi'
 $checksum64            = '7aad1f481b2fdf86166d082933071e7e9aaf7efd3666a4204cdc5fd2f42b0e59'
@@ -21,13 +21,13 @@ $packageArgs = @{
 if ($key.QuietUninstallString) {
   $parts = $key.QuietUninstallString -split '\s+', 2
 
-  $packageArgs = @{
+  $uninstallArgs = @{
     packageName = $env:ChocolateyPackageName
     file        = $parts[0]
     silentArgs  = $parts[1]
   }
 
-  Uninstall-ChocolateyPackage @packageArgs
+  Uninstall-ChocolateyPackage @uninstallArgs
 }
 
 # Install the new version
