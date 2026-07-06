@@ -6,7 +6,7 @@ enclosed in quotation marks, you should use an editor that supports UTF-8, not t
     <id>elm-platform</id>
     <packageSourceUrl>https://github.com/bdukes/Chocolatey-Packages</packageSourceUrl>
     <owners>Christian Jacobsen, Brian Dukes</owners>
-    <version>0.19.1</version>
+    <version>0.19.2</version>
     <title>Elm Platform (Install)</title>
     <authors>Evan Czaplicki</authors>
     <projectUrl>https://elm-lang.org/</projectUrl>
