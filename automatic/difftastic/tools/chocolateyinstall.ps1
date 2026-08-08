@@ -4,8 +4,8 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition;
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  url           = 'https://github.com/Wilfred/difftastic/releases/download/0.69.0/difft-x86_64-pc-windows-msvc.zip'
-  checksum      = 'a5adbf57eb1b923b62d1c3596c4f827df143f5b52cfba48bb9e83f41dea90c02'
+  url           = 'https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-x86_64-pc-windows-msvc.zip'
+  checksum      = 'b563ae76e22ce28c7080a8b628cfabf6fa86f9ee114a0f5697bc2ca26f9ce1d7'
   checksumType  = 'sha256'
 }
 
