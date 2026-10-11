@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/ImageMagick/ImageMagick6/releases/download/6.9.13-57/ImageMagick-6.9.13-57-portable-Q16-x86.7z
-   x64: https://github.com/ImageMagick/ImageMagick6/releases/download/6.9.13-57/ImageMagick-6.9.13-57-portable-Q16-x64.7z
+   x32: https://github.com/ImageMagick/ImageMagick6/releases/download/6.9.13-58/ImageMagick-6.9.13-58-portable-Q16-x86.7z
+   x64: https://github.com/ImageMagick/ImageMagick6/releases/download/6.9.13-58/ImageMagick-6.9.13-58-portable-Q16-x64.7z
 
    to download the installer.
 
@@ -16,5 +16,5 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: A58220BFBD49A7DE2014A9FC77E56C73C171CF0AF6AEE7976911DB6111BC227C
-   checksum64: 5CD63D9EEEDECA3AD4114AD9E27766215123FF0FBD54681659EF2E20C86376A8
+   checksum32: 7F8F72599C1899BDC72821FEA0F1D53B022D48980D31C2D39A3D1EB63DBDB280
+   checksum64: 8091B6DBEDFDBF828A07D17D2F41D4E110249F370A38CA26204CE9BD03404E9C
